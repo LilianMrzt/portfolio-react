@@ -4,7 +4,8 @@ import { type IconProps } from '@interfaces/components/common/IconProps'
 
 const Icon: FC<IconProps> = ({
     children,
-    size = 24
+    size = 24,
+    color
 }): ReactNode => {
     return (
         <div
@@ -13,7 +14,8 @@ const Icon: FC<IconProps> = ({
                 height: size,
                 width: size,
                 minWidth: size,
-                minHeight: size
+                minHeight: size,
+                color
             }}
         >
             {children}

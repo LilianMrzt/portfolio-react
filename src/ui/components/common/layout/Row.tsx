@@ -1,13 +1,14 @@
 import React, { type FC } from 'react'
-import { type RowProps } from '@interfaces/components/common/RowProps'
+import { type RowProps } from '@interfaces/components/common/layout/RowProps'
 import './row.css'
 
 const Row: FC<RowProps> = ({
-    children
+    children,
+    className
 }) => {
     return (
         <div
-            className={'row'}
+            className={`row ${className}`}
         >
             {children}
         </div>

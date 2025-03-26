@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react'
 
-export interface ColumnProps {
+export interface RowProps {
     children: ReactNode
+    className?: string
 }
