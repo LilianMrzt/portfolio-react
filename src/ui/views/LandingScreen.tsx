@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
-import Column from '@components/Column'
-import Row from '@components/Row'
-import Text from '@components/Text'
+import Column from '@components/common/Column'
+import Row from '@components/common/Row'
+import Text from '@components/common/Text'
 
 const LandingScreen = (): ReactNode => {
     return (
