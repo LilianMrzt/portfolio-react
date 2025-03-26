@@ -13,6 +13,7 @@ const NavBar = (): ReactNode => {
             className={'nav-bar'}
         >
             <Button
+                onClick={() => {}}
                 icon={<MenuIcon/>}
                 color={theme.onSurface}
                 backgroundColor={theme.surface}

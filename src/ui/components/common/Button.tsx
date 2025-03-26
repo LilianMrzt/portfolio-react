@@ -1,20 +1,13 @@
-import React, { type CSSProperties, type FC, type ReactElement, type ReactNode, useState } from 'react'
+import React, { type FC, type ReactNode, useState } from 'react'
 import Row from '@components/common/layout/Row'
 import Icon from '@components/common/Icon'
 import Text from '@components/common/Text'
 import './button.css'
 import theme from '@constants/Theme'
-
-export interface ButtonProps {
-    label?: string
-    icon?: ReactElement
-    backgroundColor?: CSSProperties['backgroundColor']
-    color?: CSSProperties['color']
-    hoverColor?: CSSProperties['color']
-    padding?: CSSProperties['padding']
-}
+import { type ButtonProps } from '@interfaces/components/common/ButtonProps'
 
 const Button: FC<ButtonProps> = ({
+    onClick,
     label,
     icon,
     backgroundColor = theme.primary,
@@ -34,6 +27,7 @@ const Button: FC<ButtonProps> = ({
 
     return (
         <button
+            onClick={onClick}
             className={'button'}
             style={{
                 backgroundColor,
