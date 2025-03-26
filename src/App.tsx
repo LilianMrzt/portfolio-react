@@ -5,7 +5,9 @@ import LandingScreen from '@ui/views/LandingScreen'
 
 const App = (): ReactNode => {
     return (
-        <div className="App">
+        <div
+            className={'App'}
+        >
             <LandingScreen/>
         </div>
     )
