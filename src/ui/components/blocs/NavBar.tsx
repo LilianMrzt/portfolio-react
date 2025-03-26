@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import React, { type FC, type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
 import Text from '@components/common/Text'
 import Icon from '@components/common/Icon'
@@ -6,14 +6,17 @@ import { CodeIcon, MenuIcon } from '@resources/Icons'
 import './nav-bar.css'
 import theme from '@constants/Theme'
 import Button from '@components/common/Button'
+import { type NavBarProps } from '@interfaces/components/blocs/NavBarProps'
 
-const NavBar = (): ReactNode => {
+const NavBar: FC<NavBarProps> = ({
+    onMenuClick
+}): ReactNode => {
     return (
         <nav
             className={'nav-bar'}
         >
             <Button
-                onClick={() => {}}
+                onClick={onMenuClick}
                 icon={<MenuIcon/>}
                 color={theme.onSurface}
                 backgroundColor={theme.surface}
