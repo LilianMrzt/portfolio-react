@@ -5,15 +5,20 @@ import Icon from '@components/common/Icon'
 import { CodeIcon, MenuIcon } from '@resources/Icons'
 import './nav-bar.css'
 import theme from '@constants/Theme'
+import Button from '@components/common/Button'
 
 const NavBar = (): ReactNode => {
     return (
         <nav
             className={'nav-bar'}
         >
-            <Icon>
-                <MenuIcon/>
-            </Icon>
+            <Button
+                icon={<MenuIcon/>}
+                color={theme.onSurface}
+                backgroundColor={theme.surface}
+                hoverColor={theme.primary}
+                padding={8}
+            />
             <Row
                 justifyContent={'start'}
             >
