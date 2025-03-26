@@ -8,13 +8,16 @@ import theme from '@constants/Theme'
 
 const NavBar = (): ReactNode => {
     return (
-        <nav>
+        <nav
+            className={'nav-bar'}
+        >
+            <Icon>
+                <MenuIcon/>
+            </Icon>
             <Row
-                className={'nav-bar'}
+                justifyContent={'start'}
+                width={'fit-content'}
             >
-                <Icon>
-                    <MenuIcon/>
-                </Icon>
                 <Icon
                     color={theme.primary}
                 >

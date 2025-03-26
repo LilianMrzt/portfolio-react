@@ -4,11 +4,21 @@ import './row.css'
 
 const Row: FC<RowProps> = ({
     children,
-    className
+    className,
+    justifyContent = 'center',
+    alignItems = 'center',
+    width = '100%',
+    gap = 10
 }) => {
     return (
         <div
             className={`row ${className}`}
+            style={{
+                alignItems,
+                justifyContent,
+                gap,
+                width
+            }}
         >
             {children}
         </div>
