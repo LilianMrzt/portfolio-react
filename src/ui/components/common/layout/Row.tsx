@@ -7,7 +7,7 @@ const Row: FC<RowProps> = ({
     className,
     justifyContent = 'center',
     alignItems = 'center',
-    width = '100%',
+    width = 'fit-content',
     gap = 10
 }) => {
     return (

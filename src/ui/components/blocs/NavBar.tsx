@@ -16,7 +16,6 @@ const NavBar = (): ReactNode => {
             </Icon>
             <Row
                 justifyContent={'start'}
-                width={'fit-content'}
             >
                 <Icon
                     color={theme.primary}
