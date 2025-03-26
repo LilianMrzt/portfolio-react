@@ -1,5 +1,5 @@
 import React, { type FC } from 'react'
-import { type RowProps } from '@interfaces/components/RowProps'
+import { type RowProps } from '@interfaces/components/common/RowProps'
 import './row.css'
 
 const Row: FC<RowProps> = ({

@@ -1,5 +1,5 @@
 import React, { type FC, type ReactNode } from 'react'
-import { type ColumnProps } from '@interfaces/components/ColumnProps'
+import { type ColumnProps } from '@interfaces/components/common/ColumnProps'
 import './column.css'
 
 const Column: FC<ColumnProps> = ({

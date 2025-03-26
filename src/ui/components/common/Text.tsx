@@ -1,5 +1,5 @@
 import React, { type FC, type ReactNode } from 'react'
-import { type TextProps } from '@interfaces/components/TextProps'
+import { type TextProps } from '@interfaces/components/common/TextProps'
 import './text.css'
 
 const Text: FC<TextProps> = ({
