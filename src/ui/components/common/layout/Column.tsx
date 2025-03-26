@@ -8,7 +8,7 @@ const Column: FC<ColumnProps> = ({
 }): ReactNode => {
     return (
         <div
-            className={`column ${className}`}
+            className={`column ${className ?? ''}`}
         >
             {children}
         </div>

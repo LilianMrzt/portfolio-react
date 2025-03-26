@@ -12,7 +12,7 @@ const Row: FC<RowProps> = ({
 }) => {
     return (
         <div
-            className={`row ${className}`}
+            className={`row ${className ?? ''}`}
             style={{
                 alignItems,
                 justifyContent,
