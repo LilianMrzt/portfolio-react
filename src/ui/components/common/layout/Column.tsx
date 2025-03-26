@@ -4,11 +4,17 @@ import './column.css'
 
 const Column: FC<ColumnProps> = ({
     children,
-    className
+    className,
+    maxWidth,
+    padding
 }): ReactNode => {
     return (
         <div
             className={`column ${className ?? ''}`}
+            style={{
+                maxWidth,
+                padding
+            }}
         >
             {children}
         </div>
