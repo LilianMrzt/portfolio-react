@@ -31,6 +31,7 @@ const NavBar: FC<NavBarProps> = ({
             >
                 <Row
                     justifyContent={'start'}
+                    gap={8}
                 >
                     <Icon
                         color={theme.primary}
@@ -38,7 +39,7 @@ const NavBar: FC<NavBarProps> = ({
                         <CodeIcon/>
                     </Icon>
                     <Title>
-                        Portfolio - Lilian Marzet
+                        Portfolio
                     </Title>
                 </Row>
             </Link>

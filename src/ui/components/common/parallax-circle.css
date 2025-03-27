@@ -1,0 +1,9 @@
+.parallax-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--primary);
+    z-index: 0;
+    transition: transform 0.1s ease-out;
+}

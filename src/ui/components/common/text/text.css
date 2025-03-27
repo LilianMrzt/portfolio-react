@@ -5,4 +5,5 @@
     font-family: 'Public Sans', sans-serif;
     width: fit-content;
     text-align: justify;
+    z-index: 5;
 }
