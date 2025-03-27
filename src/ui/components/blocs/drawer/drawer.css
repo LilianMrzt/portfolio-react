@@ -5,11 +5,18 @@
     left: 0;
     max-width: 320px;
     width: 100%;
+    height: calc(100% + 200px);
     background-color: var(--surface);
     box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
     z-index: 30;
     transform: translateX(-100%);
     transition: transform 300ms ease-in-out;
+}
+
+@media (max-width: 960px) {
+    .drawer {
+        max-width: 280px;
+    }
 }
 
 .drawer.open {
@@ -37,6 +44,7 @@
     transition-duration: 150ms;
     opacity: 0;
     pointer-events: none;
+    height: calc(100% + 200px);
 }
 
 .drawer-background {
