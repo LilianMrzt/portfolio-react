@@ -1,6 +1,6 @@
 import React, { type FC, type ReactNode, useState } from 'react'
-import { type ExternalLinkProps } from '@interfaces/components/common/ExternalLinkProps'
-import Icon from '@components/common/Icon'
+import { type ExternalLinkProps } from '@interfaces/components/common/pressable/ExternalLinkProps'
+import Icon from '@components/common/resources/Icon'
 import './external-link.css'
 import theme from '@constants/Theme'
 

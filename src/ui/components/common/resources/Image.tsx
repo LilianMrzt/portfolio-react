@@ -1,5 +1,5 @@
 import React, { type FC, type ReactNode } from 'react'
-import { type ImageProps } from '@interfaces/components/common/ImageProps'
+import { type ImageProps } from '@interfaces/components/common/resources/ImageProps'
 
 const Image: FC<ImageProps> = ({
     src,

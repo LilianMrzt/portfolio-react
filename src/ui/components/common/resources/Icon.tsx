@@ -1,6 +1,6 @@
 import React, { type FC, type ReactNode } from 'react'
 import './icon.css'
-import { type IconProps } from '@interfaces/components/common/IconProps'
+import { type IconProps } from '@interfaces/components/common/resources/IconProps'
 
 const Icon: FC<IconProps> = ({
     children,

@@ -3,15 +3,15 @@ import { type DrawerProps } from '@interfaces/components/blocs/drawer/DrawerProp
 import './drawer.css'
 import Row from '@components/common/layout/Row'
 import { CloseIcon, GithubIcon, LinkedinIcon, MailIcon } from '@resources/Icons'
-import Button from '@components/common/Button'
+import Button from '@components/common/pressable/Button'
 import theme from '@constants/Theme'
 import { AppRoutes } from '@constants/AppRoutes'
 import DrawerRouteItem from '@components/blocs/drawer/DrawerRouteItem'
 import Column from '@components/common/layout/Column'
-import ExternalLink from '@components/common/ExternalLink'
+import ExternalLink from '@components/common/pressable/ExternalLink'
 import Title from '@components/common/text/Title'
 import Text from '@components/common/text/Text'
-import Image from '@components/common/Image'
+import Image from '@components/common/resources/Image'
 
 const Drawer: FC<DrawerProps> = ({
     isDrawerOpen,

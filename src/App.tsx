@@ -1,7 +1,7 @@
 import './app.css'
 import React, { useState } from 'react'
 import { type ReactNode } from 'react'
-import NavBar from '@components/blocs/NavBar'
+import NavBar from '@components/blocs/nav-bar/NavBar'
 import Drawer from '@components/blocs/drawer/Drawer'
 import AppNavigation from '@ui/navigation/AppNavigation'
 

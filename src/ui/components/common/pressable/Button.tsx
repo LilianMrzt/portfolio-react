@@ -1,10 +1,10 @@
 import React, { type FC, type ReactNode, useState } from 'react'
 import Row from '@components/common/layout/Row'
-import Icon from '@components/common/Icon'
+import Icon from '@components/common/resources/Icon'
 import Text from '@components/common/text/Text'
 import './button.css'
 import theme from '@constants/Theme'
-import { type ButtonProps } from '@interfaces/components/common/ButtonProps'
+import { type ButtonProps } from '@interfaces/components/common/pressable/ButtonProps'
 
 const Button: FC<ButtonProps> = ({
     onClick,
