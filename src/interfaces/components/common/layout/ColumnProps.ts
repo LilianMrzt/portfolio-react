@@ -7,5 +7,6 @@ export interface ColumnProps {
     padding?: CSSProperties['padding']
     gap?: CSSProperties['gap']
     justifyContent?: CSSProperties['justifyContent']
+    alignItems?: CSSProperties['alignItems']
     height?: CSSProperties['height']
 }

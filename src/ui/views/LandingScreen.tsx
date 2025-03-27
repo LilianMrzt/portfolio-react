@@ -1,21 +1,47 @@
 import React, { type ReactNode } from 'react'
-import Column from '@components/common/layout/Column'
-import Row from '@components/common/layout/Row'
 import Text from '@components/common/text/Text'
-import './landing-screen.css'
+import Section from '@components/common/layout/Section'
+import Screen from '@components/common/layout/Screen'
 
 const LandingScreen = (): ReactNode => {
     return (
-        <Column
-            maxWidth={1280}
-            className={'landing-screen'}
-        >
-            <Row>
+        <Screen>
+            <Section
+                label={'Skills'}
+            >
                 <Text>
-                  Lilian Marzet
+                    Test
                 </Text>
-            </Row>
-        </Column>
+            </Section>
+            <Section
+                label={'About me'}
+            >
+                <Text>
+                    Test
+                </Text>
+            </Section>
+            <Section
+                label={'My projects'}
+            >
+                <Text>
+                    Test
+                </Text>
+            </Section>
+            <Section
+                label={'What people say'}
+            >
+                <Text>
+                    Test
+                </Text>
+            </Section>
+            <Section
+                label={'Get in touch'}
+            >
+                <Text>
+                    Test
+                </Text>
+            </Section>
+        </Screen>
     )
 }
 

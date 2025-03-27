@@ -9,6 +9,7 @@ const Column: FC<ColumnProps> = ({
     padding,
     gap = 16,
     justifyContent = 'center',
+    alignItems = 'center',
     height = '100%'
 }): ReactNode => {
     return (
@@ -19,6 +20,7 @@ const Column: FC<ColumnProps> = ({
                 padding,
                 gap,
                 justifyContent,
+                alignItems,
                 height
             }}
         >
