@@ -20,7 +20,7 @@ const NavBar: FC<NavBarProps> = ({
             <Button
                 onClick={onMenuClick}
                 icon={<MenuIcon/>}
-                color={theme.onSurface}
+                color={theme.text}
                 backgroundColor={theme.surface}
                 hoverColor={theme.primary}
                 padding={8}

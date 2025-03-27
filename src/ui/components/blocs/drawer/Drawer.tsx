@@ -39,7 +39,7 @@ const Drawer: FC<DrawerProps> = ({
                         onClick={onClose}
                         padding={10}
                         backgroundColor={theme.surface}
-                        color={theme.onSurface}
+                        color={theme.text}
                     />
                 </Row>
                 <Column

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
 code {
@@ -16,12 +17,8 @@ code {
   --primary: #4F46E5;
   --primary-opacity: #EEF2FF;
   --on-primary: #FFFFFF;
-  --background: #F3F4F6;
-  --on-background: #1A1A1A;
-  --on-background-secondary: #6B7280;
+  --background: #F9FAFB;
   --surface: #FFFFFF;
-  --on-surface: #1A1A1A;
-  --text: #374151;
-  --secondary-text: #78756C;
+  --text: #111727;
   --outline: #DBDAD8;
 }
