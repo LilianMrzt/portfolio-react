@@ -1,0 +1,10 @@
+{
+    "drawer": {
+        "home" : "Home",
+        "projects": "Projects",
+        "fullStackDeveloper": "Fullstack Developer"
+    },
+    "footer": {
+        "allRightsReserved": "All rights reserved."
+    }
+}

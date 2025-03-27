@@ -12,11 +12,13 @@ import ExternalLink from '@components/common/pressable/ExternalLink'
 import Title from '@components/common/text/Title'
 import Text from '@components/common/text/Text'
 import Image from '@components/common/resources/Image'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const Drawer: FC<DrawerProps> = ({
     isDrawerOpen,
     onClose
 }): ReactNode => {
+    const { translate } = useTranslation()
     return (
         <>
             <div
@@ -63,7 +65,7 @@ const Drawer: FC<DrawerProps> = ({
                             Lilian Marzet
                         </Title>
                         <Text>
-                            Développeur Fullstack
+                            {translate('drawer.fullStackDeveloper')}
                         </Text>
                     </Column>
                     <Column

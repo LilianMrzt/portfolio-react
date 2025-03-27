@@ -4,12 +4,12 @@ import { type RouteType } from '@interfaces/types/RouteType'
 
 export const AppRoutes: Record<string, RouteType> = {
     home: {
-        label: 'Accueil',
+        label: 'drawer.home',
         route: '/',
         icon: <HomeIcon/>
     },
     projects: {
-        label: 'Projets',
+        label: 'drawer.projects',
         route: '/projects',
         icon: <ProjectsIcon/>
     }

@@ -42,7 +42,7 @@
 .drawer-background {
     position: absolute;
     inset: 0;
-    background-color: var(--on-background);
+    background-color: var(--text);
     opacity: 0.7;
 }
 

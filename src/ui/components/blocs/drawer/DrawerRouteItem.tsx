@@ -6,12 +6,14 @@ import './drawer-route-item.css'
 import { Link, useLocation } from 'react-router-dom'
 import theme from '@constants/Theme'
 import { type DrawerRouteItemProps } from '@interfaces/components/blocs/drawer/DrawerRouteItemProps'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
     route,
     onClose
 }): ReactNode => {
     const location = useLocation()
+    const { translate } = useTranslation()
 
     const isSelected = location.pathname === route.route
 
@@ -36,7 +38,7 @@ const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
                 <Text
                     color={isSelected ? theme.primary : theme.text}
                 >
-                    {route.label}
+                    {translate(route.label)}
                 </Text>
             </Row>
         </Link>

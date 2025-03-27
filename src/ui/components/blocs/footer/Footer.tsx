@@ -3,8 +3,10 @@ import Row from '@components/common/layout/Row'
 import Text from '@components/common/text/Text'
 import './footer.css'
 import theme from '@constants/Theme'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const Footer = (): ReactNode => {
+    const { translate } = useTranslation()
     return (
         <footer
             className={'footer'}
@@ -16,7 +18,7 @@ const Footer = (): ReactNode => {
                 <Text
                     color={theme.textSecondary}
                 >
-                    {`© ${new Date().getFullYear().toString()} • Portfolio - Lilian Marzet. All rights reserved.`}
+                    {`© ${new Date().getFullYear().toString()} • Portfolio - Lilian Marzet. ${translate('footer.allRightsReserved')}.`}
                 </Text>
             </Row>
         </footer>
