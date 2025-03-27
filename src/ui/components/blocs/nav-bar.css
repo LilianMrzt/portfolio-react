@@ -10,7 +10,7 @@
     justify-content: start;
     align-items: center;
     gap: 30px;
-    z-index: 30;
+    z-index: 20;
 }
 
 .nav-bar-link {
