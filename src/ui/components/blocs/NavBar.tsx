@@ -7,6 +7,8 @@ import './nav-bar.css'
 import theme from '@constants/Theme'
 import Button from '@components/common/Button'
 import { type NavBarProps } from '@interfaces/components/blocs/NavBarProps'
+import { Link } from 'react-router-dom'
+import { AppRoutes } from '@constants/AppRoutes'
 
 const NavBar: FC<NavBarProps> = ({
     onMenuClick
@@ -23,18 +25,23 @@ const NavBar: FC<NavBarProps> = ({
                 hoverColor={theme.primary}
                 padding={8}
             />
-            <Row
-                justifyContent={'start'}
+            <Link
+                to={AppRoutes.home.route}
+                className={'nav-bar-link'}
             >
-                <Icon
-                    color={theme.primary}
+                <Row
+                    justifyContent={'start'}
                 >
-                    <CodeIcon/>
-                </Icon>
-                <Text>
-                    Lilian Marzet
-                </Text>
-            </Row>
+                    <Icon
+                        color={theme.primary}
+                    >
+                        <CodeIcon/>
+                    </Icon>
+                    <Text>
+                        Lilian Marzet
+                    </Text>
+                </Row>
+            </Link>
         </nav>
     )
 }

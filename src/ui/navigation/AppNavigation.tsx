@@ -2,6 +2,7 @@ import React, { type ReactNode } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { AppRoutes } from '@constants/AppRoutes'
 import LandingScreen from '@ui/views/LandingScreen'
+import ProjectsScreen from '@ui/views/ProjectsScreen'
 
 const AppNavigation = (): ReactNode => {
     return (
@@ -12,7 +13,7 @@ const AppNavigation = (): ReactNode => {
             />
             <Route
                 path={AppRoutes.projects.route}
-                element={<LandingScreen />}
+                element={<ProjectsScreen />}
             />
         </Routes>
     )
