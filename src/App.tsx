@@ -1,9 +1,9 @@
 import './app.css'
 import React, { useState } from 'react'
 import { type ReactNode } from 'react'
-import LandingScreen from '@ui/views/LandingScreen'
 import NavBar from '@components/blocs/NavBar'
-import Drawer from '@components/blocs/Drawer'
+import Drawer from '@components/blocs/drawer/Drawer'
+import AppNavigation from '@ui/navigation/AppNavigation'
 
 const App = (): ReactNode => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -26,7 +26,7 @@ const App = (): ReactNode => {
             <main
                 className={'app-main'}
             >
-                <LandingScreen/>
+                <AppNavigation/>
             </main>
         </div>
     )
