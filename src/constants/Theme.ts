@@ -1,5 +1,6 @@
 const theme = {
     primary: getComputedStyle(document.documentElement).getPropertyValue('--primary').trim(),
+    primaryOpacity: getComputedStyle(document.documentElement).getPropertyValue('--primary-opacity').trim(),
     onPrimary: getComputedStyle(document.documentElement).getPropertyValue('--on-primary').trim(),
     background: getComputedStyle(document.documentElement).getPropertyValue('--background').trim(),
     onBackground: getComputedStyle(document.documentElement).getPropertyValue('--on-background').trim(),

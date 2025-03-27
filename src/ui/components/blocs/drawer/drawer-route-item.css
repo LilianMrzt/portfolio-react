@@ -1,5 +1,10 @@
 .drawer-route-item {
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 8px 12px;
     border: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-decoration: none;
+    display: flex;
 }

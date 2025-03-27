@@ -5,7 +5,6 @@ import Row from '@components/common/layout/Row'
 import { CloseIcon } from '@resources/Icons'
 import Button from '@components/common/Button'
 import theme from '@constants/Theme'
-import Column from '@components/common/layout/Column'
 import { AppRoutes } from '@constants/AppRoutes'
 import DrawerRouteItem from '@components/blocs/drawer/DrawerRouteItem'
 
@@ -38,14 +37,16 @@ const Drawer: FC<DrawerProps> = ({
                         color={theme.onSurface}
                     />
                 </Row>
-                <Column>
+                <nav
+                    className={'drawer-nav'}
+                >
                     {Object.entries(AppRoutes).map(([key, route]) => (
                         <DrawerRouteItem
                             key={key}
                             route={route}
                         />
                     ))}
-                </Column>
+                </nav>
             </div>
         </>
     )

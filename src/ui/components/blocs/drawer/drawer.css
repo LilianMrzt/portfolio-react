@@ -16,6 +16,12 @@
     transform: translateX(0);
 }
 
+.drawer-nav {
+    padding: 16px;
+    height: calc(100% - 44px);
+    box-sizing: border-box;
+}
+
 .drawer-background-wrapper {
     position: fixed;
     inset: 0;

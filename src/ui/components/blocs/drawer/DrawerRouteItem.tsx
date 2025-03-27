@@ -3,7 +3,7 @@ import Row from '@components/common/layout/Row'
 import Icon from '@components/common/Icon'
 import Text from '@components/common/Text'
 import './drawer-route-item.css'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import theme from '@constants/Theme'
 import { type DrawerRouteItemProps } from '@interfaces/components/blocs/drawer/DrawerRouteItemProps'
 
@@ -11,31 +11,33 @@ const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
     route
 }): ReactNode => {
     const location = useLocation()
-    const navigate = useNavigate()
 
     const isSelected = location.pathname === route.route
 
     return (
-        <button
+        <Link
             className={'drawer-route-item'}
             style={{
-                backgroundColor: isSelected ? theme.primary : theme.surface
+                backgroundColor: isSelected ? theme.primaryOpacity : theme.surface
             }}
-            onClick={() => {
-                void navigate(route.route)
-            }}
+            to={route.route}
         >
             <Row
                 width={'100%'}
+                justifyContent={'start'}
             >
-                <Icon>
+                <Icon
+                    color={isSelected ? theme.primary : theme.text}
+                >
                     {route.icon}
                 </Icon>
-                <Text>
+                <Text
+                    color={isSelected ? theme.primary : theme.text}
+                >
                     {route.label}
                 </Text>
             </Row>
-        </button>
+        </Link>
     )
 }
 
