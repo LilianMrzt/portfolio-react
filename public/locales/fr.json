@@ -6,5 +6,17 @@
     },
     "footer": {
         "allRightsReserved": "Tous droits reservés"
+    },
+    "homeScreen": {
+        "initialSection": {
+            "greetings": "Bonjour, je suis",
+            "fullStackDeveloper": "Développeur Fullstack"
+        },
+        "aboutMeSection": {
+            "title": "A propos de moi",
+            "contentText1": "Mon expertise se situe principalement dans les technologies modernes telles que React et React Native pour le front-end, où je m’épanouis dans la gestion d’interface utilisateur dynamiques et intuitives. Côté back-end, je me distingue par ma maîtrise de NodeJS, permettant la mise en oeuvre de fonctionnalités robustes et la gestion efficace des données.",
+            "contentText2": "Mon parcours récent témoingne de ma détermanitation à apprendre et à évoluer constamment dans le domaine du développement, avec un engagement résolu envers l’excellence technique et l’innovation.",
+            "buttonLabel": "Télécharger mon CV"
+        }
     }
 }

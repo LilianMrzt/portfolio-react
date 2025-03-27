@@ -9,12 +9,15 @@ import './about-me-section.css'
 import Button from '@components/common/pressable/Button'
 import { DownloadIcon } from '@resources/Icons'
 import { useWindowSize } from '@hooks/useWindowSize'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const AboutMeSection = (): ReactNode => {
     const { width } = useWindowSize()
+    const { translate } = useTranslation()
+
     return (
         <Section
-            label={'A propos de moi'}
+            label={translate('homeScreen.aboutMeSection.title')}
             id={'about-me-section'}
         >
             <Card
@@ -31,19 +34,18 @@ const AboutMeSection = (): ReactNode => {
                             <Text
                                 fontSize={18}
                             >
-                                Mon expertise se situe principalement dans les technologies modernes telles que React et React Native pour le front-end, où je m’épanouis dans la gestion d’interface utilisateur dynamiques et intuitives.
-                                Côté back-end, je me distingue par ma maîtrise de PHP, permettant la mise en oeuvre de fonctionnalités robustes et la gestion efficace des données.
+                                {translate('homeScreen.aboutMeSection.contentText1')}
                             </Text>
                             <Text
                                 fontSize={18}
                             >
-                                Mon parcours récent témoingne de ma détermanitation à apprendre et à évoluer constamment dans le domaine du développement, avec un engagement résolu envers l’excellence technique et l’innovation.
+                                {translate('homeScreen.aboutMeSection.contentText2')}
                             </Text>
                         </Column>
                         <Button
                             onClick={() => {}}
                             icon={<DownloadIcon/>}
-                            label={'Télécharger mon CV'}
+                            label={translate('homeScreen.aboutMeSection.buttonLabel')}
                         />
                     </Column>
                     <div

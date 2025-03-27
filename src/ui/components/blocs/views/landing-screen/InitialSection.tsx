@@ -7,9 +7,12 @@ import Button from '@components/common/pressable/Button'
 import { ChevronDownIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useWindowSize } from '@hooks/useWindowSize'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const InitialSection = (): ReactNode => {
     const { width } = useWindowSize()
+    const { translate } = useTranslation()
+
     const scrollToSection = (): void => {
         const element = document.getElementById('about-me-section')
         if (element) {
@@ -35,7 +38,7 @@ const InitialSection = (): ReactNode => {
                 <Text
                     fontSize={24}
                 >
-                    Bonjour, je suis
+                    {translate('homeScreen.initialSection.greetings')}
                 </Text>
                 <Title
                     fontSize={width < 960 ? 96 : 128}
@@ -43,7 +46,7 @@ const InitialSection = (): ReactNode => {
                     Lilian Marzet
                 </Title>
                 <SubTitle>
-                    Développeur Fullstack
+                    {translate('homeScreen.initialSection.fullStackDeveloper')}
                 </SubTitle>
             </Column>
             <Button
