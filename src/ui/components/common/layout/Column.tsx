@@ -7,7 +7,7 @@ const Column: FC<ColumnProps> = ({
     className,
     maxWidth,
     padding,
-    gap,
+    gap = 16,
     justifyContent = 'center',
     height = '100%'
 }): ReactNode => {

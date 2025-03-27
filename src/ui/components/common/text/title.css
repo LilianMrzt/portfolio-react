@@ -1,0 +1,8 @@
+.title {
+    margin: 0;
+    padding: 0;
+    transition: color 0.2s ease-in-out, width 0.2s ease-in-out;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1rem;
+    width: fit-content;
+}

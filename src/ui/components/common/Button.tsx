@@ -1,7 +1,7 @@
 import React, { type FC, type ReactNode, useState } from 'react'
 import Row from '@components/common/layout/Row'
 import Icon from '@components/common/Icon'
-import Text from '@components/common/Text'
+import Text from '@components/common/text/Text'
 import './button.css'
 import theme from '@constants/Theme'
 import { type ButtonProps } from '@interfaces/components/common/ButtonProps'

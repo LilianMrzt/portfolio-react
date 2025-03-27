@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import Column from '@components/common/layout/Column'
 import Row from '@components/common/layout/Row'
-import Text from '@components/common/Text'
+import Text from '@components/common/text/Text'
 import './landing-screen.css'
 
 const LandingScreen = (): ReactNode => {

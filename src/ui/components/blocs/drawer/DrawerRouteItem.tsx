@@ -1,7 +1,7 @@
 import React, { type FC, type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
 import Icon from '@components/common/Icon'
-import Text from '@components/common/Text'
+import Text from '@components/common/text/Text'
 import './drawer-route-item.css'
 import { Link, useLocation } from 'react-router-dom'
 import theme from '@constants/Theme'

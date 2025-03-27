@@ -9,6 +9,8 @@ import { AppRoutes } from '@constants/AppRoutes'
 import DrawerRouteItem from '@components/blocs/drawer/DrawerRouteItem'
 import Column from '@components/common/layout/Column'
 import ExternalLink from '@components/common/ExternalLink'
+import Title from '@components/common/text/Title'
+import Text from '@components/common/text/Text'
 
 const Drawer: FC<DrawerProps> = ({
     isDrawerOpen,
@@ -41,10 +43,21 @@ const Drawer: FC<DrawerProps> = ({
                 </Row>
                 <Column
                     padding={16}
-                    gap={16}
                     justifyContent={'start'}
                     height={'calc(100% - 44px)'}
                 >
+                    <Column
+                        height={'fit-content'}
+                        gap={8}
+                    >
+                        <div/>
+                        <Title>
+                            Lilian Marzet
+                        </Title>
+                        <Text>
+                            Développeur Fullstack
+                        </Text>
+                    </Column>
                     <nav
                         className={'drawer-nav'}
                     >

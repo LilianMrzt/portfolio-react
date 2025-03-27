@@ -1,5 +1,5 @@
 import React, { type FC, type ReactNode } from 'react'
-import { type TextProps } from '@interfaces/components/common/TextProps'
+import { type TextProps } from '@interfaces/components/common/text/TextProps'
 import './text.css'
 import theme from '@constants/Theme'
 

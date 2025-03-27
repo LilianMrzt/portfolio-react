@@ -1,6 +1,6 @@
 import React, { type FC, type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
-import Text from '@components/common/Text'
+import Text from '@components/common/text/Text'
 import Icon from '@components/common/Icon'
 import { CodeIcon, MenuIcon } from '@resources/Icons'
 import './nav-bar.css'

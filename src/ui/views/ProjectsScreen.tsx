@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react'
 import Column from '@components/common/layout/Column'
-import Text from '@components/common/Text'
+import Text from '@components/common/text/Text'
 
 const ProjectsScreen = (): ReactNode => {
     return (
