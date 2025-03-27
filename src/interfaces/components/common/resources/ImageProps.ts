@@ -5,6 +5,8 @@ export interface ImageProps {
     alt: string
     width: CSSProperties['width']
     height: CSSProperties['height']
+    maxHeight?: CSSProperties['maxHeight']
+    maxWidth?: CSSProperties['maxWidth']
     borderRadius?: CSSProperties['borderRadius']
     objectFit?: CSSProperties['objectFit']
 }

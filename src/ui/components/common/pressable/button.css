@@ -2,4 +2,5 @@
     border: none;
     cursor: pointer;
     transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+    z-index: 2;
 }

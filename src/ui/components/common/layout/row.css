@@ -3,5 +3,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 960px) {
+    .row {
+        flex-wrap: wrap;
+    }
 }

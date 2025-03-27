@@ -8,18 +8,21 @@ import Column from '@components/common/layout/Column'
 import './about-me-section.css'
 import Button from '@components/common/pressable/Button'
 import { DownloadIcon } from '@resources/Icons'
+import { useWindowSize } from '@hooks/useWindowSize'
 
 const AboutMeSection = (): ReactNode => {
+    const { width } = useWindowSize()
     return (
         <Section
             label={'A propos de moi'}
             id={'about-me-section'}
         >
             <Card
-                padding={64}
+                padding={width < 960 ? 32 : 64}
             >
                 <Row
                     gap={64}
+                    width={'100%'}
                 >
                     <Column
                         gap={32}
@@ -49,8 +52,10 @@ const AboutMeSection = (): ReactNode => {
                         <Image
                             src={'https://media.licdn.com/dms/image/v2/D5603AQHXsCF1ovgpQg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693410201608?e=1748476800&v=beta&t=F7OApupk981tjvqfMgV0zys8Mtnk8Oe_2AgEDj3x2mg'}
                             alt={'Photo of Lilian Marzet'}
-                            width={600}
-                            height={460}
+                            width={400}
+                            height={400}
+                            maxWidth={width - 128}
+                            maxHeight={width - 128}
                             objectFit={'cover'}
                             borderRadius={32}
                         />

@@ -11,4 +11,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--background);
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
 }

@@ -6,8 +6,10 @@ import SubTitle from '@components/common/text/SubTitle'
 import Button from '@components/common/pressable/Button'
 import { ChevronDownIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
+import { useWindowSize } from '@hooks/useWindowSize'
 
 const InitialSection = (): ReactNode => {
+    const { width } = useWindowSize()
     const scrollToSection = (): void => {
         const element = document.getElementById('about-me-section')
         if (element) {
@@ -36,7 +38,7 @@ const InitialSection = (): ReactNode => {
                     Bonjour, je suis
                 </Text>
                 <Title
-                    fontSize={128}
+                    fontSize={width < 960 ? 96 : 128}
                 >
                     Lilian Marzet
                 </Title>

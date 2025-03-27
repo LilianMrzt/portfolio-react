@@ -8,7 +8,9 @@ const Image: FC<ImageProps> = ({
     width,
     borderRadius,
     alt,
-    objectFit
+    objectFit,
+    maxWidth,
+    maxHeight
 }): ReactNode => {
     return (
         <img
@@ -18,8 +20,8 @@ const Image: FC<ImageProps> = ({
             style={{
                 height,
                 width,
-                minHeight: height,
-                minWidth: width,
+                maxWidth,
+                maxHeight,
                 borderRadius,
                 objectFit
             }}
