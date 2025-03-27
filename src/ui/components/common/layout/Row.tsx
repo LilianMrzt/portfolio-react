@@ -8,7 +8,7 @@ const Row: FC<RowProps> = ({
     justifyContent = 'center',
     alignItems = 'center',
     width = 'fit-content',
-    gap = 10
+    gap = 16
 }) => {
     return (
         <div

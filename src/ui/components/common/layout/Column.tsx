@@ -6,14 +6,20 @@ const Column: FC<ColumnProps> = ({
     children,
     className,
     maxWidth,
-    padding
+    padding,
+    gap,
+    justifyContent = 'center',
+    height = '100%'
 }): ReactNode => {
     return (
         <div
             className={`column ${className ?? ''}`}
             style={{
                 maxWidth,
-                padding
+                padding,
+                gap,
+                justifyContent,
+                height
             }}
         >
             {children}

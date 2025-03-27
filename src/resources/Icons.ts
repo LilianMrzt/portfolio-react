@@ -3,11 +3,17 @@ import { ReactComponent as CodeIcon } from '@resources/assets/CodeIcon.svg'
 import { ReactComponent as CloseIcon } from '@resources/assets/CloseIcon.svg'
 import { ReactComponent as HomeIcon } from '@resources/assets/HomeIcon.svg'
 import { ReactComponent as ProjectsIcon } from '@resources/assets/ProjectsIcon.svg'
+import { ReactComponent as GithubIcon } from '@resources/assets/GithubIcon.svg'
+import { ReactComponent as LinkedinIcon } from '@resources/assets/LinkedinIcon.svg'
+import { ReactComponent as MailIcon } from '@resources/assets/MailIcon.svg'
 
 export {
     MenuIcon,
     CodeIcon,
     CloseIcon,
     HomeIcon,
-    ProjectsIcon
+    ProjectsIcon,
+    GithubIcon,
+    LinkedinIcon,
+    MailIcon
 }

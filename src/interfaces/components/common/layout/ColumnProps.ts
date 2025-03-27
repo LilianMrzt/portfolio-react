@@ -5,4 +5,7 @@ export interface ColumnProps {
     className?: string
     maxWidth?: CSSProperties['maxWidth']
     padding?: CSSProperties['padding']
+    gap?: CSSProperties['gap']
+    justifyContent?: CSSProperties['justifyContent']
+    height?: CSSProperties['height']
 }
