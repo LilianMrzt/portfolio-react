@@ -1,19 +1,11 @@
 import React, { type ReactNode } from 'react'
-import Text from '@components/common/text/Text'
-import Section from '@components/common/layout/Section'
 import Screen from '@components/common/layout/Screen'
+import MyProjectsProjectsScreenSection from '@components/blocs/views/projects-screen/MyProjectsProjectsScreenSection'
 
 const ProjectsScreen = (): ReactNode => {
     return (
         <Screen>
-            <Section
-                label={'My projects'}
-                id={'my-projects-section'}
-            >
-                <Text>
-                    Test
-                </Text>
-            </Section>
+            <MyProjectsProjectsScreenSection/>
         </Screen>
     )
 }
