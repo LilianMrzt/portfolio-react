@@ -7,3 +7,9 @@
     z-index: 0;
     transition: transform 0.1s ease-out;
 }
+
+@media (max-width: 960px) {
+    .parallax-circle {
+        background-color: var(--secondary);
+    }
+}
