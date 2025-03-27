@@ -11,6 +11,7 @@ import Column from '@components/common/layout/Column'
 import ExternalLink from '@components/common/ExternalLink'
 import Title from '@components/common/text/Title'
 import Text from '@components/common/text/Text'
+import Image from '@components/common/Image'
 
 const Drawer: FC<DrawerProps> = ({
     isDrawerOpen,
@@ -43,6 +44,7 @@ const Drawer: FC<DrawerProps> = ({
                 </Row>
                 <Column
                     padding={16}
+                    gap={48}
                     justifyContent={'start'}
                     height={'calc(100% - 44px)'}
                 >
@@ -50,7 +52,13 @@ const Drawer: FC<DrawerProps> = ({
                         height={'fit-content'}
                         gap={8}
                     >
-                        <div/>
+                        <Image
+                            src={'https://media.licdn.com/dms/image/v2/D5603AQHXsCF1ovgpQg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693410201608?e=1748476800&v=beta&t=F7OApupk981tjvqfMgV0zys8Mtnk8Oe_2AgEDj3x2mg'}
+                            alt={'Photo of Lilian Marzet'}
+                            height={180}
+                            width={180}
+                            borderRadius={180}
+                        />
                         <Title>
                             Lilian Marzet
                         </Title>
@@ -58,39 +66,43 @@ const Drawer: FC<DrawerProps> = ({
                             Développeur Fullstack
                         </Text>
                     </Column>
-                    <nav
-                        className={'drawer-nav'}
+                    <Column
+                        height={'fit-content'}
                     >
-                        {Object.entries(AppRoutes).map(([key, route]) => (
-                            <DrawerRouteItem
-                                key={key}
-                                route={route}
-                            />
-                        ))}
-                    </nav>
-                    <div
-                        className={'drawer-separator'}
-                    />
-                    <Row>
-                        <ExternalLink
-                            hoverColor={theme.primary}
-                            href={'https://github.com/LilianMrzt'}
+                        <nav
+                            className={'drawer-nav'}
                         >
-                            <GithubIcon/>
-                        </ExternalLink>
-                        <ExternalLink
-                            hoverColor={theme.primary}
-                            href={'https://www.linkedin.com/in/lilian-marzet/'}
-                        >
-                            <LinkedinIcon/>
-                        </ExternalLink>
-                        <ExternalLink
-                            hoverColor={theme.primary}
-                            href={'mailto:lilian.marzet@gmail.com'}
-                        >
-                            <MailIcon/>
-                        </ExternalLink>
-                    </Row>
+                            {Object.entries(AppRoutes).map(([key, route]) => (
+                                <DrawerRouteItem
+                                    key={key}
+                                    route={route}
+                                />
+                            ))}
+                        </nav>
+                        <div
+                            className={'drawer-separator'}
+                        />
+                        <Row>
+                            <ExternalLink
+                                hoverColor={theme.primary}
+                                href={'https://github.com/LilianMrzt'}
+                            >
+                                <GithubIcon/>
+                            </ExternalLink>
+                            <ExternalLink
+                                hoverColor={theme.primary}
+                                href={'https://www.linkedin.com/in/lilian-marzet/'}
+                            >
+                                <LinkedinIcon/>
+                            </ExternalLink>
+                            <ExternalLink
+                                hoverColor={theme.primary}
+                                href={'mailto:lilian.marzet@gmail.com'}
+                            >
+                                <MailIcon/>
+                            </ExternalLink>
+                        </Row>
+                    </Column>
                 </Column>
             </div>
         </>
