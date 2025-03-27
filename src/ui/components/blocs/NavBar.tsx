@@ -1,6 +1,5 @@
 import React, { type FC, type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
-import Text from '@components/common/text/Text'
 import Icon from '@components/common/Icon'
 import { CodeIcon, MenuIcon } from '@resources/Icons'
 import './nav-bar.css'
@@ -9,6 +8,7 @@ import Button from '@components/common/Button'
 import { type NavBarProps } from '@interfaces/components/blocs/NavBarProps'
 import { Link } from 'react-router-dom'
 import { AppRoutes } from '@constants/AppRoutes'
+import Title from '@components/common/text/Title'
 
 const NavBar: FC<NavBarProps> = ({
     onMenuClick
@@ -37,9 +37,9 @@ const NavBar: FC<NavBarProps> = ({
                     >
                         <CodeIcon/>
                     </Icon>
-                    <Text>
-                        Lilian Marzet
-                    </Text>
+                    <Title>
+                        Portfolio - Lilian Marzet
+                    </Title>
                 </Row>
             </Link>
         </nav>
