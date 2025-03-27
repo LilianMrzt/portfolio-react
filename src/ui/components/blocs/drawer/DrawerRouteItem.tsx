@@ -8,7 +8,8 @@ import theme from '@constants/Theme'
 import { type DrawerRouteItemProps } from '@interfaces/components/blocs/drawer/DrawerRouteItemProps'
 
 const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
-    route
+    route,
+    onClose
 }): ReactNode => {
     const location = useLocation()
 
@@ -20,6 +21,7 @@ const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
             style={{
                 backgroundColor: isSelected ? theme.primaryOpacity : theme.surface
             }}
+            onClick={onClose}
             to={route.route}
         >
             <Row

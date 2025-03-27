@@ -76,6 +76,7 @@ const Drawer: FC<DrawerProps> = ({
                                 <DrawerRouteItem
                                     key={key}
                                     route={route}
+                                    onClose={onClose}
                                 />
                             ))}
                         </nav>
