@@ -10,6 +10,7 @@ const Section: FC<SectionProps> = ({
     return (
         <Column
             alignItems={'start'}
+            padding={32}
         >
             <SubTitle>
                 {label}

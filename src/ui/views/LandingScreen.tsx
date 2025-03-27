@@ -2,10 +2,12 @@ import React, { type ReactNode } from 'react'
 import Text from '@components/common/text/Text'
 import Section from '@components/common/layout/Section'
 import Screen from '@components/common/layout/Screen'
+import InitialSection from '@components/blocs/views/landing-screen/InitialSection'
 
 const LandingScreen = (): ReactNode => {
     return (
         <Screen>
+            <InitialSection/>
             <Section
                 label={'Skills'}
             >

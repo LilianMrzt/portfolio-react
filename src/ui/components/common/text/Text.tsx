@@ -5,13 +5,15 @@ import theme from '@constants/Theme'
 
 const Text: FC<TextProps> = ({
     children,
-    color = theme.text
+    color = theme.text,
+    fontSize = 16
 }): ReactNode => {
     return (
         <p
             className={'text'}
             style={{
-                color
+                color,
+                fontSize
             }}
         >
             {children}

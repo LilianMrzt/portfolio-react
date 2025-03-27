@@ -3,11 +3,15 @@ import { type SubTitleProps } from '@interfaces/components/common/text/SubTitleP
 import './sub-title.css'
 
 const SubTitle: FC<SubTitleProps> = ({
-    children
+    children,
+    fontSize = 30
 }): ReactNode => {
     return (
         <h2
             className={'sub-title'}
+            style={{
+                fontSize
+            }}
         >
             {children}
         </h2>
