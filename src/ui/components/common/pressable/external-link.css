@@ -1,3 +1,4 @@
 .external-link {
     cursor: pointer;
+    transition: color ease-in-out 0.15s;
 }

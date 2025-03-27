@@ -9,4 +9,5 @@ export interface ColumnProps {
     justifyContent?: CSSProperties['justifyContent']
     alignItems?: CSSProperties['alignItems']
     height?: CSSProperties['height']
+    id?: string
 }

@@ -9,14 +9,16 @@ const LandingScreen = (): ReactNode => {
         <Screen>
             <InitialSection/>
             <Section
-                label={'Skills'}
+                label={'About me'}
+                id={'about-me-section'}
             >
                 <Text>
                     Test
                 </Text>
             </Section>
             <Section
-                label={'About me'}
+                label={'Skills'}
+                id={'skill-section'}
             >
                 <Text>
                     Test
@@ -24,6 +26,7 @@ const LandingScreen = (): ReactNode => {
             </Section>
             <Section
                 label={'My projects'}
+                id={'my-projects-section'}
             >
                 <Text>
                     Test
@@ -31,6 +34,7 @@ const LandingScreen = (): ReactNode => {
             </Section>
             <Section
                 label={'What people say'}
+                id={'testimonials-section'}
             >
                 <Text>
                     Test
@@ -38,6 +42,7 @@ const LandingScreen = (): ReactNode => {
             </Section>
             <Section
                 label={'Get in touch'}
+                id={'contact-me-section'}
             >
                 <Text>
                     Test

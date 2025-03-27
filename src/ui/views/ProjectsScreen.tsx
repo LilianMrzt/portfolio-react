@@ -8,6 +8,7 @@ const ProjectsScreen = (): ReactNode => {
         <Screen>
             <Section
                 label={'My projects'}
+                id={'my-projects-section'}
             >
                 <Text>
                     Test

@@ -10,11 +10,13 @@ const Column: FC<ColumnProps> = ({
     gap = 16,
     justifyContent = 'center',
     alignItems = 'center',
-    height = '100%'
+    height = '100%',
+    id
 }): ReactNode => {
     return (
         <div
             className={`column ${className ?? ''}`}
+            id={id}
             style={{
                 maxWidth,
                 padding,

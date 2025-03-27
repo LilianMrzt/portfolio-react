@@ -5,12 +5,14 @@ import SubTitle from '@components/common/text/SubTitle'
 
 const Section: FC<SectionProps> = ({
     label,
+    id,
     children
 }): ReactNode => {
     return (
         <Column
             alignItems={'start'}
             padding={32}
+            id={id}
         >
             <SubTitle>
                 {label}

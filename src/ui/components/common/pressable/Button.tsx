@@ -5,6 +5,7 @@ import Text from '@components/common/text/Text'
 import './button.css'
 import theme from '@constants/Theme'
 import { type ButtonProps } from '@interfaces/components/common/pressable/ButtonProps'
+import { darkenColor } from '@utils/ColorUtils'
 
 const Button: FC<ButtonProps> = ({
     onClick,
@@ -30,9 +31,10 @@ const Button: FC<ButtonProps> = ({
             onClick={onClick}
             className={'button'}
             style={{
-                backgroundColor,
+                backgroundColor: isHovered ? darkenColor(backgroundColor) : backgroundColor,
                 color: isHovered && hoverColor ? hoverColor : color,
-                padding
+                padding,
+                borderRadius: icon && !label ? '50%' : 'none'
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
