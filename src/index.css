@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background);
+  background-color: var(--surface);
 }
 
 code {
@@ -20,5 +20,6 @@ code {
   --background: #F9FAFB;
   --surface: #FFFFFF;
   --text: #111727;
+  --text-secondary: #7C828E;
   --outline: #DBDAD8;
 }

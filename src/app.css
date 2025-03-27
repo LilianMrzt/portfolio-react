@@ -6,8 +6,9 @@
 
 .app-main {
   padding-top: 64px;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 134px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background);
 }

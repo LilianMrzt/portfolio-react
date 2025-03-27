@@ -5,6 +5,7 @@ const theme = {
     background: getComputedStyle(document.documentElement).getPropertyValue('--background').trim(),
     surface: getComputedStyle(document.documentElement).getPropertyValue('--surface').trim(),
     text: getComputedStyle(document.documentElement).getPropertyValue('--text').trim(),
+    textSecondary: getComputedStyle(document.documentElement).getPropertyValue('--text-secondary').trim(),
     outline: getComputedStyle(document.documentElement).getPropertyValue('--outline').trim()
 }
 

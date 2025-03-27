@@ -4,6 +4,7 @@ import { type ReactNode } from 'react'
 import NavBar from '@components/blocs/nav-bar/NavBar'
 import Drawer from '@components/blocs/drawer/Drawer'
 import AppNavigation from '@ui/navigation/AppNavigation'
+import Footer from '@components/blocs/footer/Footer'
 
 const App = (): ReactNode => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -28,6 +29,7 @@ const App = (): ReactNode => {
             >
                 <AppNavigation/>
             </main>
+            <Footer/>
         </div>
     )
 }
