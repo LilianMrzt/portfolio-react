@@ -1,0 +1,12 @@
+.about-me-section-image {
+    position: relative;
+}
+
+.about-me-section-image-shadow {
+    position: absolute;
+    inset: 0;
+    background-color: var(--background);
+    border-radius: 32px;
+    transform: rotate(8deg);
+    z-index: 2;
+}

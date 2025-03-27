@@ -11,7 +11,13 @@ const InitialSection = (): ReactNode => {
     const scrollToSection = (): void => {
         const element = document.getElementById('about-me-section')
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
+            const offset = 64
+            const top = element.getBoundingClientRect().top + window.pageYOffset - offset
+
+            window.scrollTo({
+                top,
+                behavior: 'smooth'
+            })
         }
     }
 

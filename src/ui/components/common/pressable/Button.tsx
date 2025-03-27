@@ -14,7 +14,7 @@ const Button: FC<ButtonProps> = ({
     backgroundColor = theme.primary,
     color = theme.onPrimary,
     hoverColor,
-    padding = '8px 12px'
+    padding = '12px 24px'
 }): ReactNode => {
     const [isHovered, setIsHovered] = useState(false)
 
@@ -32,21 +32,24 @@ const Button: FC<ButtonProps> = ({
             className={'button'}
             style={{
                 backgroundColor: isHovered ? darkenColor(backgroundColor) : backgroundColor,
-                color: isHovered && hoverColor ? hoverColor : color,
                 padding,
-                borderRadius: icon && !label ? '50%' : 'none'
+                borderRadius: icon && !label ? '50%' : 500
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             <Row>
                 {icon && (
-                    <Icon>
+                    <Icon
+                        color={isHovered && hoverColor ? hoverColor : color}
+                    >
                         {icon}
                     </Icon>
                 )}
                 {label && (
-                    <Text>
+                    <Text
+                        color={isHovered && hoverColor ? hoverColor : color}
+                    >
                         {label}
                     </Text>
                 )}

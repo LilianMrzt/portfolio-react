@@ -4,12 +4,13 @@ import { type CardProps } from '@interfaces/components/common/CardProps'
 import Column from '@components/common/layout/Column'
 
 const Card: FC<CardProps> = ({
-    children
+    children,
+    padding = 32
 }): ReactNode => {
     return (
         <Column
             className={'card'}
-            padding={16}
+            padding={padding}
         >
             {children}
         </Column>

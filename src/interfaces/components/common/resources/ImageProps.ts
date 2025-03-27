@@ -6,4 +6,5 @@ export interface ImageProps {
     width: CSSProperties['width']
     height: CSSProperties['height']
     borderRadius?: CSSProperties['borderRadius']
+    objectFit?: CSSProperties['objectFit']
 }
