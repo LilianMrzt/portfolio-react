@@ -4,6 +4,6 @@
     transition: color 0.2s ease-in-out, width 0.2s ease-in-out;
     font-family: 'Public Sans', sans-serif;
     width: fit-content;
-    text-align: justify;
+    text-align: start;
     z-index: 5;
 }

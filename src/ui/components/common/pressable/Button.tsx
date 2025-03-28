@@ -33,7 +33,7 @@ const Button: FC<ButtonProps> = ({
             style={{
                 backgroundColor: isHovered ? darkenColor(backgroundColor) : backgroundColor,
                 padding,
-                borderRadius: icon && !label ? '50%' : 500
+                borderRadius: icon && !label ? '50%' : 8
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

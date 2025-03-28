@@ -29,6 +29,7 @@ const AboutMeSection = (): ReactNode => {
                 >
                     <Column
                         gap={32}
+                        alignItems={'start'}
                     >
                         <Column>
                             <Text
