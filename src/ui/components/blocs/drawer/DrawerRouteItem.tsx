@@ -1,4 +1,4 @@
-import React, { type FC, type ReactNode } from 'react'
+import React, { type FC, type ReactNode, useState } from 'react'
 import Row from '@components/common/layout/Row'
 import Icon from '@components/common/resources/Icon'
 import Text from '@components/common/text/Text'
@@ -7,6 +7,7 @@ import { Link, useLocation } from 'react-router-dom'
 import theme from '@constants/Theme'
 import { type DrawerRouteItemProps } from '@interfaces/components/blocs/drawer/DrawerRouteItemProps'
 import { useTranslation } from '@hooks/TranslatonContext'
+import { darkenColor } from '@utils/ColorUtils'
 
 const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
     route,
@@ -17,14 +18,28 @@ const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
 
     const isSelected = location.pathname === route.route
 
+    const [isHovered, setIsHovered] = useState(false)
+
+    const handleMouseEnter = (): void => {
+        setIsHovered(true)
+    }
+
+    const handleMouseLeave = (): void => {
+        setIsHovered(false)
+    }
+
     return (
         <Link
             className={'drawer-route-item'}
             style={{
-                backgroundColor: isSelected ? theme.primaryOpacity : theme.surface
+                backgroundColor: isSelected
+                    ? isHovered ? darkenColor(theme.primaryOpacity) : theme.primaryOpacity
+                    : isHovered ? darkenColor(theme.surface) : theme.surface
             }}
             onClick={onClose}
             to={route.route}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
             <Row
                 width={'100%'}
