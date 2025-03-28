@@ -8,6 +8,9 @@ import { ReactComponent as LinkedinIcon } from '@resources/assets/LinkedinIcon.s
 import { ReactComponent as MailIcon } from '@resources/assets/MailIcon.svg'
 import { ReactComponent as ChevronDownIcon } from '@resources/assets/ChevronDownIcon.svg'
 import { ReactComponent as DownloadIcon } from '@resources/assets/DownloadIcon.svg'
+import { ReactComponent as ToolsIcon } from '@resources/assets/ToolsIcon.svg'
+import { ReactComponent as FrontEndIcon } from '@resources/assets/FrontEndIcon.svg'
+import { ReactComponent as BackEndIcon } from '@resources/assets/BackEndIcon.svg'
 
 export {
     MenuIcon,
@@ -19,5 +22,8 @@ export {
     LinkedinIcon,
     MailIcon,
     ChevronDownIcon,
-    DownloadIcon
+    DownloadIcon,
+    ToolsIcon,
+    FrontEndIcon,
+    BackEndIcon
 }
