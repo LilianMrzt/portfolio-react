@@ -8,9 +8,10 @@ import Card from '@components/common/Card'
 import {
     type SkillsSectionCardProps
 } from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillsSectionCardProps'
+import SkillsCard from '@components/blocs/views/landing-screen/skills-section/components/SkillsCard'
 
 const SkillsSectionCard: FC<SkillsSectionCardProps> = ({
-    children,
+    skills,
     title,
     icon
 }): ReactNode => {
@@ -33,8 +34,16 @@ const SkillsSectionCard: FC<SkillsSectionCardProps> = ({
                 </SubTitle>
             </Row>
             <Grid>
-                {children}
+                {[...skills]
+                    .sort((a, b) => b.mastery - a.mastery)
+                    .map((skill, index) => (
+                        <SkillsCard
+                            key={index}
+                            skill={skill}
+                        />
+                    ))}
             </Grid>
+
         </Card>
     )
 }

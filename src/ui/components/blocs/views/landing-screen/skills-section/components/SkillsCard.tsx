@@ -13,7 +13,7 @@ import SkillsMasteryIndicator
 import theme from '@constants/Theme'
 
 const SkillsCard: FC<SkillsCardProps> = ({
-    mastery
+    skill
 }): ReactNode => {
     return (
         <Column
@@ -27,20 +27,20 @@ const SkillsCard: FC<SkillsCardProps> = ({
                 <SubTitle
                     fontSize={20}
                 >
-                    React
+                    {skill.label}
                 </SubTitle>
                 <SkillsMasteryIndicator
-                    mastery={mastery}
+                    mastery={skill.mastery}
                 />
             </Row>
             <Text
                 fontSize={14}
                 color={theme.onBackground}
             >
-                Advanced state management, custom hooks, performance optimization
+                {skill.description}
             </Text>
             <SkillMasteryBar
-                mastery={mastery}
+                mastery={skill.mastery}
             />
         </Column>
     )

@@ -1,10 +1,23 @@
 import React, { type ReactNode } from 'react'
 import Section from '@components/common/layout/Section'
 import SkillsSectionCard from '@components/blocs/views/landing-screen/skills-section/components/SkillsSectionCard'
-import SkillsCard from '@components/blocs/views/landing-screen/skills-section/components/SkillsCard'
 import { BackEndIcon, FrontEndIcon, ToolsIcon } from '@resources/Icons'
+import { useTranslation } from '@hooks/TranslatonContext'
+import enFrontEndSkills from '@fixtures/skills/front-end/en.json'
+import frFrontEndSkills from '@fixtures/skills/front-end/fr.json'
+import enBackEndSkills from '@fixtures/skills/back-end/en.json'
+import frBackEndSkills from '@fixtures/skills/back-end/fr.json'
+import enToolsSkills from '@fixtures/skills/tools/en.json'
+import frToolsSkills from '@fixtures/skills/tools/fr.json'
+import { type SkillObject } from '@interfaces/objects/front-objects/SkillObject'
 
 const SkillsSection = (): ReactNode => {
+    const { language } = useTranslation()
+
+    const frontEndSkills = language === 'fr' ? frFrontEndSkills : enFrontEndSkills
+    const backEndSkills = language === 'fr' ? frBackEndSkills : enBackEndSkills
+    const toolsSkills = language === 'fr' ? frToolsSkills : enToolsSkills
+
     return (
         <Section
             label={'Skills & Expertise'}
@@ -13,54 +26,18 @@ const SkillsSection = (): ReactNode => {
             <SkillsSectionCard
                 title={'Frontend'}
                 icon={<FrontEndIcon/>}
-            >
-                <SkillsCard
-                    mastery={2}
-                />
-                <SkillsCard
-                    mastery={5}
-                />
-                <SkillsCard
-                    mastery={7}
-                />
-                <SkillsCard
-                    mastery={9}
-                />
-            </SkillsSectionCard>
+                skills={frontEndSkills as SkillObject[]}
+            />
             <SkillsSectionCard
                 title={'Backend'}
                 icon={<BackEndIcon/>}
-            >
-                <SkillsCard
-                    mastery={2}
-                />
-                <SkillsCard
-                    mastery={5}
-                />
-                <SkillsCard
-                    mastery={7}
-                />
-                <SkillsCard
-                    mastery={9}
-                />
-            </SkillsSectionCard>
+                skills={backEndSkills as SkillObject[]}
+            />
             <SkillsSectionCard
                 title={'Tools'}
                 icon={<ToolsIcon/>}
-            >
-                <SkillsCard
-                    mastery={2}
-                />
-                <SkillsCard
-                    mastery={5}
-                />
-                <SkillsCard
-                    mastery={7}
-                />
-                <SkillsCard
-                    mastery={9}
-                />
-            </SkillsSectionCard>
+                skills={toolsSkills as SkillObject[]}
+            />
         </Section>
     )
 }

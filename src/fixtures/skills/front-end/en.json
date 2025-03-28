@@ -1,0 +1,22 @@
+[
+  {
+    "mastery": 8,
+    "label": "React",
+    "description": "Able to create complex web applications, experience with hooks/contexts and clean component architecture"
+  },
+  {
+    "mastery": 7,
+    "label": "React Native",
+    "description": "Able to build performant mobile apps"
+  },
+  {
+    "mastery": 8,
+    "label": "TypeScript",
+    "description": "Comfortable with types, interfaces, and type safety"
+  },
+  {
+    "mastery": 8,
+    "label": "JavaScript",
+    "description": "Strong understanding the language and DOM"
+  }
+]

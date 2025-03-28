@@ -1,0 +1,22 @@
+[
+  {
+    "mastery": 6,
+    "label": "Node.JS",
+    "description": "Compétent dans la création d’APIs et la gestion de la logique asynchrone"
+  },
+  {
+    "mastery": 8,
+    "label": "PostgreSQL",
+    "description": "Expérimenté en conception de bases de données relationnelles et requêtes SQL avancées"
+  },
+  {
+    "mastery": 3,
+    "label": "PHP",
+    "description": "Compréhension de base du scripting, du templating et de la logique serveur"
+  },
+  {
+    "mastery": 4,
+    "label": "Symfony",
+    "description": "Connaissance des routes, des contrôleurs et de l’architecture par services"
+  }
+]
