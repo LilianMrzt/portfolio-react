@@ -11,6 +11,8 @@ import { ReactComponent as DownloadIcon } from '@resources/assets/DownloadIcon.s
 import { ReactComponent as ToolsIcon } from '@resources/assets/ToolsIcon.svg'
 import { ReactComponent as FrontEndIcon } from '@resources/assets/FrontEndIcon.svg'
 import { ReactComponent as BackEndIcon } from '@resources/assets/BackEndIcon.svg'
+import { ReactComponent as AddIcon } from '@resources/assets/AddIcon.svg'
+import { ReactComponent as SubstractIcon } from '@resources/assets/SubstractIcon.svg'
 
 export {
     MenuIcon,
@@ -25,5 +27,7 @@ export {
     DownloadIcon,
     ToolsIcon,
     FrontEndIcon,
-    BackEndIcon
+    BackEndIcon,
+    AddIcon,
+    SubstractIcon
 }
