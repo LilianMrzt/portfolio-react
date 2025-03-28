@@ -5,7 +5,7 @@ import Column from '@components/common/layout/Column'
 
 const Card: FC<CardProps> = ({
     children,
-    padding = 32
+    padding = 24
 }): ReactNode => {
     return (
         <Column
