@@ -8,6 +8,7 @@ import { ChevronDownIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
+import screenSizes from '@constants/AppConstants'
 
 const InitialSection = (): ReactNode => {
     const { width } = useWindowSize()
@@ -41,7 +42,7 @@ const InitialSection = (): ReactNode => {
                     {translate('homeScreen.initialSection.greetings')}
                 </Text>
                 <Title
-                    fontSize={width < 960 ? 96 : 128}
+                    fontSize={width < screenSizes.screenM ? 96 : 128}
                 >
                     Lilian Marzet
                 </Title>

@@ -23,4 +23,8 @@ code {
   --text: #111727;
   --text-secondary: #7C828E;
   --outline: #DBDAD8;
+
+  --screen-s: 800;
+  --screen-m: 1024;
+  --screen-l: 1280;
 }

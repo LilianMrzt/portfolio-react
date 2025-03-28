@@ -3,6 +3,7 @@ import Column from '@components/common/layout/Column'
 import { type SectionProps } from '@interfaces/components/common/layout/SectionProps'
 import SubTitle from '@components/common/text/SubTitle'
 import { useWindowSize } from '@hooks/useWindowSize'
+import screenSizes from '@constants/AppConstants'
 
 const Section: FC<SectionProps> = ({
     label,
@@ -13,7 +14,7 @@ const Section: FC<SectionProps> = ({
     return (
         <Column
             alignItems={'start'}
-            padding={width < 960 ? 16 : 32}
+            padding={width < screenSizes.screenM ? 16 : 32}
             id={id}
         >
             <SubTitle>

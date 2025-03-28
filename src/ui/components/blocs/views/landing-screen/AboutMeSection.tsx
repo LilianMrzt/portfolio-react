@@ -10,6 +10,7 @@ import Button from '@components/common/pressable/Button'
 import { DownloadIcon } from '@resources/Icons'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
+import screenSizes from '@constants/AppConstants'
 
 const AboutMeSection = (): ReactNode => {
     const { width } = useWindowSize()
@@ -21,7 +22,7 @@ const AboutMeSection = (): ReactNode => {
             id={'about-me-section'}
         >
             <Card
-                padding={width < 960 ? 32 : 64}
+                padding={width < screenSizes.screenM ? 32 : 64}
             >
                 <Row
                     gap={64}
