@@ -6,35 +6,38 @@ import {
 import './skills-mastery-indicator.css'
 import { type MasteryIndicatorObject } from '@interfaces/objects/front-objects/MasteryIndicatorObject'
 import theme from '@constants/Theme'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const SkillsMasteryIndicator: FC<SkillMasteryIndicatorProps> = ({
     mastery
 }): ReactNode => {
+    const { translate } = useTranslation()
+
     /**
      * Retourne les valeurs d'affichage utilisées dans le composant en fonction du prop mastery
      */
     const getTextFromMastery = (): MasteryIndicatorObject => {
         if (mastery <= 2) {
             return {
-                label: 'Beginner',
+                label: translate('profileScreen.skillsSection.beginner'),
                 color: theme.onOrange,
                 backgroundColor: theme.orange
             }
         } else if (mastery <= 6) {
             return {
-                label: 'Intermediate',
+                label: translate('profileScreen.skillsSection.intermediate'),
                 color: theme.onYellow,
                 backgroundColor: theme.yellow
             }
         } else if (mastery <= 8) {
             return {
-                label: 'Advanced',
+                label: translate('profileScreen.skillsSection.advanced'),
                 color: theme.onBlue,
                 backgroundColor: theme.blue
             }
         }
         return {
-            label: 'Expert',
+            label: translate('profileScreen.skillsSection.expert'),
             color: theme.onGreen,
             backgroundColor: theme.green
         }

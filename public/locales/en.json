@@ -18,6 +18,29 @@
             "contentText1": "My expertise lies mainly in modern technologies such as React and React Native for the front-end, where I thrive on managing dynamic and intuitive user interfaces. On the back-end, I stand out for my mastery of NodeJS, enabling the implementation of robust functionalities and efficient data management.",
             "contentText2": "My recent career path bears witness to my determination to constantly learn and evolve in the field of development, with a resolute commitment to technical excellence and innovation.",
             "buttonLabel": "Download my resume"
+        },
+        "skillsSection": {
+            "title": "Skills & Expertise",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "tools": "Tools and Softwares"
         }
+    },
+    "profileScreen": {
+        "skillsSection": {
+            "title": "Skills & Expertise",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "tools": "Tools and Softwares",
+            "showLess": "Show less",
+            "showMore": "Show more",
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "expert": "Expert"
+        }
+    },
+    "buttons": {
+        "viewDetails": "View details"
     }
 }

@@ -9,6 +9,7 @@ import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const Section: FC<SectionProps> = ({
     label,
@@ -19,7 +20,9 @@ const Section: FC<SectionProps> = ({
 }): ReactNode => {
     const { width } = useWindowSize()
     const navigate = useNavigate()
+    const { translate } = useTranslation()
     const isSmallScreen = width < screenSizes.screenS
+
     return (
         <Column
             alignItems={'start'}
@@ -36,7 +39,7 @@ const Section: FC<SectionProps> = ({
                 </SubTitle>
                 {viewDetailsRoute && !isSmallScreen && (
                     <Button
-                        label={'View more'}
+                        label={translate('buttons.viewDetails')}
                         iconEnd={<ArrowRightIcon/>}
                         onClick={() => {
                             void navigate(viewDetailsRoute ?? '', {

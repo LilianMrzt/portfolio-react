@@ -13,6 +13,7 @@ import Button from '@components/common/pressable/Button'
 import { useWindowSize } from '@hooks/useWindowSize'
 import AppConstants from '@constants/AppConstants'
 import { AddIcon, SubstractIcon } from '@resources/Icons'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const SkillsSectionCard: FC<SkillsSectionCardProps> = ({
     skills,
@@ -21,6 +22,7 @@ const SkillsSectionCard: FC<SkillsSectionCardProps> = ({
 }): ReactNode => {
     const [showAll, setShowAll] = useState(false)
     const { width } = useWindowSize()
+    const { translate } = useTranslation()
 
     const sortedSkills = [...skills].sort((a, b) => b.mastery - a.mastery)
     const shownItems = width < AppConstants.screenS ? 4 : 6
@@ -55,7 +57,7 @@ const SkillsSectionCard: FC<SkillsSectionCardProps> = ({
                     width={'100%'}
                 >
                     <Button
-                        label={showAll ? 'Show less' : 'Show more'}
+                        label={showAll ? translate('profileScreen.skillsSection.showLess') : translate('profileScreen.skillsSection.showMore')}
                         icon={showAll ? <SubstractIcon/> : <AddIcon/>}
                         onClick={() => { setShowAll(prev => !prev) }}
                         backgroundColor={theme.surface}

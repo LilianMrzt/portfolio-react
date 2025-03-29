@@ -14,7 +14,7 @@ import enToolsSkills from '@fixtures/skills/tools/en.json'
 import { AppRoutes } from '@constants/AppRoutes'
 
 const SkillsSection = (): ReactNode => {
-    const { language } = useTranslation()
+    const { language, translate } = useTranslation()
 
     const frontEndSkills = language === 'fr' ? frFrontEndSkills : enFrontEndSkills
     const backEndSkills = language === 'fr' ? frBackEndSkills : enBackEndSkills
@@ -22,24 +22,24 @@ const SkillsSection = (): ReactNode => {
 
     return (
         <Section
-            label={'Skills & Expertise'}
+            label={translate('homeScreen.skillsSection.title')}
             id={'home-skill-section'}
             viewDetailsRoute={AppRoutes.profile.route}
             sectionScrollId={'skill-section'}
         >
             <Grid>
                 <SkillCardHomeScreen
-                    title={'Frontend'}
+                    title={translate('homeScreen.skillsSection.frontend')}
                     icon={<FrontEndIcon/>}
                     skills={frontEndSkills as SkillObject[]}
                 />
                 <SkillCardHomeScreen
-                    title={'Backend'}
+                    title={translate('homeScreen.skillsSection.backend')}
                     icon={<BackEndIcon/>}
                     skills={backEndSkills as SkillObject[]}
                 />
                 <SkillCardHomeScreen
-                    title={'Tools'}
+                    title={translate('homeScreen.skillsSection.tools')}
                     icon={<ToolsIcon/>}
                     skills={toolsSkills as SkillObject[]}
                 />

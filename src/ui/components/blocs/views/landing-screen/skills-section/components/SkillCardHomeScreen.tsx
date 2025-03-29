@@ -15,8 +15,6 @@ const SkillCardHomeScreen: FC<SkillCardHomeScreenProps> = ({
     skills
 }): ReactNode => {
     const sortedSkills = [...skills].sort((a, b) => b.mastery - a.mastery)
-    const displayedSkills = sortedSkills.slice(0, 5)
-    const remainingSkills = skills.length <= 5 ? 0 : skills.length - displayedSkills.length
 
     return (
         <Card
@@ -43,17 +41,12 @@ const SkillCardHomeScreen: FC<SkillCardHomeScreenProps> = ({
                 flexWrap={'wrap'}
                 justifyContent={'start'}
             >
-                {displayedSkills.map((skill, index) => (
+                {sortedSkills.map((skill, index) => (
                     <SkillIndicator
                         key={index}
                         label={skill.label}
                     />
                 ))}
-                {skills.length > 4 && (
-                    <SkillIndicator
-                        label={`+ ${remainingSkills}`}
-                    />
-                )}
             </Row>
         </Card>
     )

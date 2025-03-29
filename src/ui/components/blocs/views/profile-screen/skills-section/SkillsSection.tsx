@@ -12,7 +12,7 @@ import frToolsSkills from '@fixtures/skills/tools/fr.json'
 import { type SkillObject } from '@interfaces/objects/front-objects/SkillObject'
 
 const SkillsSection = (): ReactNode => {
-    const { language } = useTranslation()
+    const { language, translate } = useTranslation()
 
     const frontEndSkills = language === 'fr' ? frFrontEndSkills : enFrontEndSkills
     const backEndSkills = language === 'fr' ? frBackEndSkills : enBackEndSkills
@@ -20,21 +20,21 @@ const SkillsSection = (): ReactNode => {
 
     return (
         <Section
-            label={'Skills & Expertise'}
+            label={translate('profileScreen.skillsSection.title')}
             id={'skill-section'}
         >
             <SkillsSectionCard
-                title={'Frontend'}
+                title={translate('profileScreen.skillsSection.frontend')}
                 icon={<FrontEndIcon/>}
                 skills={frontEndSkills as SkillObject[]}
             />
             <SkillsSectionCard
-                title={'Backend'}
+                title={translate('profileScreen.skillsSection.backend')}
                 icon={<BackEndIcon/>}
                 skills={backEndSkills as SkillObject[]}
             />
             <SkillsSectionCard
-                title={'Tools'}
+                title={translate('profileScreen.skillsSection.tools')}
                 icon={<ToolsIcon/>}
                 skills={toolsSkills as SkillObject[]}
             />
