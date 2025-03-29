@@ -8,6 +8,7 @@ const Row: FC<RowProps> = ({
     justifyContent = 'center',
     alignItems = 'center',
     width = 'fit-content',
+    height,
     gap = 16,
     flexWrap = 'nowrap'
 }) => {
@@ -19,6 +20,7 @@ const Row: FC<RowProps> = ({
                 justifyContent,
                 gap,
                 width,
+                height,
                 flexWrap: flexWrap as any
             }}
         >
