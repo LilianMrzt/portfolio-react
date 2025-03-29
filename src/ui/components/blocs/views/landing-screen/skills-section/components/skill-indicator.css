@@ -1,0 +1,6 @@
+.skill-indicator {
+    padding: 8px 12px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    width: fit-content;
+}

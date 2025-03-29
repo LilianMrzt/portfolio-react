@@ -27,6 +27,7 @@ const AboutMeSection = (): ReactNode => {
                 <Row
                     gap={64}
                     width={'100%'}
+                    flexWrap={width < screenSizes.screenM ? 'wrap' : 'nowrap'}
                 >
                     <Column
                         gap={32}
