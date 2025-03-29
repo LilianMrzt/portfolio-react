@@ -2,7 +2,7 @@ import React, { type FC, type ReactNode } from 'react'
 import Text from '@components/common/text/Text'
 import {
     type SkillMasteryIndicatorProps
-} from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillMasteryIndicatorProps'
+} from '@interfaces/components/blocs/views/profile-screen/skills-section/components/SkillMasteryIndicatorProps'
 import './skills-mastery-indicator.css'
 import { type MasteryIndicatorObject } from '@interfaces/objects/front-objects/MasteryIndicatorObject'
 import theme from '@constants/Theme'

@@ -4,7 +4,7 @@ import { darkenColor } from '@utils/ColorUtils'
 import theme from '@constants/Theme'
 import {
     type SkillMasteryBarProps
-} from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillMasteryBarProps'
+} from '@interfaces/components/blocs/views/profile-screen/skills-section/components/SkillMasteryBarProps'
 
 const SkillMasteryBar: FC<SkillMasteryBarProps> = ({
     mastery

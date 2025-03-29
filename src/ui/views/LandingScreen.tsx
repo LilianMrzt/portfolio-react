@@ -7,7 +7,7 @@ import MyProjectsLandingScreenSection from '@components/blocs/views/landing-scre
 import TestimonialsSection from '@components/blocs/views/landing-screen/TestimonialsSection'
 import ParallaxCircle from '@components/common/ParallaxCircle'
 import { useWindowSize } from '@hooks/useWindowSize'
-import SkillsSection from '@components/blocs/views/landing-screen/SkillsSection'
+import SkillsSection from '@components/blocs/views/landing-screen/skills-section/SkillsSection'
 
 const LandingScreen = (): ReactNode => {
     const { width, height } = useWindowSize()

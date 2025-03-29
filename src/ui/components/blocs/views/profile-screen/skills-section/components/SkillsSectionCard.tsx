@@ -7,7 +7,7 @@ import Grid from '@components/common/layout/Grid'
 import Card from '@components/common/Card'
 import {
     type SkillsSectionCardProps
-} from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillsSectionCardProps'
+} from '@interfaces/components/blocs/views/profile-screen/skills-section/components/SkillsSectionCardProps'
 import SkillsCard from '@components/blocs/views/profile-screen/skills-section/components/SkillsCard'
 import Button from '@components/common/pressable/Button'
 import { useWindowSize } from '@hooks/useWindowSize'
