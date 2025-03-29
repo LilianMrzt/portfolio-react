@@ -1,7 +1,8 @@
 {
     "drawer": {
         "home" : "Accueil",
-        "projects": "Projets",
+        "projects": "Mes projets",
+        "profile": "Mon profil",
         "fullStackDeveloper": "Développeur Fullstack"
     },
     "footer": {

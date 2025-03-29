@@ -4,10 +4,10 @@ import InitialSection from '@components/blocs/views/landing-screen/InitialSectio
 import AboutMeSection from '@components/blocs/views/landing-screen/AboutMeSection'
 import ContactMeSection from '@components/blocs/views/landing-screen/ContactMeSection'
 import MyProjectsLandingScreenSection from '@components/blocs/views/landing-screen/MyProjectsLandingScreenSection'
-import SkillsSection from '@components/blocs/views/landing-screen/skills-section/SkillsSection'
 import TestimonialsSection from '@components/blocs/views/landing-screen/TestimonialsSection'
 import ParallaxCircle from '@components/common/ParallaxCircle'
 import { useWindowSize } from '@hooks/useWindowSize'
+import SkillsSection from '@components/blocs/views/landing-screen/SkillsSection'
 
 const LandingScreen = (): ReactNode => {
     const { width, height } = useWindowSize()

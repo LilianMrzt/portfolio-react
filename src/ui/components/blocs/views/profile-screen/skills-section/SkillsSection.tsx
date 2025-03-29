@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react'
 import Section from '@components/common/layout/Section'
-import SkillsSectionCard from '@components/blocs/views/landing-screen/skills-section/components/SkillsSectionCard'
+import SkillsSectionCard from '@components/blocs/views/profile-screen/skills-section/components/SkillsSectionCard'
 import { BackEndIcon, FrontEndIcon, ToolsIcon } from '@resources/Icons'
 import { useTranslation } from '@hooks/TranslatonContext'
 import enFrontEndSkills from '@fixtures/skills/front-end/en.json'

@@ -13,6 +13,7 @@ import { ReactComponent as FrontEndIcon } from '@resources/assets/FrontEndIcon.s
 import { ReactComponent as BackEndIcon } from '@resources/assets/BackEndIcon.svg'
 import { ReactComponent as AddIcon } from '@resources/assets/AddIcon.svg'
 import { ReactComponent as SubstractIcon } from '@resources/assets/SubstractIcon.svg'
+import { ReactComponent as ProfileIcon } from '@resources/assets/ProfileIcon.svg'
 
 export {
     MenuIcon,
@@ -29,5 +30,6 @@ export {
     FrontEndIcon,
     BackEndIcon,
     AddIcon,
-    SubstractIcon
+    SubstractIcon,
+    ProfileIcon
 }

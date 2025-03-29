@@ -4,12 +4,12 @@ import Text from '@components/common/text/Text'
 import './skills-card.css'
 import Row from '@components/common/layout/Row'
 import SubTitle from '@components/common/text/SubTitle'
-import SkillMasteryBar from '@components/blocs/views/landing-screen/skills-section/components/SkillMasteryBar'
+import SkillMasteryBar from '@components/blocs/views/profile-screen/skills-section/components/SkillMasteryBar'
 import {
     type SkillsCardProps
 } from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillsCardProps'
 import SkillsMasteryIndicator
-    from '@components/blocs/views/landing-screen/skills-section/components/SkillsMasteryIndicator'
+    from '@components/blocs/views/profile-screen/skills-section/components/SkillsMasteryIndicator'
 import theme from '@constants/Theme'
 
 const SkillsCard: FC<SkillsCardProps> = ({
