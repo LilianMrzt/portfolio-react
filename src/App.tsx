@@ -5,6 +5,7 @@ import NavBar from '@components/blocs/nav-bar/NavBar'
 import Drawer from '@components/blocs/drawer/Drawer'
 import AppNavigation from '@ui/navigation/AppNavigation'
 import Footer from '@components/blocs/footer/Footer'
+import ScrollToTop from '@ui/navigation/ScrollToTop'
 
 const App = (): ReactNode => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -13,6 +14,7 @@ const App = (): ReactNode => {
         <div
             className={'app'}
         >
+            <ScrollToTop/>
             <NavBar
                 onMenuClick={() => {
                     setIsDrawerOpen(!isDrawerOpen)
