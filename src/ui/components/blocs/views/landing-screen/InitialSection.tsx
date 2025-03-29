@@ -9,23 +9,11 @@ import theme from '@constants/Theme'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
 import screenSizes from '@constants/AppConstants'
+import { scrollToSection } from '@utils/Animationutils'
 
 const InitialSection = (): ReactNode => {
     const { width } = useWindowSize()
     const { translate } = useTranslation()
-
-    const scrollToSection = (): void => {
-        const element = document.getElementById('about-me-section')
-        if (element) {
-            const offset = 64
-            const top = element.getBoundingClientRect().top + window.pageYOffset - offset
-
-            window.scrollTo({
-                top,
-                behavior: 'smooth'
-            })
-        }
-    }
 
     return (
         <Column
@@ -51,7 +39,9 @@ const InitialSection = (): ReactNode => {
                 </SubTitle>
             </Column>
             <Button
-                onClick={scrollToSection}
+                onClick={() => {
+                    scrollToSection('about-me-section')
+                }}
                 icon={<ChevronDownIcon/>}
                 padding={16}
                 color={theme.text}

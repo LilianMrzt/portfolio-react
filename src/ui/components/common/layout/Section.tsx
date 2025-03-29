@@ -14,7 +14,8 @@ const Section: FC<SectionProps> = ({
     label,
     id,
     children,
-    viewDetailsRoute
+    viewDetailsRoute,
+    sectionScrollId
 }): ReactNode => {
     const { width } = useWindowSize()
     const navigate = useNavigate()
@@ -38,7 +39,9 @@ const Section: FC<SectionProps> = ({
                         label={'View more'}
                         iconEnd={<ArrowRightIcon/>}
                         onClick={() => {
-                            void navigate(viewDetailsRoute ?? '')
+                            void navigate(viewDetailsRoute ?? '', {
+                                state: { scrollTo: sectionScrollId }
+                            })
                         }}
                         backgroundColor={theme.background}
                         color={theme.primary}
@@ -56,7 +59,9 @@ const Section: FC<SectionProps> = ({
                         label={'View more'}
                         iconEnd={<ArrowRightIcon/>}
                         onClick={() => {
-                            void navigate(viewDetailsRoute ?? '')
+                            void navigate(viewDetailsRoute ?? '', {
+                                state: { scrollTo: sectionScrollId }
+                            })
                         }}
                         backgroundColor={theme.background}
                         color={theme.primary}
