@@ -24,6 +24,10 @@
             "frontend": "Front-end",
             "backend": "Back-end",
             "tools": "Tools and Softwares"
+        },
+        "testimonialsSection": {
+            "title": "Testimonials",
+            "at": "at"
         }
     },
     "profileScreen": {

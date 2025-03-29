@@ -4,7 +4,7 @@ import InitialSection from '@components/blocs/views/landing-screen/InitialSectio
 import AboutMeSection from '@components/blocs/views/landing-screen/AboutMeSection'
 import ContactMeSection from '@components/blocs/views/landing-screen/ContactMeSection'
 import MyProjectsLandingScreenSection from '@components/blocs/views/landing-screen/MyProjectsLandingScreenSection'
-import TestimonialsSection from '@components/blocs/views/landing-screen/TestimonialsSection'
+import TestimonialsSection from '@components/blocs/views/landing-screen/testimonials-section/TestimonialsSection'
 import ParallaxCircle from '@components/common/ParallaxCircle'
 import { useWindowSize } from '@hooks/useWindowSize'
 import SkillsSection from '@components/blocs/views/landing-screen/skills-section/SkillsSection'

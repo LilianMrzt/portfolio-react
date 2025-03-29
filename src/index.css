@@ -18,9 +18,11 @@ code {
   --primary-opacity: #EEF2FF;
   --on-primary: #FFFFFF;
   --secondary: #46b5e5;
+  --tertiary: #E0E7FF;
   --background: #F9FAFB;
   --on-background: #4B5663;
   --surface: #FFFFFF;
+  --surface-secondary: #F3F4F6;
   --text: #111727;
   --text-secondary: #7C828E;
   --outline: #DBDAD8;

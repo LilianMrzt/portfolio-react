@@ -15,6 +15,9 @@ import { ReactComponent as AddIcon } from '@resources/assets/AddIcon.svg'
 import { ReactComponent as SubstractIcon } from '@resources/assets/SubstractIcon.svg'
 import { ReactComponent as ProfileIcon } from '@resources/assets/ProfileIcon.svg'
 import { ReactComponent as ArrowRightIcon } from '@resources/assets/ArrowRightIcon.svg'
+import { ReactComponent as ChevronRightIcon } from '@resources/assets/ChevronRightIcon.svg'
+import { ReactComponent as ChevronLeftIcon } from '@resources/assets/ChevronLeftIcon.svg'
+import { ReactComponent as QuoteIcon } from '@resources/assets/QuoteIcon.svg'
 
 export {
     MenuIcon,
@@ -33,5 +36,8 @@ export {
     AddIcon,
     SubstractIcon,
     ProfileIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
+    ChevronRightIcon,
+    ChevronLeftIcon,
+    QuoteIcon
 }

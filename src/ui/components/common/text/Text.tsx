@@ -6,14 +6,17 @@ import theme from '@constants/Theme'
 const Text: FC<TextProps> = ({
     children,
     color = theme.text,
-    fontSize = 16
+    fontSize = 16,
+    italic,
+    textAlign = 'start'
 }): ReactNode => {
     return (
         <p
-            className={'text'}
+            className={`text ${italic && 'italic'}`}
             style={{
                 color,
-                fontSize
+                fontSize,
+                textAlign: textAlign as any
             }}
         >
             {children}
