@@ -59,7 +59,7 @@ const Section: FC<SectionProps> = ({
                     justifyContent={'end'}
                 >
                     <Button
-                        label={'View more'}
+                        label={translate('buttons.viewDetails')}
                         iconEnd={<ArrowRightIcon/>}
                         onClick={() => {
                             void navigate(viewDetailsRoute ?? '', {
