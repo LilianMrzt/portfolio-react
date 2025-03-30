@@ -2,7 +2,7 @@ import React, { type ReactNode } from 'react'
 import Screen from '@components/common/layout/Screen'
 import InitialSection from '@components/blocs/views/landing-screen/InitialSection'
 import AboutMeSection from '@components/blocs/views/landing-screen/AboutMeSection'
-import ContactMeSection from '@components/blocs/views/landing-screen/ContactMeSection'
+import ContactMeSection from '@components/blocs/views/landing-screen/contact-me-section/ContactMeSection'
 import MyProjectsLandingScreenSection from '@components/blocs/views/landing-screen/MyProjectsLandingScreenSection'
 import TestimonialsSection from '@components/blocs/views/landing-screen/testimonials-section/TestimonialsSection'
 import ParallaxCircle from '@components/common/ParallaxCircle'
@@ -21,7 +21,6 @@ const LandingScreen = (): ReactNode => {
                 <MyProjectsLandingScreenSection/>
                 <TestimonialsSection/>
                 <ContactMeSection/>
-
             </Screen>
             <ParallaxCircle
                 size={100}

@@ -18,6 +18,8 @@ import { ReactComponent as ArrowRightIcon } from '@resources/assets/ArrowRightIc
 import { ReactComponent as ChevronRightIcon } from '@resources/assets/ChevronRightIcon.svg'
 import { ReactComponent as ChevronLeftIcon } from '@resources/assets/ChevronLeftIcon.svg'
 import { ReactComponent as QuoteIcon } from '@resources/assets/QuoteIcon.svg'
+import { ReactComponent as LocationIcon } from '@resources/assets/LocationIcon.svg'
+import { ReactComponent as PhoneIcon } from '@resources/assets/PhoneIcon.svg'
 
 export {
     MenuIcon,
@@ -39,5 +41,7 @@ export {
     ArrowRightIcon,
     ChevronRightIcon,
     ChevronLeftIcon,
-    QuoteIcon
+    QuoteIcon,
+    LocationIcon,
+    PhoneIcon
 }

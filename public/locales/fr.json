@@ -28,6 +28,13 @@
         "testimonialsSection": {
             "title": "Témoignages",
             "at": "chez"
+        },
+        "contactMeSection": {
+            "title": "Contactez-moi",
+            "openToDiscuss": "Je suis toujours ouvert à discuter de nouveaux projets et de nouvelles opportunités.",
+            "email": "Email",
+            "phone": "Téléphone",
+            "location": "Localisation"
         }
     },
     "profileScreen": {
