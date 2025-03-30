@@ -1,7 +1,8 @@
 {
     "drawer": {
         "home" : "Accueil",
-        "projects": "Projets",
+        "projects": "Mes projets",
+        "profile": "Mon profil",
         "fullStackDeveloper": "Développeur Fullstack"
     },
     "footer": {
@@ -17,6 +18,40 @@
             "contentText1": "Mon expertise se situe principalement dans les technologies modernes telles que React et React Native pour le front-end, où je m’épanouis dans la gestion d’interface utilisateur dynamiques et intuitives. Côté back-end, je me distingue par ma maîtrise de NodeJS, permettant la mise en oeuvre de fonctionnalités robustes et la gestion efficace des données.",
             "contentText2": "Mon parcours récent témoingne de ma détermanitation à apprendre et à évoluer constamment dans le domaine du développement, avec un engagement résolu envers l’excellence technique et l’innovation.",
             "buttonLabel": "Télécharger mon CV"
+        },
+        "skillsSection": {
+            "title": "Compétences et Maîtrises",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "tools": "Outils et logiciels"
+        },
+        "testimonialsSection": {
+            "title": "Témoignages",
+            "at": "chez"
+        },
+        "contactMeSection": {
+            "title": "Contactez-moi",
+            "openToDiscuss": "Je suis toujours ouvert à discuter de nouveaux projets et de nouvelles opportunités.",
+            "email": "Email",
+            "phone": "Téléphone",
+            "location": "Localisation"
         }
+    },
+    "profileScreen": {
+        "skillsSection": {
+            "title": "Compétences et Maîtrises",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "tools": "Outils et logiciels",
+            "showLess": "Voir moins",
+            "showMore": "Voir plus",
+            "beginner": "Débutant",
+            "intermediate": "Intermédiaire",
+            "advanced": "Avancé",
+            "expert": "Expert"
+        }
+    },
+    "buttons": {
+        "viewDetails": "Voir les détails"
     }
 }

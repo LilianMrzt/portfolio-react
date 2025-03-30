@@ -11,6 +11,7 @@ const Button: FC<ButtonProps> = ({
     onClick,
     label,
     icon,
+    iconEnd,
     backgroundColor = theme.primary,
     color = theme.onPrimary,
     hoverColor,
@@ -33,7 +34,7 @@ const Button: FC<ButtonProps> = ({
             style={{
                 backgroundColor: isHovered ? darkenColor(backgroundColor) : backgroundColor,
                 padding,
-                borderRadius: icon && !label ? '50%' : 500
+                borderRadius: icon && !label ? '50%' : 8
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -52,6 +53,13 @@ const Button: FC<ButtonProps> = ({
                     >
                         {label}
                     </Text>
+                )}
+                {iconEnd && (
+                    <Icon
+                        color={isHovered && hoverColor ? hoverColor : color}
+                    >
+                        {iconEnd}
+                    </Icon>
                 )}
             </Row>
         </button>

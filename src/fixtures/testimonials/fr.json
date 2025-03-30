@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "William Pradere",
+    "role": "Lead Tech",
+    "company": "Steamulo",
+    "image": "/images/william-pradere.jpg",
+    "content": "Lilian s’est rapidement intégré à l’équipe et a su monter en compétence avec efficacité sur le projet auquel il a été affecté. Il fait preuve d’une grande autonomie, tout en sollicitant les bonnes informations lorsque cela est nécessaire. Curieux et enthousiaste, il n’hésite pas à questionner les choix techniques ou fonctionnels avec pertinence, dans une logique d’amélioration continue et de compréhension approfondie des sujets traités."
+  },
+  {
+    "id": "2",
+    "name": "Test Po",
+    "role": "Project Owner",
+    "company": "TEST",
+    "image": "/images/emma-stone.jpg",
+    "content": "Travailler avec Lilian a été un véritable plaisir tout au long du projet. En tant que développeur, il a su faire preuve d’un grand professionnalisme, d’une excellente compréhension des besoins métiers, et d’une capacité à proposer des solutions pertinentes et efficaces. Son autonomie, sa rigueur et sa communication claire ont largement contribué au bon déroulement et à la réussite de notre collaboration."
+  }
+]

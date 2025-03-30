@@ -1,0 +1,22 @@
+[
+  {
+    "mastery": 6,
+    "label": "Node.JS",
+    "description": "Proficient with building APIs and handling asynchronous logic"
+  },
+  {
+    "mastery": 8,
+    "label": "PostgreSQL",
+    "description": "Experienced in relational database design and advanced SQL queries"
+  },
+  {
+    "mastery": 3,
+    "label": "PHP",
+    "description": "Basic understanding of scripting, templating, and server-side logic"
+  },
+  {
+    "mastery": 4,
+    "label": "Symfony",
+    "description": "Familiar with routing, controllers, and service architecture"
+  }
+]

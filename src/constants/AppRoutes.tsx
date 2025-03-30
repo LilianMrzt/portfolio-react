@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeIcon, ProjectsIcon } from '@resources/Icons'
+import { HomeIcon, ProfileIcon, ProjectsIcon } from '@resources/Icons'
 import { type RouteType } from '@interfaces/types/RouteType'
 
 export const AppRoutes: Record<string, RouteType> = {
@@ -7,6 +7,11 @@ export const AppRoutes: Record<string, RouteType> = {
         label: 'drawer.home',
         route: '/',
         icon: <HomeIcon/>
+    },
+    profile: {
+        label: 'drawer.profile',
+        route: '/profile',
+        icon: <ProfileIcon/>
     },
     projects: {
         label: 'drawer.projects',

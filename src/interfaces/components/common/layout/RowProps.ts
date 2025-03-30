@@ -7,4 +7,6 @@ export interface RowProps {
     justifyContent?: CSSProperties['justifyContent']
     gap?: CSSProperties['gap']
     width?: CSSProperties['width']
+    height?: CSSProperties['height']
+    flexWrap?: CSSProperties['flexWrap']
 }

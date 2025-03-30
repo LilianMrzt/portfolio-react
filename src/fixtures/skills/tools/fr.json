@@ -1,0 +1,37 @@
+[
+  {
+    "mastery": 8,
+    "label": "Git",
+    "description": "À l’aise avec le contrôle de version, la gestion des branches et les workflows collaboratifs"
+  },
+  {
+    "mastery": 9,
+    "label": "Jira",
+    "description": "Très à l’aise avec la gestion des tâches, des sprints et des tableaux Agile"
+  },
+  {
+    "mastery": 5,
+    "label": "Confluence",
+    "description": "Capable de documenter des connaissances techniques et de collaborer avec l’équipe"
+  },
+  {
+    "mastery": 10,
+    "label": "IntelliJ",
+    "description": "Expert dans l’utilisation d’IntelliJ et de ses fonctionnalités avancées"
+  },
+  {
+    "mastery": 4,
+    "label": "AWS",
+    "description": "Connaissances de base des services cloud comme EC2, S3, Amplify et IAM"
+  },
+  {
+    "mastery": 6,
+    "label": "Figma",
+    "description": "À l’aise pour collaborer avec les designers et comprendre les maquettes UI"
+  },
+  {
+    "mastery": 1,
+    "label": "Jenkins",
+    "description": "Expérience minimale avec les pipelines CI/CD et la configuration des jobs"
+  }
+]

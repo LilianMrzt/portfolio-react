@@ -5,12 +5,16 @@ import Column from '@components/common/layout/Column'
 
 const Card: FC<CardProps> = ({
     children,
-    padding = 32
+    padding = 24,
+    gap,
+    justifyContent
 }): ReactNode => {
     return (
         <Column
             className={'card'}
             padding={padding}
+            gap={gap}
+            justifyContent={justifyContent}
         >
             {children}
         </Column>

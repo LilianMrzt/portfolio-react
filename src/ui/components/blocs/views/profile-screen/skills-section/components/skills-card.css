@@ -1,0 +1,10 @@
+.skills-card {
+    padding: 24px;
+    background-color: var(--background);
+    border-radius: 8px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.skills-card:hover {
+    transform: scale(1.03);
+}

@@ -8,7 +8,9 @@ const Row: FC<RowProps> = ({
     justifyContent = 'center',
     alignItems = 'center',
     width = 'fit-content',
-    gap = 16
+    height,
+    gap = 16,
+    flexWrap = 'nowrap'
 }) => {
     return (
         <div
@@ -17,7 +19,9 @@ const Row: FC<RowProps> = ({
                 alignItems,
                 justifyContent,
                 gap,
-                width
+                width,
+                height,
+                flexWrap: flexWrap as any
             }}
         >
             {children}

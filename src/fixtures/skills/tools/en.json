@@ -1,0 +1,37 @@
+[
+  {
+    "mastery": 8,
+    "label": "Git",
+    "description": "Confident using Git for version control, branching, and collaboration workflows"
+  },
+  {
+    "mastery": 9,
+    "label": "Jira",
+    "description": "Highly comfortable managing tasks, sprints, and agile boards"
+  },
+  {
+    "mastery": 5,
+    "label": "Confluence",
+    "description": "Able to document technical knowledge and collaborate with teams"
+  },
+  {
+    "mastery": 10,
+    "label": "IntelliJ",
+    "description": "Expert at using IntelliJ features and plugins for efficient development"
+  },
+  {
+    "mastery": 4,
+    "label": "AWS",
+    "description": "Familiar with basic cloud services like EC2, S3, Amplify and IAM"
+  },
+  {
+    "mastery": 6,
+    "label": "Figma",
+    "description": "Comfortable collaborating with designers and interpreting UI mockups"
+  },
+  {
+    "mastery": 1,
+    "label": "Jenkins",
+    "description": "Minimal experience with CI/CD pipelines and job configuration"
+  }
+]

@@ -3,19 +3,19 @@ import Section from '@components/common/layout/Section'
 import Text from '@components/common/text/Text'
 import Card from '@components/common/Card'
 
-const TestimonialsSection = (): ReactNode => {
+const ProfileScreenIntroductionSection = (): ReactNode => {
     return (
         <Section
-            label={'What people say'}
-            id={'testimonials-section'}
+            label={'My Profile'}
+            id={'my-projects-section'}
         >
             <Card>
                 <Text>
-                    Test
+        Test
                 </Text>
             </Card>
         </Section>
     )
 }
 
-export default TestimonialsSection
+export default ProfileScreenIntroductionSection
