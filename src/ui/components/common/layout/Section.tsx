@@ -9,18 +9,17 @@ import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useNavigate } from 'react-router-dom'
-import { useTranslation } from '@hooks/TranslatonContext'
 
 const Section: FC<SectionProps> = ({
     label,
     id,
     children,
     viewDetailsRoute,
-    sectionScrollId
+    sectionScrollId,
+    viewDetailsButtonLabel
 }): ReactNode => {
     const { width } = useWindowSize()
     const navigate = useNavigate()
-    const { translate } = useTranslation()
     const isSmallScreen = width < screenSizes.screenS
 
     return (
@@ -39,7 +38,7 @@ const Section: FC<SectionProps> = ({
                 </SubTitle>
                 {viewDetailsRoute && !isSmallScreen && (
                     <Button
-                        label={translate('buttons.viewDetails')}
+                        label={viewDetailsButtonLabel}
                         iconEnd={<ArrowRightIcon/>}
                         onClick={() => {
                             void navigate(viewDetailsRoute ?? '', {
@@ -53,13 +52,13 @@ const Section: FC<SectionProps> = ({
                 )}
             </Row>
             {children}
-            {viewDetailsRoute && isSmallScreen && (
+            {viewDetailsRoute && viewDetailsButtonLabel && isSmallScreen && (
                 <Row
                     width={'100%'}
                     justifyContent={'end'}
                 >
                     <Button
-                        label={translate('buttons.viewDetails')}
+                        label={viewDetailsButtonLabel}
                         iconEnd={<ArrowRightIcon/>}
                         onClick={() => {
                             void navigate(viewDetailsRoute ?? '', {

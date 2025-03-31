@@ -5,5 +5,6 @@ export interface SectionProps {
     id: string
     children: ReactNode
     viewDetailsRoute?: string
+    viewDetailsButtonLabel?: string
     sectionScrollId?: string
 }

@@ -35,6 +35,10 @@
             "email": "Email",
             "phone": "Téléphone",
             "location": "Localisation"
+        },
+        "projectsSection": {
+            "title": "Mes derniers projets",
+            "buttonLabel": "Plus de détails"
         }
     },
     "profileScreen": {
@@ -51,7 +55,17 @@
             "expert": "Expert"
         }
     },
+    "projectsScreen": {
+        "title": "Mes projets"
+    },
+    "projectsDetailsScreen": {
+        "backToProjects": "Retour aux projets",
+        "projectOverview": "Aperçu du projet",
+        "keyFeatures": "Fonctionnalités clés",
+        "technicalDetails": "Détails techniques"
+    },
     "buttons": {
-        "viewDetails": "Voir les détails"
+        "viewDetails": "Voir les détails",
+        "viewAllProjects": "Voir tous les projets"
     }
 }

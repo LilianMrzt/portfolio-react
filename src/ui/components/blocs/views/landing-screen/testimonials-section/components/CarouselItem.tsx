@@ -28,6 +28,7 @@ const CarouselItem: FC<CarouselItemProps> = ({
                 color={theme.textSecondary}
                 italic
                 textAlign={'center'}
+                lineHeight={1.2}
             >
                 {`"${currentItem.content}"`}
             </Text>

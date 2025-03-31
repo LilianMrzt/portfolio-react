@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "slug": "portfolio",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    "name": "Developper Portfolio",
+    "overview": "A modern, responsive developer portfolio built with React and TypeScript. Features dark mode support, multi-language functionality, and a clean, professional design showcasing projects, skills, and testimonials.",
+    "features": [
+      "Responsive design with dark mode support",
+      "Multi-language support (English and French)",
+      "Project showcase with detailed views",
+      "Mobile-friendly navigation with slide-out menu"
+    ],
+    "technicalDetails": "Built using React 18 with TypeScript for type safety and better developer experience. Implements context-based theme and language switching and React Router for navigation. Features a component-based architecture with reusable UI components and responsive design principles.",
+    "technologies": ["React", "TypeScript", "React Router", "ESLint"],
+    "githubLink": "https://github.com/LilianMrzt/portfolio-react",
+    "appLink": "https://lilian-marzet.com/"
+  }
+]

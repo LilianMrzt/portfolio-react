@@ -8,15 +8,19 @@ const Text: FC<TextProps> = ({
     color = theme.text,
     fontSize = 16,
     italic,
-    textAlign = 'start'
+    textAlign = 'start',
+    numberOfLines,
+    lineHeight
 }): ReactNode => {
     return (
         <p
-            className={`text ${italic && 'italic'}`}
+            className={`text ${italic && 'italic'} ${numberOfLines && 'clamp'}`}
             style={{
                 color,
                 fontSize,
-                textAlign: textAlign as any
+                textAlign: textAlign as any,
+                WebkitLineClamp: numberOfLines,
+                lineHeight
             }}
         >
             {children}

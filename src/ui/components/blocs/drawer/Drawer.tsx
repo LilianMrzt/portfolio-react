@@ -5,7 +5,7 @@ import Row from '@components/common/layout/Row'
 import { CloseIcon, GithubIcon, LinkedinIcon, MailIcon } from '@resources/Icons'
 import Button from '@components/common/pressable/Button'
 import theme from '@constants/Theme'
-import { AppRoutes } from '@constants/AppRoutes'
+import { DrawerRoutes } from '@constants/DrawerRoutes'
 import DrawerRouteItem from '@components/blocs/drawer/DrawerRouteItem'
 import Column from '@components/common/layout/Column'
 import ExternalLink from '@components/common/pressable/ExternalLink'
@@ -74,7 +74,7 @@ const Drawer: FC<DrawerProps> = ({
                         <nav
                             className={'drawer-nav'}
                         >
-                            {Object.entries(AppRoutes).map(([key, route]) => (
+                            {Object.entries(DrawerRoutes).map(([key, route]) => (
                                 <DrawerRouteItem
                                     key={key}
                                     route={route}

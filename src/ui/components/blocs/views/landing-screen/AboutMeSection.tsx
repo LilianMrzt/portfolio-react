@@ -16,6 +16,13 @@ const AboutMeSection = (): ReactNode => {
     const { width } = useWindowSize()
     const { translate } = useTranslation()
 
+    const handleResumeDownload = (): void => {
+        const link = document.createElement('a')
+        link.href = '/files/CV_Lilian_MARZET.pdf'
+        link.download = 'CV_Lilian_MARZET.pdf'
+        link.click()
+    }
+
     return (
         <Section
             label={translate('homeScreen.aboutMeSection.title')}
@@ -46,7 +53,7 @@ const AboutMeSection = (): ReactNode => {
                             </Text>
                         </Column>
                         <Button
-                            onClick={() => {}}
+                            onClick={handleResumeDownload}
                             icon={<DownloadIcon/>}
                             label={translate('homeScreen.aboutMeSection.buttonLabel')}
                         />

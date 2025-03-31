@@ -7,7 +7,7 @@ import theme from '@constants/Theme'
 import Button from '@components/common/pressable/Button'
 import { type NavBarProps } from '@interfaces/components/blocs/nav-bar/NavBarProps'
 import { Link } from 'react-router-dom'
-import { AppRoutes } from '@constants/AppRoutes'
+import { AppRoutes } from '@constants/DrawerRoutes'
 import Title from '@components/common/text/Title'
 
 const NavBar: FC<NavBarProps> = ({
@@ -26,7 +26,7 @@ const NavBar: FC<NavBarProps> = ({
                 padding={8}
             />
             <Link
-                to={AppRoutes.home.route}
+                to={AppRoutes.home.route ?? ''}
                 className={'nav-bar-link'}
             >
                 <Row

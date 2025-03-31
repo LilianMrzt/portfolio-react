@@ -1,0 +1,8 @@
+.info-bubble {
+    padding: 4px 8px;
+    border-radius: 50px;
+}
+
+.info-bubble.blur {
+    backdrop-filter: blur(4px);
+}

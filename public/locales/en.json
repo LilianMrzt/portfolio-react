@@ -6,7 +6,7 @@
         "fullStackDeveloper": "Fullstack Developer"
     },
     "footer": {
-        "allRightsReserved": "All rights reserved."
+        "allRightsReserved": "All rights reserved"
     },
     "homeScreen": {
         "initialSection": {
@@ -35,6 +35,10 @@
             "email": "Email",
             "phone": "Phone",
             "location": "Location"
+        },
+        "projectsSection": {
+            "title": "My last projects",
+            "buttonLabel": "View more"
         }
     },
     "profileScreen": {
@@ -51,7 +55,17 @@
             "expert": "Expert"
         }
     },
+    "projectsScreen": {
+        "title": "My projects"
+    },
+    "projectsDetailsScreen": {
+        "backToProjects": "Back to projects",
+        "projectOverview": "Project overview",
+        "keyFeatures": "Key features",
+        "technicalDetails": "Technical details"
+    },
     "buttons": {
-        "viewDetails": "View details"
+        "viewDetails": "View details",
+        "viewAllProjects": "View all projects"
     }
 }
