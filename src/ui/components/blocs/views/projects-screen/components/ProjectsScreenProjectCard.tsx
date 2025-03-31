@@ -15,11 +15,15 @@ import { ArrowRightIcon, ExternalLinkIcon, GithubIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useTranslation } from '@hooks/TranslatonContext'
 import ExternalLink from '@components/common/pressable/ExternalLink'
+import { useNavigate } from 'react-router-dom'
+import { AppRoutes } from '@constants/DrawerRoutes'
 
 const ProjectsScreenProjectCard: FC<ProjectsScreenProjectCardProps> = ({
     project
 }): ReactNode => {
     const { translate } = useTranslation()
+    const navigate = useNavigate()
+
     return (
         <Card
             className={'project-screen-project-card'}
@@ -71,7 +75,11 @@ const ProjectsScreenProjectCard: FC<ProjectsScreenProjectCardProps> = ({
                     justifyContent={'space-between'}
                 >
                     <Button
-                        onClick={() => {}}
+                        onClick={() => {
+                            if (AppRoutes.projectDetails.routeFn) {
+                                void navigate(AppRoutes.projectDetails.routeFn(project.slug))
+                            }
+                        }}
                         label={translate('homeScreen.projectsSection.buttonLabel')}
                         iconEnd={<ArrowRightIcon/>}
                         backgroundColor={theme.surface}

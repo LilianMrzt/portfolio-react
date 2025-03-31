@@ -37,7 +37,7 @@ const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
                     : isHovered ? darkenColor(theme.surface) : theme.surface
             }}
             onClick={onClose}
-            to={route.route}
+            to={route.route ?? ''}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

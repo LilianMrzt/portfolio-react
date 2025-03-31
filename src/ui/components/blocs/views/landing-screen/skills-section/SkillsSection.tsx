@@ -11,7 +11,7 @@ import frBackEndSkills from '@fixtures/skills/back-end/fr.json'
 import enBackEndSkills from '@fixtures/skills/back-end/en.json'
 import frToolsSkills from '@fixtures/skills/tools/fr.json'
 import enToolsSkills from '@fixtures/skills/tools/en.json'
-import { AppRoutes } from '@constants/AppRoutes'
+import { AppRoutes } from '@constants/DrawerRoutes'
 
 const SkillsSection = (): ReactNode => {
     const { language, translate } = useTranslation()

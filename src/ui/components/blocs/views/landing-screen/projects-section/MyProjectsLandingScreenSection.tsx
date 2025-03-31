@@ -7,7 +7,7 @@ import { useTranslation } from '@hooks/TranslatonContext'
 import frProjects from '@fixtures/projects/fr.json'
 import enProjects from '@fixtures/projects/en.json'
 import { type ProjectObject } from '@interfaces/objects/front-objects/ProjectObject'
-import { AppRoutes } from '@constants/AppRoutes'
+import { AppRoutes } from '@constants/DrawerRoutes'
 
 const MyProjectsLandingScreenSection = (): ReactNode => {
     const { language, translate } = useTranslation()
