@@ -12,7 +12,7 @@
       "Mobile-friendly navigation with slide-out menu"
     ],
     "technicalDetails": "Built using React 18 with TypeScript for type safety and better developer experience. Implements context-based theme and language switching and React Router for navigation. Features a component-based architecture with reusable UI components and responsive design principles.",
-    "technologies": ["React", "TypeScript", "React Router"],
+    "technologies": ["React", "TypeScript", "React Router", "ESLint"],
     "githubLink": "https://github.com/LilianMrzt/portfolio-react",
     "appLink": ""
   }

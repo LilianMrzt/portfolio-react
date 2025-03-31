@@ -8,5 +8,6 @@ export interface ButtonProps {
     backgroundColor?: CSSProperties['backgroundColor']
     color?: CSSProperties['color']
     hoverColor?: CSSProperties['color']
+    borderColor?: CSSProperties['borderColor']
     padding?: CSSProperties['padding']
 }

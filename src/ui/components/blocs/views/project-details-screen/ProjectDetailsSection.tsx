@@ -94,6 +94,7 @@ const ProjectDetailsSection = (): ReactNode => {
                         <Row
                             width={'100%'}
                             justifyContent={'start'}
+                            flexWrap={'wrap'}
                         >
                             {project.technologies.map((technology, index) => (
                                 <InfoBubble
@@ -174,8 +175,11 @@ const ProjectDetailsSection = (): ReactNode => {
                                 label={'View source'}
                                 icon={<GithubIcon/>}
                                 onClick={() => {
-                                    window.open('https://github.com/LilianMrzt/portfolio-react', '_blank')
+                                    window.open(project.githubLink, '_blank')
                                 }}
+                                backgroundColor={theme.surface}
+                                borderColor={theme.outline}
+                                color={theme.text}
                             />
                         )}
                     </Row>

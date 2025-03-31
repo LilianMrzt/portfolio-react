@@ -14,6 +14,7 @@ const Button: FC<ButtonProps> = ({
     iconEnd,
     backgroundColor = theme.primary,
     color = theme.onPrimary,
+    borderColor = 'transparent',
     hoverColor,
     padding = '12px 24px'
 }): ReactNode => {
@@ -34,7 +35,8 @@ const Button: FC<ButtonProps> = ({
             style={{
                 backgroundColor: isHovered ? darkenColor(backgroundColor) : backgroundColor,
                 padding,
-                borderRadius: icon && !label ? '50%' : 8
+                borderRadius: icon && !label ? '50%' : 8,
+                border: `1px solid ${borderColor}`
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
