@@ -14,6 +14,6 @@
     "technicalDetails": "Construit en utilisant React 18 avec TypeScript pour la sécurité des types et une meilleure expérience pour les développeurs. Implémente le changement de thème et de langue basé sur le contexte et React Router pour la navigation. L'architecture est basée sur des composants réutilisables et sur les principes de la conception réactive.",
     "technologies": ["React", "TypeScript", "React Router", "ESLint"],
     "githubLink": "https://github.com/LilianMrzt/portfolio-react",
-    "appLink": ""
+    "appLink": "https://lilian-marzet.com/"
   }
 ]

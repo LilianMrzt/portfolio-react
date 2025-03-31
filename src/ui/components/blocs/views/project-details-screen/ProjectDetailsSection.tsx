@@ -20,7 +20,7 @@ import Text from '@components/common/text/Text'
 import { darkenColor } from '@utils/ColorUtils'
 
 const ProjectDetailsSection = (): ReactNode => {
-    const { language } = useTranslation()
+    const { language, translate } = useTranslation()
     const navigate = useNavigate()
 
     const projects = language === 'fr' ? frProjects : enProjects
@@ -38,7 +38,7 @@ const ProjectDetailsSection = (): ReactNode => {
             alignItems={'start'}
         >
             <Button
-                label={'Back to projects'}
+                label={translate('projectsDetailsScreen.backToProjects')}
                 icon={<ArrowLeftIcon/>}
                 onClick={() => {
                     void navigate(AppRoutes.projects.route ?? '')
@@ -115,7 +115,7 @@ const ProjectDetailsSection = (): ReactNode => {
                             <SubTitle
                                 fontSize={20}
                             >
-                                Project Overview
+                                {translate('projectsDetailsScreen.projectOverview')}
                             </SubTitle>
                             <Text
                                 color={darkenColor(theme.textSecondary)}
@@ -131,7 +131,7 @@ const ProjectDetailsSection = (): ReactNode => {
                             <SubTitle
                                 fontSize={20}
                             >
-                                Key features
+                                {translate('projectsDetailsScreen.keyFeatures')}
                             </SubTitle>
                             { project.features.map((feature, index) => (
                                 <Text
@@ -150,7 +150,7 @@ const ProjectDetailsSection = (): ReactNode => {
                             <SubTitle
                                 fontSize={20}
                             >
-                                Technical details
+                                {translate('projectsDetailsScreen.technicalDetails')}
                             </SubTitle>
                             <Text
                                 color={darkenColor(theme.textSecondary)}

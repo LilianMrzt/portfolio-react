@@ -7,13 +7,13 @@ import frProjects from '@fixtures/projects/fr.json'
 import enProjects from '@fixtures/projects/en.json'
 
 const MyProjectsProjectsScreenSection = (): ReactNode => {
-    const { language } = useTranslation()
+    const { language, translate } = useTranslation()
 
     const projects = language === 'fr' ? frProjects : enProjects
 
     return (
         <Section
-            label={'My projects'}
+            label={translate('projectsScreen.title')}
             id={'my-projects-section'}
         >
             <Grid>

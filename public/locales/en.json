@@ -55,6 +55,15 @@
             "expert": "Expert"
         }
     },
+    "projectsScreen": {
+        "title": "My projects"
+    },
+    "projectsDetailsScreen": {
+        "backToProjects": "Back to projects",
+        "projectOverview": "Project overview",
+        "keyFeatures": "Key features",
+        "technicalDetails": "Technical details"
+    },
     "buttons": {
         "viewDetails": "View details",
         "viewAllProjects": "View all projects"
