@@ -6,4 +6,6 @@ export interface TextProps {
     fontSize?: CSSProperties['fontSize']
     textAlign?: CSSProperties['textAlign']
     italic?: boolean
+    numberOfLines?: number
+    lineHeight?: CSSProperties['lineHeight']
 }

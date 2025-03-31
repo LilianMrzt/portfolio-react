@@ -5,4 +5,5 @@ export interface CardProps {
     padding?: CSSProperties['padding']
     gap?: CSSProperties['gap']
     justifyContent?: CSSProperties['justifyContent']
+    className?: string
 }

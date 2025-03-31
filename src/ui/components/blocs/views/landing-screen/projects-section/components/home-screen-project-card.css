@@ -1,0 +1,21 @@
+.home-screen-project-card {
+    position: relative;
+}
+
+.home-screen-project-card-content {
+    position: absolute;
+    height: 192px;
+}
+
+.home-screen-project-card-content.content {
+    position: absolute;
+    z-index: 4;
+    inset: 0;
+}
+
+.home-screen-project-card-content.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    z-index: 3;
+}

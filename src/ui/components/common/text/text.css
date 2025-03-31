@@ -11,3 +11,10 @@
 .text.italic {
     font-style: italic;
 }
+
+.text.clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

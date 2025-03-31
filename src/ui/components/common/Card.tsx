@@ -7,11 +7,12 @@ const Card: FC<CardProps> = ({
     children,
     padding = 24,
     gap,
-    justifyContent
+    justifyContent,
+    className
 }): ReactNode => {
     return (
         <Column
-            className={'card'}
+            className={`card ${className}`}
             padding={padding}
             gap={gap}
             justifyContent={justifyContent}
