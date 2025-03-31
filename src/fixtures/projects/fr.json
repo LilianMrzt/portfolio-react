@@ -2,15 +2,8 @@
   {
     "id": 1,
     "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-    "name": "Developper Portfolio",
-    "description": "A modern, responsive developer portfolio built with React, TypeScript, and TailwindCSS. Features dark mode support, multi-language functionality, and a clean, professional design showcasing projects, skills, and testimonials.",
-    "technologies": ["React", "TypeScript", "React Router"]
-  },
-  {
-    "id": 2,
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-    "name": "Developper Portfolio",
-    "description": "A modern, responsive developer portfolio built with React, TypeScript, and TailwindCSS. Features dark mode support, multi-language functionality, and a clean, professional design showcasing projects, skills, and testimonials.",
+    "name": "Portfolio",
+    "description": "Un portfolio de développeur moderne et responsive construit avec React et TypeScript. Comprend la prise en charge du mode sombre, des fonctionnalités multilingues et un design propre et professionnel mettant en valeur les projets, les compétences et les témoignages. ",
     "technologies": ["React", "TypeScript", "React Router"]
   }
 ]

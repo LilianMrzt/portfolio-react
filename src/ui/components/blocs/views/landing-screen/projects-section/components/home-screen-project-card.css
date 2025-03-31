@@ -2,6 +2,12 @@
     position: relative;
 }
 
+@media (min-width: 800px) {
+    .home-screen-project-card {
+        max-width: 640px;
+    }
+}
+
 .home-screen-project-card-content {
     position: absolute;
     height: 192px;

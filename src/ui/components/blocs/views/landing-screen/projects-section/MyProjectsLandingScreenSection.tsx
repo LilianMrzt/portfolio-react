@@ -9,14 +9,14 @@ import enProjects from '@fixtures/projects/en.json'
 import { type ProjectObject } from '@interfaces/objects/front-objects/ProjectObject'
 
 const MyProjectsLandingScreenSection = (): ReactNode => {
-    const { language } = useTranslation()
+    const { language, translate } = useTranslation()
 
     const projects = language === 'fr' ? frProjects : enProjects
     const renderedProjects = projects.slice(0, 2)
 
     return (
         <Section
-            label={'My projects'}
+            label={translate('homeScreen.projectsSection.title')}
             id={'my-projects-section'}
         >
             <Grid>

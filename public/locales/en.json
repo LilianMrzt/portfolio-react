@@ -35,6 +35,10 @@
             "email": "Email",
             "phone": "Phone",
             "location": "Location"
+        },
+        "projectsSection": {
+            "title": "My projects",
+            "buttonLabel": "View more"
         }
     },
     "profileScreen": {

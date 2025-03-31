@@ -14,10 +14,12 @@ import SubTitle from '@components/common/text/SubTitle'
 import Row from '@components/common/layout/Row'
 import TechnologyIndicator
     from '@components/blocs/views/landing-screen/projects-section/components/TechnologyIndicator'
+import { useTranslation } from '@hooks/TranslatonContext'
 
 const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
     project
 }): ReactNode => {
+    const { translate } = useTranslation()
     const renderedTechnologies = project.technologies.slice(0, 3)
     const remainingTechnologiesNumber = project.technologies.length - renderedTechnologies.length
 
@@ -83,7 +85,7 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                 </Text>
                 <Button
                     onClick={() => {}}
-                    label={'View more'}
+                    label={translate('homeScreen.projectsSection.buttonLabel')}
                     iconEnd={<ArrowRightIcon/>}
                     backgroundColor={theme.surface}
                     color={theme.primary}
