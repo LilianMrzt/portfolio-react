@@ -10,7 +10,8 @@ const Row: FC<RowProps> = ({
     width = 'fit-content',
     height,
     gap = 16,
-    flexWrap = 'nowrap'
+    flexWrap = 'nowrap',
+    padding
 }) => {
     return (
         <div
@@ -21,7 +22,8 @@ const Row: FC<RowProps> = ({
                 gap,
                 width,
                 height,
-                flexWrap: flexWrap as any
+                flexWrap: flexWrap as any,
+                padding
             }}
         >
             {children}

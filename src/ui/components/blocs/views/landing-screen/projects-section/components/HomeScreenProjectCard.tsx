@@ -12,8 +12,8 @@ import theme from '@constants/Theme'
 import './home-screen-project-card.css'
 import SubTitle from '@components/common/text/SubTitle'
 import Row from '@components/common/layout/Row'
-import TechnologyIndicator
-    from '@components/blocs/views/landing-screen/projects-section/components/TechnologyIndicator'
+import InfoBubble
+    from '@components/common/InfoBubble'
 import { useTranslation } from '@hooks/TranslatonContext'
 
 const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
@@ -60,14 +60,22 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                         flexWrap={('wrap')}
                     >
                         {renderedTechnologies.map((technology, index) => (
-                            <TechnologyIndicator
+                            <InfoBubble
                                 key={index}
                                 label={technology}
+                                color={theme.surface}
+                                backgroundColor={'rgba(255, 255, 255, 0.2)'}
+                                blur
+                                fontSize={13}
                             />
                         ))}
                         {remainingTechnologiesNumber > 0 && (
-                            <TechnologyIndicator
+                            <InfoBubble
                                 label={`+ ${remainingTechnologiesNumber}`}
+                                color={theme.surface}
+                                backgroundColor={'rgba(255, 255, 255, 0.2)'}
+                                blur
+                                fontSize={13}
                             />
                         )}
                     </Row>

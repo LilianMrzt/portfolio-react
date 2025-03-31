@@ -9,4 +9,5 @@ export interface RowProps {
     width?: CSSProperties['width']
     height?: CSSProperties['height']
     flexWrap?: CSSProperties['flexWrap']
+    padding?: CSSProperties['padding']
 }

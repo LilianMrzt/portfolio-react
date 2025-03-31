@@ -1,9 +1,12 @@
 [
   {
     "id": 1,
+    "slug": "portfolio",
     "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
     "name": "Portfolio",
     "description": "Un portfolio de développeur moderne et responsive construit avec React et TypeScript. Comprend la prise en charge du mode sombre, des fonctionnalités multilingues et un design propre et professionnel mettant en valeur les projets, les compétences et les témoignages. ",
-    "technologies": ["React", "TypeScript", "React Router"]
+    "technologies": ["React", "TypeScript", "React Router", "React", "TypeScript", "React Router", "React", "TypeScript", "React Router"],
+    "githubLink": "https://github.com/LilianMrzt/portfolio-react",
+    "appLink": ""
   }
 ]
