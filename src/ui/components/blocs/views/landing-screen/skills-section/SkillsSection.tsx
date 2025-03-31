@@ -26,6 +26,7 @@ const SkillsSection = (): ReactNode => {
             id={'home-skill-section'}
             viewDetailsRoute={AppRoutes.profile.route}
             sectionScrollId={'skill-section'}
+            viewDetailsButtonLabel={translate('buttons.viewDetails')}
         >
             <Grid>
                 <SkillCardHomeScreen

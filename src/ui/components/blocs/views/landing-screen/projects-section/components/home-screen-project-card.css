@@ -1,5 +1,10 @@
 .home-screen-project-card {
     position: relative;
+    transition: transform 0.15s ease-in-out;
+}
+
+.home-screen-project-card:hover {
+    transform: scale(1.05);
 }
 
 @media (min-width: 800px) {

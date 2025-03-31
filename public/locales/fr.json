@@ -37,7 +37,7 @@
             "location": "Localisation"
         },
         "projectsSection": {
-            "title": "Mes projets",
+            "title": "Mes derniers projets",
             "buttonLabel": "Plus de détails"
         }
     },
@@ -56,6 +56,7 @@
         }
     },
     "buttons": {
-        "viewDetails": "Voir les détails"
+        "viewDetails": "Voir les détails",
+        "viewAllProjects": "Voir tous les projets"
     }
 }

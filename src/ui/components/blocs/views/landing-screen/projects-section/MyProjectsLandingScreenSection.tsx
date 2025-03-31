@@ -7,6 +7,7 @@ import { useTranslation } from '@hooks/TranslatonContext'
 import frProjects from '@fixtures/projects/fr.json'
 import enProjects from '@fixtures/projects/en.json'
 import { type ProjectObject } from '@interfaces/objects/front-objects/ProjectObject'
+import { AppRoutes } from '@constants/AppRoutes'
 
 const MyProjectsLandingScreenSection = (): ReactNode => {
     const { language, translate } = useTranslation()
@@ -18,6 +19,8 @@ const MyProjectsLandingScreenSection = (): ReactNode => {
         <Section
             label={translate('homeScreen.projectsSection.title')}
             id={'my-projects-section'}
+            viewDetailsRoute={AppRoutes.projects.route}
+            viewDetailsButtonLabel={translate('buttons.viewAllProjects')}
         >
             <Grid>
                 {renderedProjects.map((project: ProjectObject) => (

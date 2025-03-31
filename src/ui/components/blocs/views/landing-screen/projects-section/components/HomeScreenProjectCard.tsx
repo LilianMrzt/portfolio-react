@@ -74,7 +74,7 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                 </Column>
             </div>
             <Column
-                padding={24}
+                padding={'24px 24px 0 24px'}
                 alignItems={'start'}
             >
                 <Text
@@ -83,13 +83,18 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                 >
                     {project.description}
                 </Text>
+            </Column>
+            <Column
+                padding={8}
+                alignItems={'start'}
+            >
                 <Button
                     onClick={() => {}}
                     label={translate('homeScreen.projectsSection.buttonLabel')}
                     iconEnd={<ArrowRightIcon/>}
                     backgroundColor={theme.surface}
                     color={theme.primary}
-                    padding={0}
+                    padding={'8px 16px'}
                 />
             </Column>
         </Card>
