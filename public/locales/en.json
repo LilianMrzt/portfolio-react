@@ -62,7 +62,9 @@
         "backToProjects": "Back to projects",
         "projectOverview": "Project overview",
         "keyFeatures": "Key features",
-        "technicalDetails": "Technical details"
+        "technicalDetails": "Technical details",
+        "viewLiveDemo": "View live demo",
+        "viewSource": "View source"
     },
     "buttons": {
         "viewDetails": "View details",

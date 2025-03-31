@@ -163,7 +163,7 @@ const ProjectDetailsSection = (): ReactNode => {
                     <Row>
                         {project.appLink && (
                             <Button
-                                label={'View live demo'}
+                                label={translate('projectsDetailsScreen.viewLiveDemo')}
                                 icon={<ExternalLinkIcon/>}
                                 onClick={() => {
                                     window.open(project.appLink, '_blank')
@@ -172,7 +172,7 @@ const ProjectDetailsSection = (): ReactNode => {
                         )}
                         {project.githubLink && (
                             <Button
-                                label={'View source'}
+                                label={translate('projectsDetailsScreen.viewSource')}
                                 icon={<GithubIcon/>}
                                 onClick={() => {
                                     window.open(project.githubLink, '_blank')
