@@ -15,11 +15,14 @@ import Row from '@components/common/layout/Row'
 import InfoBubble
     from '@components/common/InfoBubble'
 import { useTranslation } from '@hooks/TranslatonContext'
+import { AppRoutes } from '@constants/DrawerRoutes'
+import { useNavigate } from 'react-router-dom'
 
 const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
     project
 }): ReactNode => {
     const { translate } = useTranslation()
+    const navigate = useNavigate()
     const renderedTechnologies = project.technologies.slice(0, 3)
     const remainingTechnologiesNumber = project.technologies.length - renderedTechnologies.length
 
@@ -89,7 +92,7 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                     numberOfLines={2}
                     lineHeight={1.4}
                 >
-                    {project.description}
+                    {project.overview}
                 </Text>
             </Column>
             <Column
@@ -97,7 +100,11 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                 alignItems={'start'}
             >
                 <Button
-                    onClick={() => {}}
+                    onClick={() => {
+                        if (AppRoutes.projectDetails.routeFn) {
+                            void navigate(AppRoutes.projectDetails.routeFn(project.slug))
+                        }
+                    }}
                     label={translate('homeScreen.projectsSection.buttonLabel')}
                     iconEnd={<ArrowRightIcon/>}
                     backgroundColor={theme.surface}

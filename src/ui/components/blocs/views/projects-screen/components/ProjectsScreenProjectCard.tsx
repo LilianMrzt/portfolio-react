@@ -51,7 +51,7 @@ const ProjectsScreenProjectCard: FC<ProjectsScreenProjectCardProps> = ({
                     lineHeight={1.5}
                     numberOfLines={3}
                 >
-                    {project.description}
+                    {project.overview}
                 </Text>
                 <Row
                     gap={8}

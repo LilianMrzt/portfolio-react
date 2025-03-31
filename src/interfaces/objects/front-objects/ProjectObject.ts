@@ -3,7 +3,9 @@ export interface ProjectObject {
     slug: string
     image: string
     name: string
-    description: string
+    overview: string
+    features: string[]
+    technicalDetails: string
     technologies: string[]
     githubLink?: string
     appLink?: string
