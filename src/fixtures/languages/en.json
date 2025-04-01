@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "language": "French",
+    "level": "Native language",
+    "certifications": [
+      "Projet Voltaire - Score 763"
+    ]
+  },
+  {
+    "id": 2,
+    "language": "English",
+    "level": "Bilingual",
+    "certifications": [
+      "TOEIC - Score 980/990 (Level C1)",
+      "Cambridge First Certificate"
+    ]
+  },
+  {
+    "id": 3,
+    "language": "German",
+    "level": "Basic knowledge",
+    "certifications": []
+  },
+  {
+    "id": 4,
+    "language": "Spanish",
+    "level": "Basic knowledge",
+    "certifications": []
+  }
+]

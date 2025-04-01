@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "startDate": "2018",
+    "endDate": "2023",
+    "school": "ESIEE Paris",
+    "schoolType": "Engineering School",
+    "cursus": "Embedded Systems",
+    "location": "93162 Noisy-le-Grand, France"
+  },
+  {
+    "id": 2,
+    "startDate": "2015",
+    "endDate": "2018",
+    "school": "Lycée Françoise Cabrini",
+    "schoolType": "High School",
+    "cursus": "Science Baccalaureate",
+    "location": "93162 Noisy-le-Grand, France"
+  }
+]

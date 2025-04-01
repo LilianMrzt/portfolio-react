@@ -1,0 +1,18 @@
+.formation-card {
+    position: relative;
+    transition: transform 0.15s ease-in-out;
+}
+
+.formation-card:hover {
+    transform: translate(10px);
+}
+
+.formation-card-timeline-line {
+    position: absolute;
+    top: 40px;
+    height: calc(100% - 20px);
+}
+
+.formation-card-separator {
+    height: 20px;
+}

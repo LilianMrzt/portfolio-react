@@ -1,0 +1,18 @@
+.professional-experience-card {
+    position: relative;
+    transition: transform 0.15s ease-in-out;
+}
+
+.professional-experience-card:hover {
+    transform: translate(10px);
+}
+
+.professional-experience-card-timeline-line {
+    position: absolute;
+    top: 40px;
+    height: calc(100% - 20px);
+}
+
+.professional-experience-card-separator {
+    height: 20px;
+}

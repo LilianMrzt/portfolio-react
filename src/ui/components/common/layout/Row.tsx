@@ -11,6 +11,7 @@ const Row: FC<RowProps> = ({
     height,
     gap = 16,
     flexWrap = 'nowrap',
+    minHeight,
     padding
 }) => {
     return (
@@ -23,7 +24,8 @@ const Row: FC<RowProps> = ({
                 width,
                 height,
                 flexWrap: flexWrap as any,
-                padding
+                padding,
+                minHeight
             }}
         >
             {children}

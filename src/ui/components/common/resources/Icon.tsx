@@ -5,7 +5,11 @@ import { type IconProps } from '@interfaces/components/common/resources/IconProp
 const Icon: FC<IconProps> = ({
     children,
     size = 24,
-    color
+    color,
+    alignSelf,
+    backgroundColor,
+    padding,
+    round
 }): ReactNode => {
     return (
         <div
@@ -15,7 +19,11 @@ const Icon: FC<IconProps> = ({
                 width: size,
                 minWidth: size,
                 minHeight: size,
-                color
+                color,
+                alignSelf,
+                backgroundColor,
+                padding,
+                borderRadius: round ? '50%' : 'none'
             }}
         >
             {children}

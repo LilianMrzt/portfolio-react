@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "language": "Français",
+    "level": "Langue natale",
+    "certifications": [
+      "Projet Voltaire - Score 763"
+    ]
+  },
+  {
+    "id": 2,
+    "language": "Anglais",
+    "level": "Bilingue",
+    "certifications": [
+      "TOEIC - Score 980/990 (Niveau C1)",
+      "Cambridge First Certificate"
+    ]
+  },
+  {
+    "id": 3,
+    "language": "Allemand",
+    "level": "Notions",
+    "certifications": []
+  },
+  {
+    "id": 4,
+    "language": "Espagnol",
+    "level": "Notions",
+    "certifications": []
+  }
+]

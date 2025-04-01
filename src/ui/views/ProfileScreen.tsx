@@ -1,9 +1,12 @@
 import React, { type ReactNode, useEffect } from 'react'
 import Screen from '@components/common/layout/Screen'
-import ProfileScreenIntroductionSection from '@components/blocs/views/profile-screen/ProfileScreenIntroductionSection'
 import SkillsSection from '@components/blocs/views/profile-screen/skills-section/SkillsSection'
 import { scrollToSection } from '@utils/Animationutils'
 import { useLocation, useNavigate } from 'react-router-dom'
+import LanguagesSection from '@components/blocs/views/profile-screen/languages-section/LanguagesSection'
+import ProfessionalExperienceSection
+    from '@components/blocs/views/profile-screen/professional-experience-section/ProfessionalExperienceSection'
+import FormationsSection from '@components/blocs/views/profile-screen/formations-section/FormationsSection'
 
 const ProfileScreen = (): ReactNode => {
     const location = useLocation()
@@ -22,7 +25,9 @@ const ProfileScreen = (): ReactNode => {
 
     return (
         <Screen>
-            <ProfileScreenIntroductionSection/>
+            <ProfessionalExperienceSection/>
+            <FormationsSection/>
+            <LanguagesSection/>
             <SkillsSection/>
         </Screen>
     )

@@ -11,6 +11,7 @@ import { DownloadIcon } from '@resources/Icons'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
 import screenSizes from '@constants/AppConstants'
+import { AppRoutes } from '@constants/DrawerRoutes'
 
 const AboutMeSection = (): ReactNode => {
     const { width } = useWindowSize()
@@ -19,14 +20,19 @@ const AboutMeSection = (): ReactNode => {
     const handleResumeDownload = (): void => {
         const link = document.createElement('a')
         link.href = '/files/CV_Lilian_MARZET.pdf'
-        link.download = 'CV_Lilian_MARZET.pdf'
+        link.setAttribute('download', 'CV_Lilian_MARZET.pdf')
+        link.setAttribute('target', '_blank')
+        document.body.appendChild(link)
         link.click()
+        document.body.removeChild(link)
     }
 
     return (
         <Section
             label={translate('homeScreen.aboutMeSection.title')}
             id={'about-me-section'}
+            viewDetailsRoute={AppRoutes.profile.route}
+            viewDetailsButtonLabel={translate('buttons.viewDetails')}
         >
             <Card
                 padding={width < screenSizes.screenM ? 32 : 64}
@@ -38,7 +44,7 @@ const AboutMeSection = (): ReactNode => {
                 >
                     <Column
                         gap={32}
-                        alignItems={'start'}
+                        alignItems={width < screenSizes.screenS ? 'center' : 'start'}
                     >
                         <Column>
                             <Text

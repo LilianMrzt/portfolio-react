@@ -15,7 +15,6 @@ import Row from '@components/common/layout/Row'
 import ExternalLink from '@components/common/pressable/ExternalLink'
 import Image from '@components/common/resources/Image'
 import InfoBubble from '@components/common/InfoBubble'
-import Title from '@components/common/text/Title'
 import Text from '@components/common/text/Text'
 import { darkenColor } from '@utils/ColorUtils'
 
@@ -67,9 +66,9 @@ const ProjectDetailsSection = (): ReactNode => {
                             width={'100%'}
                             justifyContent={'space-between'}
                         >
-                            <Title>
+                            <SubTitle>
                                 {project.name}
-                            </Title>
+                            </SubTitle>
                             <Row>
                                 {project.githubLink && (
                                     <ExternalLink
@@ -160,10 +159,12 @@ const ProjectDetailsSection = (): ReactNode => {
                             </Text>
                         </Column>
                     </Column>
-                    <Row>
+                    <Row
+                        flexWrap={'wrap'}
+                    >
                         {project.appLink && (
                             <Button
-                                label={'View live demo'}
+                                label={translate('projectsDetailsScreen.viewLiveDemo')}
                                 icon={<ExternalLinkIcon/>}
                                 onClick={() => {
                                     window.open(project.appLink, '_blank')
@@ -172,7 +173,7 @@ const ProjectDetailsSection = (): ReactNode => {
                         )}
                         {project.githubLink && (
                             <Button
-                                label={'View source'}
+                                label={translate('projectsDetailsScreen.viewSource')}
                                 icon={<GithubIcon/>}
                                 onClick={() => {
                                     window.open(project.githubLink, '_blank')

@@ -7,15 +7,18 @@ import {
 } from '@interfaces/components/blocs/views/landing-screen/testimonials-section/components/CarouselItemProps'
 import Image from '@components/common/resources/Image'
 import { useTranslation } from '@hooks/TranslatonContext'
+import { useWindowSize } from '@hooks/useWindowSize'
+import screenSizes from '@constants/AppConstants'
 
 const CarouselItem: FC<CarouselItemProps> = ({
     currentItem
 }): ReactNode => {
+    const { width } = useWindowSize()
     const { translate } = useTranslation()
     return (
         <Column
             gap={32}
-            maxWidth={'70%'}
+            maxWidth={width < screenSizes.screenS ? '100%' : '70%'}
         >
             <Image
                 src={currentItem.image}
