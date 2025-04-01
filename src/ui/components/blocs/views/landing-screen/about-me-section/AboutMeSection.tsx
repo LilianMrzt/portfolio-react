@@ -11,6 +11,7 @@ import { DownloadIcon } from '@resources/Icons'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
 import screenSizes from '@constants/AppConstants'
+import { AppRoutes } from '@constants/DrawerRoutes'
 
 const AboutMeSection = (): ReactNode => {
     const { width } = useWindowSize()
@@ -30,6 +31,8 @@ const AboutMeSection = (): ReactNode => {
         <Section
             label={translate('homeScreen.aboutMeSection.title')}
             id={'about-me-section'}
+            viewDetailsRoute={AppRoutes.profile.route}
+            viewDetailsButtonLabel={translate('buttons.viewDetails')}
         >
             <Card
                 padding={width < screenSizes.screenM ? 32 : 64}

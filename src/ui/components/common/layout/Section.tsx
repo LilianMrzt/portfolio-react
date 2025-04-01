@@ -31,7 +31,7 @@ const Section: FC<SectionProps> = ({
             <Row
                 justifyContent={isSmallScreen ? 'start' : 'space-between'}
                 width={'100%'}
-                height={40}
+                minHeight={40}
             >
                 <SubTitle>
                     {label}

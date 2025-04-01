@@ -8,6 +8,7 @@ export interface RowProps {
     gap?: CSSProperties['gap']
     width?: CSSProperties['width']
     height?: CSSProperties['height']
+    minHeight?: CSSProperties['minHeight']
     flexWrap?: CSSProperties['flexWrap']
     padding?: CSSProperties['padding']
 }
