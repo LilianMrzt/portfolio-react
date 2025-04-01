@@ -9,12 +9,7 @@ interface ThemeContextProps {
     toggleTheme: () => void
 }
 
-// Crée le contexte
-const ThemeContext = createContext<ThemeContextProps>({
-    themeName: 'light',
-    theme: themes.light,
-    toggleTheme: () => {}
-})
+const ThemeContext = createContext<ThemeContextProps | undefined>(undefined)
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [themeName, setThemeName] = useState<ThemeType>('light')
@@ -44,5 +39,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     )
 }
 
-// Hook pour accéder au thème
-export const useTheme = (): ThemeContextProps => useContext(ThemeContext)
+export const useTheme = (): ThemeContextProps => {
+    const context = useContext(ThemeContext)
+    if (!context) {
+        throw new Error('useProjectsDetails must be used within an projectsDetailsProvider')
+    }
+    return context
+}
