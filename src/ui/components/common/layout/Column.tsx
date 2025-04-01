@@ -11,7 +11,9 @@ const Column: FC<ColumnProps> = ({
     justifyContent = 'center',
     alignItems = 'center',
     height = '100%',
-    id
+    id,
+    width,
+    alignSelf
 }): ReactNode => {
     return (
         <div
@@ -23,7 +25,9 @@ const Column: FC<ColumnProps> = ({
                 gap,
                 justifyContent,
                 alignItems,
-                height
+                height,
+                width,
+                alignSelf
             }}
         >
             {children}

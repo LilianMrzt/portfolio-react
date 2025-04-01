@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "startDate": "Octobre 2023",
+    "endDate": "Présent",
+    "position": "Développeur Fullstack",
+    "jobType": "CDI",
+    "company": "Perfluence",
+    "location": "94130 Nogent-sur-Marne, France",
+    "description": "Développement du logiciel de gestion du capital relationnel Powerscope V2 depuis zéro, dans le but de créer un projet répondant aux standards technologiques actuels. Rôle de chef de projet technique. Mise en place et organisation de la gestion du projet Powerscope sous forme de cycles Agile.",
+    "technologies": [
+      "ReactJS",
+      "NodeJS",
+      "Jira",
+      "Bitbucket"
+    ]
+  },
+  {
+    "id": 2,
+    "startDate": "Mars 2023",
+    "endDate": "Août 2023",
+    "position": "Stagiaire - Développeur Fullstack",
+    "jobType": "Stage",
+    "company": "Steamulo",
+    "location": "75009 Paris, France",
+    "description": "Participation à plusieurs projets digitaux, dont le développement d’une application mobile depuis zéro dans le cadre d’un projet de modernisation. Développement et maintenance de fonctionnalités pour le site Carrefour Location et le portail Guichet Unique de l’INPI. Réalisation d’un POC (proof of concept) mobile pour Citadium.",
+    "technologies": [
+      "ReactJS",
+      "React Native",
+      "PHP - Symfony",
+      "Twig",
+      "PostgreSQL",
+      "Jira",
+      "GitLab",
+      "Agile Scrum",
+      "Agile Kanban"
+    ]
+  },
+  {
+    "id": 3,
+    "startDate": "Mai 2022",
+    "endDate": "Août 2022",
+    "position": "Stagiaire - Développeur ROS",
+    "jobType": "Stage",
+    "company": "Capgemini Engineering",
+    "location": "31700 Blagnac, France",
+    "description": "Recherche et implémentation du SLAM (Simultaneous Localization and Mapping) dans le cadre d’un projet de R&D en robotique. Travaux réalisés en simulation avec ROS (Robot Operating System) en vue d’applications réelles.",
+    "technologies": [
+      "ROS"
+    ]
+  }
+]

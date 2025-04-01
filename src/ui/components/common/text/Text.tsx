@@ -10,7 +10,8 @@ const Text: FC<TextProps> = ({
     italic,
     textAlign = 'start',
     numberOfLines,
-    lineHeight
+    lineHeight,
+    fontWeight
 }): ReactNode => {
     return (
         <p
@@ -20,7 +21,8 @@ const Text: FC<TextProps> = ({
                 fontSize,
                 textAlign: textAlign as any,
                 WebkitLineClamp: numberOfLines,
-                lineHeight
+                lineHeight,
+                fontWeight
             }}
         >
             {children}

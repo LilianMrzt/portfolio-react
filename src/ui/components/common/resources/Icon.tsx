@@ -6,7 +6,9 @@ const Icon: FC<IconProps> = ({
     children,
     size = 24,
     color,
-    alignSelf
+    alignSelf,
+    backgroundColor,
+    padding
 }): ReactNode => {
     return (
         <div
@@ -17,7 +19,9 @@ const Icon: FC<IconProps> = ({
                 minWidth: size,
                 minHeight: size,
                 color,
-                alignSelf
+                alignSelf,
+                backgroundColor,
+                padding
             }}
         >
             {children}

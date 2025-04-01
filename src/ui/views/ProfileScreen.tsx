@@ -4,6 +4,8 @@ import SkillsSection from '@components/blocs/views/profile-screen/skills-section
 import { scrollToSection } from '@utils/Animationutils'
 import { useLocation, useNavigate } from 'react-router-dom'
 import LanguagesSection from '@components/blocs/views/profile-screen/languages-section/LanguagesSection'
+import ProfessionalExperienceSection
+    from '@components/blocs/views/profile-screen/professional-experience-section/ProfessionalExperienceSection'
 
 const ProfileScreen = (): ReactNode => {
     const location = useLocation()
@@ -22,6 +24,7 @@ const ProfileScreen = (): ReactNode => {
 
     return (
         <Screen>
+            <ProfessionalExperienceSection/>
             <LanguagesSection/>
             <SkillsSection/>
         </Screen>

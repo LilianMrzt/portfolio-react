@@ -56,6 +56,9 @@
         },
         "languagesSection": {
             "title": "Languages"
+        },
+        "professionalExperiencesSection": {
+            "title": "Professional experiences"
         }
     },
     "projectsScreen": {

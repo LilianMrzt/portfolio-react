@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "startDate": "October 2023",
+    "endDate": "Present",
+    "position": "Fullstack Developer",
+    "jobType": "Full-time",
+    "company": "Perfluence",
+    "location": "94130 Nogent-sur-Marne, France",
+    "description": "Development of Powerscope V2 relationship capital management software from scratch to develop a project that meets current technological standards, technical project manager. Implementation and organization of Powerscope project management in the form of Agile cycles.",
+    "technologies": [
+      "ReactJS",
+      "NodeJS",
+      "Jira",
+      "Bitbucket"
+    ]
+  },
+  {
+    "id": 2,
+    "startDate": "March 2023",
+    "endDate": "August 2023",
+    "position": "Fullstack Developer Intern",
+    "jobType": "Internship",
+    "company": "Steamulo",
+    "location": "75009 Paris, France",
+    "description": "Contributed to multiple digital projects including the development of a mobile application from scratch as part of a modernization initiative. Developed and maintained features for the Carrefour Location website and the French National Institute of Industrial Property (INPI) Guichet Unique portal. Created a mobile proof of concept (POC) for Citadium.",
+    "technologies": [
+      "ReactJS",
+      "React Native",
+      "PHP - Symfony",
+      "Twig",
+      "PostgreSQL",
+      "Jira",
+      "GitLab",
+      "Agile Scrum",
+      "Agile Kanban"
+    ]
+  },
+  {
+    "id": 3,
+    "startDate": "May 2022",
+    "endDate": "August 2022",
+    "position": "ROS Developer Intern",
+    "jobType": "Internship",
+    "company": "Capgemini Engineering",
+    "location": "31700 Blagnac, France",
+    "description": "Conducted research and implementation of SLAM (Simultaneous Localization and Mapping) within a robotics R&D project. Worked with ROS (Robot Operating System) in simulation environments in preparation for real-world applications.",
+    "technologies": [
+      "ROS"
+    ]
+  }
+]
