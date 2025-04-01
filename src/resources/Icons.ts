@@ -22,6 +22,9 @@ import { ReactComponent as LocationIcon } from '@resources/assets/LocationIcon.s
 import { ReactComponent as PhoneIcon } from '@resources/assets/PhoneIcon.svg'
 import { ReactComponent as ExternalLinkIcon } from '@resources/assets/ExternalLinkIcon.svg'
 import { ReactComponent as ArrowLeftIcon } from '@resources/assets/ArrowLeftIcon.svg'
+import { ReactComponent as FormationIcon } from '@resources/assets/FormationIcon.svg'
+import { ReactComponent as WorkIcon } from '@resources/assets/WorkIcon.svg'
+import { ReactComponent as LanguageIcon } from '@resources/assets/LanguageIcon.svg'
 
 export {
     MenuIcon,
@@ -47,5 +50,8 @@ export {
     LocationIcon,
     PhoneIcon,
     ExternalLinkIcon,
-    ArrowLeftIcon
+    ArrowLeftIcon,
+    FormationIcon,
+    WorkIcon,
+    LanguageIcon
 }
