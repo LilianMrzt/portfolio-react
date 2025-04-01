@@ -1,6 +1,6 @@
 import React, { type FC, type ReactNode } from 'react'
 import Text from '@components/common/text/Text'
-import theme from '@constants/Theme'
+
 import Column from '@components/common/layout/Column'
 import {
     type CarouselItemProps
@@ -9,12 +9,14 @@ import Image from '@components/common/resources/Image'
 import { useTranslation } from '@hooks/TranslatonContext'
 import { useWindowSize } from '@hooks/useWindowSize'
 import screenSizes from '@constants/ScreenSizes'
+import { useTheme } from '@hooks/ThemeContext'
 
 const CarouselItem: FC<CarouselItemProps> = ({
     currentItem
 }): ReactNode => {
     const { width } = useWindowSize()
     const { translate } = useTranslation()
+    const { theme } = useTheme()
     return (
         <Column
             gap={32}

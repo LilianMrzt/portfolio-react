@@ -6,14 +6,16 @@ import Text from '@components/common/text/Text'
 import {
     type ContactInformationCardProps
 } from '@interfaces/components/blocs/views/landing-screen/contact-me-section/components/ContactInformationCardProps'
-import theme from '@constants/Theme'
+
 import { copyToClipboard } from '@utils/TextUtils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const ContactInformationCard: FC<ContactInformationCardProps> = ({
     icon,
     label,
     content
 }): ReactNode => {
+    const { theme } = useTheme()
     return (
         <Row>
             <Button

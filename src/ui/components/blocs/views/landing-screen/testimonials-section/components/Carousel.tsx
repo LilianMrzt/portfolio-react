@@ -7,14 +7,16 @@ import Row from '@components/common/layout/Row'
 import Button from '@components/common/pressable/Button'
 import './carousel.css'
 import { ChevronLeftIcon, ChevronRightIcon, QuoteIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
+
 import CarouselDot from '@components/blocs/views/landing-screen/testimonials-section/components/CarouselDot'
 import CarouselItem from '@components/blocs/views/landing-screen/testimonials-section/components/CarouselItem'
 import Icon from '@components/common/resources/Icon'
+import { useTheme } from '@hooks/ThemeContext'
 
 const Carousel: FC<CarouselProps> = ({
     testimonials
 }): ReactNode => {
+    const { theme } = useTheme()
     const [currentIndex, setCurrentIndex] = useState(0)
     const [isAutoPlaying, setIsAutoPlaying] = useState(true)
     const testimonialRef = useRef<HTMLDivElement | null>(null)

@@ -4,24 +4,29 @@ import {
     type InfoBubbleProps
 } from '@interfaces/components/blocs/views/landing-screen/projects-section/components/InfoBubbleProps'
 import './info-bubble.css'
-import theme from '@constants/Theme'
+import { useTheme } from '@hooks/ThemeContext'
 
 const InfoBubble: FC<InfoBubbleProps> = ({
     label,
-    backgroundColor = theme.surfaceSecondary,
-    color = theme.text,
+    backgroundColor,
+    color,
     blur,
     fontSize = 15
 }): ReactNode => {
+    const { theme } = useTheme()
+
+    const colorValue = color ?? theme.text
+    const backgroundColorValue = backgroundColor ?? theme.surfaceSecondary
+
     return (
         <div
             className={`info-bubble ${blur && 'blur'}`}
             style={{
-                backgroundColor
+                backgroundColor: backgroundColorValue
             }}
         >
             <Text
-                color={color}
+                color={colorValue}
                 fontSize={fontSize}
             >
                 {label}

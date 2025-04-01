@@ -4,15 +4,17 @@ import Icon from '@components/common/resources/Icon'
 import Text from '@components/common/text/Text'
 import './drawer-route-item.css'
 import { Link, useLocation } from 'react-router-dom'
-import theme from '@constants/Theme'
+
 import { type DrawerRouteItemProps } from '@interfaces/components/blocs/drawer/DrawerRouteItemProps'
 import { useTranslation } from '@hooks/TranslatonContext'
 import { darkenColor } from '@utils/ColorUtils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const DrawerRouteItem: FC<DrawerRouteItemProps> = ({
     route,
     onClose
 }): ReactNode => {
+    const { theme } = useTheme()
     const location = useLocation()
     const { translate } = useTranslation()
 

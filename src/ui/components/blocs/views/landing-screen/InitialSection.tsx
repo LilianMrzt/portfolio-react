@@ -5,15 +5,16 @@ import Title from '@components/common/text/Title'
 import SubTitle from '@components/common/text/SubTitle'
 import Button from '@components/common/pressable/Button'
 import { ChevronDownIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
 import screenSizes from '@constants/ScreenSizes'
 import { scrollToSection } from '@utils/Animationutils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const InitialSection = (): ReactNode => {
     const { width } = useWindowSize()
     const { translate } = useTranslation()
+    const { theme } = useTheme()
 
     return (
         <Column

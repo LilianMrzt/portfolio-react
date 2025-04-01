@@ -1,6 +1,6 @@
 .button {
     border: none;
     cursor: pointer;
-    transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+    transition: hover ease-in-out 0.15s, background-color ease-in-out 0.15s;
     z-index: 2;
 }

@@ -12,16 +12,18 @@ import InfoBubble from '@components/common/InfoBubble'
 import Row from '@components/common/layout/Row'
 import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon, ExternalLinkIcon, GithubIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
+
 import { useTranslation } from '@hooks/TranslatonContext'
 import ExternalLink from '@components/common/pressable/ExternalLink'
 import { useNavigate } from 'react-router-dom'
 import { AppRoutes } from '@constants/DrawerRoutes'
+import { useTheme } from '@hooks/ThemeContext'
 
 const ProjectsScreenProjectCard: FC<ProjectsScreenProjectCardProps> = ({
     project
 }): ReactNode => {
     const { translate } = useTranslation()
+    const { theme } = useTheme()
     const navigate = useNavigate()
 
     return (

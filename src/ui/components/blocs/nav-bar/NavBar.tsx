@@ -3,7 +3,7 @@ import Row from '@components/common/layout/Row'
 import Icon from '@components/common/resources/Icon'
 import { CodeIcon, MenuIcon } from '@resources/Icons'
 import './nav-bar.css'
-import theme from '@constants/Theme'
+
 import Button from '@components/common/pressable/Button'
 import { type NavBarProps } from '@interfaces/components/blocs/nav-bar/NavBarProps'
 import { Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ import ThemeConstants from '@constants/ThemeConstants'
 const NavBar: FC<NavBarProps> = ({
     onMenuClick
 }): ReactNode => {
-    const { themeType, toggleTheme } = useTheme()
+    const { toggleTheme, themeName, theme } = useTheme()
     return (
         <nav
             className={'nav-bar'}
@@ -48,7 +48,7 @@ const NavBar: FC<NavBarProps> = ({
             </Link>
             <Button
                 onClick={toggleTheme}
-                label={themeType === ThemeConstants.light ? '☀️ Light Mode' : '🌙 Dark Mode'}
+                label={themeName === ThemeConstants.light ? '☀️ Light Mode' : '🌙 Dark Mode'}
             />
 
         </nav>

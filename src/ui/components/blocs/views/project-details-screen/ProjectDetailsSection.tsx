@@ -2,7 +2,7 @@ import React, { type ReactNode } from 'react'
 import Column from '@components/common/layout/Column'
 import Button from '@components/common/pressable/Button'
 import { ArrowLeftIcon, ExternalLinkIcon, GithubIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
+
 import Card from '@components/common/Card'
 import SubTitle from '@components/common/text/SubTitle'
 import frProjects from '@fixtures/projects/fr.json'
@@ -17,9 +17,11 @@ import Image from '@components/common/resources/Image'
 import InfoBubble from '@components/common/InfoBubble'
 import Text from '@components/common/text/Text'
 import { darkenColor } from '@utils/ColorUtils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const ProjectDetailsSection = (): ReactNode => {
     const { language, translate } = useTranslation()
+    const { theme } = useTheme()
     const navigate = useNavigate()
 
     const projects = language === 'fr' ? frProjects : enProjects

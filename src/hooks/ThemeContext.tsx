@@ -1,63 +1,43 @@
-import React, { createContext, type FC, type ReactNode, useContext, useEffect, useState } from 'react'
-import themeConstants from '@constants/ThemeConstants'
+import React, { createContext, useContext, useState, useEffect } from 'react'
+import { themes } from '@constants/theme/Themes'
 
-interface ThemeContextType {
-    themeType: string
+type ThemeType = 'light' | 'dark'
+
+interface ThemeContextProps {
+    themeName: ThemeType
+    theme: typeof themes.light
     toggleTheme: () => void
 }
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
+// Crée le contexte
+const ThemeContext = createContext<ThemeContextProps>({
+    themeName: 'light',
+    theme: themes.light,
+    toggleTheme: () => {}
+})
 
-export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
-    const [themeType, setThemeType] = useState(themeConstants.light)
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+    const [themeName, setThemeName] = useState<ThemeType>('light')
+
+    const theme = themes[themeName]
 
     const toggleTheme = (): void => {
-        const newTheme = themeType === themeConstants.dark ? themeConstants.light : themeConstants.dark
-        setThemeType(newTheme)
-        localStorage.setItem('data-theme', newTheme)
+        setThemeName((prev) => (prev === 'light' ? 'dark' : 'light'))
     }
 
     useEffect(() => {
-        const localTheme = localStorage.getItem('data-theme')
-        if (localTheme) {
-            setThemeType(localTheme)
-        }
-    }, [])
-
-    useEffect(() => {
-        document.body.setAttribute('data-theme', themeType)
-    }, [themeType])
+        const root = document.documentElement
+        Object.entries(theme).forEach(([key, value]) => {
+            root.style.setProperty(`--${key}`, value)
+        })
+    }, [theme])
 
     return (
-        <ThemeContext.Provider
-            value={{
-                themeType,
-                toggleTheme
-            }}
-        >
+        <ThemeContext.Provider value={{ themeName, theme, toggleTheme }}>
             {children}
         </ThemeContext.Provider>
     )
 }
-export const useTheme = (): ThemeContextType => {
-    const context = useContext(ThemeContext)
-    if (!context) {
-        throw new Error('useTheme must be used within a ThemeProvider')
-    }
-    return context
-}
 
-/*
-export const useThemeValues = (): any => {
-    const [, setTick] = useState(0)
-
-    // Trigger re-render on theme change
-    useEffect(() => {
-        const observer = new MutationObserver(() => { setTick(t => t + 1) })
-        observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
-        return () => { observer.disconnect() }
-    }, [])
-
-    return getTheme()
-}
-*/
+// Hook pour accéder au thème
+export const useTheme = (): ThemeContextProps => useContext(ThemeContext)

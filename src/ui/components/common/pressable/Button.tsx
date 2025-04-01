@@ -5,7 +5,7 @@ import Text from '@components/common/text/Text'
 import './button.css'
 import { type ButtonProps } from '@interfaces/components/common/pressable/ButtonProps'
 import { darkenColor } from '@utils/ColorUtils'
-import theme from '@constants/Theme'
+import { useTheme } from '@hooks/ThemeContext'
 
 const Button: FC<ButtonProps> = ({
     onClick,
@@ -19,6 +19,7 @@ const Button: FC<ButtonProps> = ({
     padding = '12px 24px'
 }): ReactNode => {
     const [isHovered, setIsHovered] = useState(false)
+    const { theme } = useTheme()
 
     const backgroundColorValue = backgroundColor ?? theme.primary
     const colorValue = color ?? theme.onPrimary

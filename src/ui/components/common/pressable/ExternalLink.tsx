@@ -2,15 +2,18 @@ import React, { type FC, type ReactNode, useState } from 'react'
 import { type ExternalLinkProps } from '@interfaces/components/common/pressable/ExternalLinkProps'
 import Icon from '@components/common/resources/Icon'
 import './external-link.css'
-import theme from '@constants/Theme'
+import { useTheme } from '@hooks/ThemeContext'
 
 const ExternalLink: FC<ExternalLinkProps> = ({
     children,
     href,
     hoverColor,
-    color = theme.text
+    color
 }): ReactNode => {
     const [isHovered, setIsHovered] = useState(false)
+    const { theme } = useTheme()
+
+    const colorValue = color ?? theme.text
 
     const handleMouseEnter = (): void => {
         setIsHovered(true)
@@ -29,7 +32,7 @@ const ExternalLink: FC<ExternalLinkProps> = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             style={{
-                color: isHovered && hoverColor ? hoverColor : color
+                color: isHovered && hoverColor ? hoverColor : colorValue
             }}
         >
             <Icon
