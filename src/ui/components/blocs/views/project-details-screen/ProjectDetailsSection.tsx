@@ -2,7 +2,7 @@ import React, { type ReactNode } from 'react'
 import Column from '@components/common/layout/Column'
 import Button from '@components/common/pressable/Button'
 import { ArrowLeftIcon, ExternalLinkIcon, GithubIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
+
 import Card from '@components/common/Card'
 import SubTitle from '@components/common/text/SubTitle'
 import frProjects from '@fixtures/projects/fr.json'
@@ -16,10 +16,12 @@ import ExternalLink from '@components/common/pressable/ExternalLink'
 import Image from '@components/common/resources/Image'
 import InfoBubble from '@components/common/InfoBubble'
 import Text from '@components/common/text/Text'
-import { darkenColor } from '@utils/ColorUtils'
+import { darkenOrLightenColor } from '@utils/ColorUtils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const ProjectDetailsSection = (): ReactNode => {
     const { language, translate } = useTranslation()
+    const { theme, themeName } = useTheme()
     const navigate = useNavigate()
 
     const projects = language === 'fr' ? frProjects : enProjects
@@ -117,7 +119,7 @@ const ProjectDetailsSection = (): ReactNode => {
                                 {translate('projectsDetailsScreen.projectOverview')}
                             </SubTitle>
                             <Text
-                                color={darkenColor(theme.textSecondary)}
+                                color={darkenOrLightenColor(theme.textSecondary, themeName)}
                                 lineHeight={1.5}
                             >
                                 {project.overview}
@@ -135,7 +137,7 @@ const ProjectDetailsSection = (): ReactNode => {
                             { project.features.map((feature, index) => (
                                 <Text
                                     key={index}
-                                    color={darkenColor(theme.textSecondary)}
+                                    color={darkenOrLightenColor(theme.textSecondary, themeName)}
                                     lineHeight={1.5}
                                 >
                                     {`• ${feature}`}
@@ -152,7 +154,7 @@ const ProjectDetailsSection = (): ReactNode => {
                                 {translate('projectsDetailsScreen.technicalDetails')}
                             </SubTitle>
                             <Text
-                                color={darkenColor(theme.textSecondary)}
+                                color={darkenOrLightenColor(theme.textSecondary, themeName)}
                                 lineHeight={1.5}
                             >
                                 {project.technicalDetails}

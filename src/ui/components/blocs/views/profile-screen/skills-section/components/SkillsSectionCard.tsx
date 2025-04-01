@@ -1,7 +1,7 @@
 import React, { type FC, type ReactNode, useState } from 'react'
 import Row from '@components/common/layout/Row'
 import Icon from '@components/common/resources/Icon'
-import theme from '@constants/Theme'
+
 import SubTitle from '@components/common/text/SubTitle'
 import Grid from '@components/common/layout/Grid'
 import Card from '@components/common/Card'
@@ -11,15 +11,17 @@ import {
 import SkillsCard from '@components/blocs/views/profile-screen/skills-section/components/SkillsCard'
 import Button from '@components/common/pressable/Button'
 import { useWindowSize } from '@hooks/useWindowSize'
-import AppConstants from '@constants/AppConstants'
+import AppConstants from '@constants/ScreenSizes'
 import { AddIcon, SubstractIcon } from '@resources/Icons'
 import { useTranslation } from '@hooks/TranslatonContext'
+import { useTheme } from '@hooks/ThemeContext'
 
 const SkillsSectionCard: FC<SkillsSectionCardProps> = ({
     skills,
     title,
     icon
 }): ReactNode => {
+    const { theme } = useTheme()
     const [showAll, setShowAll] = useState(false)
     const { width } = useWindowSize()
     const { translate } = useTranslation()

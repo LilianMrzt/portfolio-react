@@ -2,11 +2,13 @@ import React, { type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
 import Text from '@components/common/text/Text'
 import './footer.css'
-import theme from '@constants/Theme'
+
 import { useTranslation } from '@hooks/TranslatonContext'
+import { useTheme } from '@hooks/ThemeContext'
 
 const Footer = (): ReactNode => {
     const { translate } = useTranslation()
+    const { theme } = useTheme()
     return (
         <footer
             className={'footer'}

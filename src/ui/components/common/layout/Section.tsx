@@ -3,12 +3,13 @@ import Column from '@components/common/layout/Column'
 import { type SectionProps } from '@interfaces/components/common/layout/SectionProps'
 import SubTitle from '@components/common/text/SubTitle'
 import { useWindowSize } from '@hooks/useWindowSize'
-import screenSizes from '@constants/AppConstants'
 import Row from '@components/common/layout/Row'
 import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
+
 import { useNavigate } from 'react-router-dom'
+import screenSizes from '@constants/ScreenSizes'
+import { useTheme } from '@hooks/ThemeContext'
 
 const Section: FC<SectionProps> = ({
     label,
@@ -19,6 +20,7 @@ const Section: FC<SectionProps> = ({
     viewDetailsButtonLabel
 }): ReactNode => {
     const { width } = useWindowSize()
+    const { theme } = useTheme()
     const navigate = useNavigate()
     const isSmallScreen = width < screenSizes.screenS
 

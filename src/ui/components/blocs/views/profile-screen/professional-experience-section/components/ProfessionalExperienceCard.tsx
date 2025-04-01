@@ -7,18 +7,20 @@ import {
     type ProfessionalExperienceCardProps
 } from '@interfaces/components/blocs/views/profile-screen/professional-experiences-section/components/ProfessionalExperienceCardProps'
 import Text from '@components/common/text/Text'
-import theme from '@constants/Theme'
+
 import InfoBubble from '@components/common/InfoBubble'
 import VerticalSeparator
     from '@components/blocs/views/profile-screen/professional-experience-section/components/VerticalSeparator'
 import { useWindowSize } from '@hooks/useWindowSize'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 import './professional-experience-card.css'
+import { useTheme } from '@hooks/ThemeContext'
 
 const ProfessionalExperienceCard: FC<ProfessionalExperienceCardProps> = ({
     professionalExperience
 }): ReactNode => {
     const { width } = useWindowSize()
+    const { theme } = useTheme()
     return (
         <Row
             width={'100%'}

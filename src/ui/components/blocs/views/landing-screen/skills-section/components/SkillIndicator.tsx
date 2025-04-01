@@ -5,11 +5,12 @@ import {
 } from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillIndicatorProps'
 import './skill-indicator.css'
 import Row from '@components/common/layout/Row'
-import theme from '@constants/Theme'
+import { useTheme } from '@hooks/ThemeContext'
 
 const SkillIndicator: FC<SkillIndicatorProps> = ({
     label
 }): ReactNode => {
+    const { theme } = useTheme()
     return (
         <Row
             className={'skill-indicator'}

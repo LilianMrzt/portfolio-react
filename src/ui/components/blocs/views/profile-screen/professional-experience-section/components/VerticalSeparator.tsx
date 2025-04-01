@@ -3,17 +3,18 @@ import './vertical-separator.css'
 import {
     type VerticalSeparatorProps
 } from '@interfaces/components/blocs/views/profile-screen/professional-experiences-section/components/VerticalSeparatorProps'
-import { darkenColor } from '@utils/ColorUtils'
-import theme from '@constants/Theme'
+import { darkenOrLightenColor } from '@utils/ColorUtils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const VerticalSeparator: FC<VerticalSeparatorProps> = ({
     className
 }): ReactNode => {
+    const { theme, themeName } = useTheme()
     return (
         <div
             className={`vertical-separator ${className}`}
             style={{
-                backgroundColor: darkenColor(theme.surfaceSecondary)
+                backgroundColor: darkenOrLightenColor(theme.surfaceSecondary, themeName)
             }}
         />
     )

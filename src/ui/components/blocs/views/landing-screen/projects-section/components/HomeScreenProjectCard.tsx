@@ -8,7 +8,7 @@ import {
 import Column from '@components/common/layout/Column'
 import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon } from '@resources/Icons'
-import theme from '@constants/Theme'
+
 import './home-screen-project-card.css'
 import SubTitle from '@components/common/text/SubTitle'
 import Row from '@components/common/layout/Row'
@@ -17,10 +17,12 @@ import InfoBubble
 import { useTranslation } from '@hooks/TranslatonContext'
 import { AppRoutes } from '@constants/DrawerRoutes'
 import { useNavigate } from 'react-router-dom'
+import { useTheme } from '@hooks/ThemeContext'
 
 const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
     project
 }): ReactNode => {
+    const { theme } = useTheme()
     const { translate } = useTranslation()
     const navigate = useNavigate()
     const renderedTechnologies = project.technologies.slice(0, 3)

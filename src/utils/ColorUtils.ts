@@ -1,3 +1,5 @@
+import type themeConstants from '@constants/ThemeConstants'
+
 /**
  * Convertir une couleur sous format hex en format rgb
  * @param hex
@@ -23,18 +25,25 @@ export const hexToRgb = (hex: string): { r: number, g: number, b: number } | nul
 /**
  * Fonction pour assombrir une couleur rgb
  * @param hex
+ * @param mode
  */
-export const darkenColor = (
-    hex: string
+export const darkenOrLightenColor = (
+    hex: string,
+    mode: keyof typeof themeConstants
 ): string => {
     const rgbHex = hexToRgb(hex)
     const percentage = 5
-    const darken = (channel: number): number =>
-        Math.max(0, Math.min(255, channel - (channel * percentage) / 100))
+    if (!rgbHex) return hex // fail-safe
 
-    const newR = Math.round(darken(rgbHex?.r ?? 0))
-    const newG = Math.round(darken(rgbHex?.g ?? 0))
-    const newB = Math.round(darken(rgbHex?.b ?? 0))
+    const adjust = (channel: number): number => {
+        return mode === 'light'
+            ? Math.max(0, Math.min(255, channel - (channel * percentage) / 100))
+            : Math.max(0, Math.min(255, channel + ((255 - channel) * percentage) / 100))
+    }
+
+    const newR = Math.round(adjust(rgbHex?.r ?? 0))
+    const newG = Math.round(adjust(rgbHex?.g ?? 0))
+    const newB = Math.round(adjust(rgbHex?.b ?? 0))
 
     return `rgb(${newR}, ${newG}, ${newB})`
 }

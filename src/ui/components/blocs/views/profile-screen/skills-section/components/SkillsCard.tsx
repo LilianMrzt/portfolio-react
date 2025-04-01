@@ -10,11 +10,12 @@ import {
 } from '@interfaces/components/blocs/views/profile-screen/skills-section/components/SkillsCardProps'
 import SkillsMasteryIndicator
     from '@components/blocs/views/profile-screen/skills-section/components/SkillsMasteryIndicator'
-import theme from '@constants/Theme'
+import { useTheme } from '@hooks/ThemeContext'
 
 const SkillsCard: FC<SkillsCardProps> = ({
     skill
 }): ReactNode => {
+    const { theme } = useTheme()
     return (
         <Column
             className={'skills-card'}

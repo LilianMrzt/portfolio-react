@@ -8,33 +8,37 @@ body {
   background-color: var(--surface);
 }
 
+body.theme-changing * {
+  transition: none !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 :root {
-  --primary: #4F46E5;
-  --primary-opacity: #EEF2FF;
-  --on-primary: #FFFFFF;
-  --secondary: #46b5e5;
-  --tertiary: #E0E7FF;
-  --background: #F9FAFB;
-  --on-background: #4B5663;
-  --surface: #FFFFFF;
-  --surface-secondary: #F3F4F6;
-  --text: #111727;
-  --text-secondary: #7C828E;
-  --outline: #DBDAD8;
+  --primary: '';
+  --primary-opacity: '';
+  --on-primary: '';
+  --secondary: '';
+  --tertiary: '';
+  --background: '';
+  --on-background: '';
+  --surface:'';
+  --surface-secondary: '';
+  --text: '';
+  --text-secondary:'';
+  --outline: '';
 
-  --green: #DFF6E0;
-  --on-green: #1D7B2E;
-  --blue: #DBE9FE;
-  --on-blue: #1D40B0;
-  --yellow: #FEF9C3;
-  --on-yellow: #916025;
-  --orange: #FEE7DB;
-  --on-orange: #B0581D;
+  --green: '';
+  --on-green:'';
+  --blue: '';
+  --on-blue:'';
+  --yellow: '';
+  --on-yellow: '';
+  --orange: '';
+  --on-orange: '';
 
   --screen-s: 800;
   --screen-m: 1024;

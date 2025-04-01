@@ -3,22 +3,26 @@ import Row from '@components/common/layout/Row'
 import Icon from '@components/common/resources/Icon'
 import Text from '@components/common/text/Text'
 import './button.css'
-import theme from '@constants/Theme'
 import { type ButtonProps } from '@interfaces/components/common/pressable/ButtonProps'
-import { darkenColor } from '@utils/ColorUtils'
+import { darkenOrLightenColor } from '@utils/ColorUtils'
+import { useTheme } from '@hooks/ThemeContext'
 
 const Button: FC<ButtonProps> = ({
     onClick,
     label,
     icon,
     iconEnd,
-    backgroundColor = theme.primary,
-    color = theme.onPrimary,
+    backgroundColor,
+    color,
     borderColor = 'transparent',
     hoverColor,
     padding = '12px 24px'
 }): ReactNode => {
     const [isHovered, setIsHovered] = useState(false)
+    const { theme, themeName } = useTheme()
+
+    const backgroundColorValue = backgroundColor ?? theme.primary
+    const colorValue = color ?? theme.onPrimary
 
     const handleMouseEnter = (): void => {
         setIsHovered(true)
@@ -33,7 +37,7 @@ const Button: FC<ButtonProps> = ({
             onClick={onClick}
             className={'button'}
             style={{
-                backgroundColor: isHovered ? darkenColor(backgroundColor) : backgroundColor,
+                backgroundColor: isHovered ? darkenOrLightenColor(backgroundColorValue, themeName) : backgroundColorValue,
                 padding,
                 borderRadius: icon && !label ? '50%' : 8,
                 border: `1px solid ${borderColor}`
@@ -44,21 +48,21 @@ const Button: FC<ButtonProps> = ({
             <Row>
                 {icon && (
                     <Icon
-                        color={isHovered && hoverColor ? hoverColor : color}
+                        color={isHovered && hoverColor ? hoverColor : colorValue}
                     >
                         {icon}
                     </Icon>
                 )}
                 {label && (
                     <Text
-                        color={isHovered && hoverColor ? hoverColor : color}
+                        color={isHovered && hoverColor ? hoverColor : colorValue}
                     >
                         {label}
                     </Text>
                 )}
                 {iconEnd && (
                     <Icon
-                        color={isHovered && hoverColor ? hoverColor : color}
+                        color={isHovered && hoverColor ? hoverColor : colorValue}
                     >
                         {iconEnd}
                     </Icon>

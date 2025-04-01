@@ -5,19 +5,21 @@ import {
     type FormationCardProps
 } from '@interfaces/components/blocs/views/profile-screen/formations-section/components/FormationCardProps'
 import Icon from '@components/common/resources/Icon'
-import theme from '@constants/Theme'
+
 import { FormationIcon } from '@resources/Icons'
 import VerticalSeparator
     from '@components/blocs/views/profile-screen/professional-experience-section/components/VerticalSeparator'
 import Column from '@components/common/layout/Column'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 import { useWindowSize } from '@hooks/useWindowSize'
 import './formation-card.css'
+import { useTheme } from '@hooks/ThemeContext'
 
 const FormationCard: FC<FormationCardProps> = ({
     formation
 }): ReactNode => {
     const { width } = useWindowSize()
+    const { theme } = useTheme()
     return (
         <Row
             width={'100%'}

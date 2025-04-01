@@ -4,7 +4,7 @@ import './drawer.css'
 import Row from '@components/common/layout/Row'
 import { CloseIcon, GithubIcon, LinkedinIcon, MailIcon } from '@resources/Icons'
 import Button from '@components/common/pressable/Button'
-import theme from '@constants/Theme'
+
 import { DrawerRoutes } from '@constants/DrawerRoutes'
 import DrawerRouteItem from '@components/blocs/drawer/DrawerRouteItem'
 import Column from '@components/common/layout/Column'
@@ -13,11 +13,13 @@ import Title from '@components/common/text/Title'
 import Text from '@components/common/text/Text'
 import Image from '@components/common/resources/Image'
 import { useTranslation } from '@hooks/TranslatonContext'
+import { useTheme } from '@hooks/ThemeContext'
 
 const Drawer: FC<DrawerProps> = ({
     isDrawerOpen,
     onClose
 }): ReactNode => {
+    const { theme } = useTheme()
     const { translate } = useTranslation()
     return (
         <>
