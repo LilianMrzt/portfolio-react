@@ -35,6 +35,7 @@ const ProfessionalExperienceCard: FC<ProfessionalExperienceCardProps> = ({
                     backgroundColor={theme.blue}
                     padding={8}
                     size={16}
+                    round
                 >
                     <WorkIcon/>
                 </Icon>

@@ -29,7 +29,7 @@ const Section: FC<SectionProps> = ({
             id={id}
         >
             <Row
-                justifyContent={'space-between'}
+                justifyContent={isSmallScreen ? 'start' : 'space-between'}
                 width={'100%'}
                 height={40}
             >

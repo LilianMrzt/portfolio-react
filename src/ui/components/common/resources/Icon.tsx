@@ -8,7 +8,8 @@ const Icon: FC<IconProps> = ({
     color,
     alignSelf,
     backgroundColor,
-    padding
+    padding,
+    round
 }): ReactNode => {
     return (
         <div
@@ -21,7 +22,8 @@ const Icon: FC<IconProps> = ({
                 color,
                 alignSelf,
                 backgroundColor,
-                padding
+                padding,
+                borderRadius: round ? '50%' : 'none'
             }}
         >
             {children}

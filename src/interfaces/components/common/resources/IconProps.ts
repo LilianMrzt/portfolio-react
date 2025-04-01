@@ -7,4 +7,5 @@ export interface IconProps {
     backgroundColor?: CSSProperties['backgroundColor']
     padding?: CSSProperties['padding']
     alignSelf?: CSSProperties['alignSelf']
+    round?: boolean
 }
