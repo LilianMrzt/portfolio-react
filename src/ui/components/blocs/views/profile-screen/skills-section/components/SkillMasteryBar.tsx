@@ -1,6 +1,6 @@
 import React, { type FC, type ReactNode } from 'react'
 import './skill-mastery-bar.css'
-import { darkenColor } from '@utils/ColorUtils'
+import { darkenOrLightenColor } from '@utils/ColorUtils'
 
 import {
     type SkillMasteryBarProps
@@ -10,13 +10,13 @@ import { useTheme } from '@hooks/ThemeContext'
 const SkillMasteryBar: FC<SkillMasteryBarProps> = ({
     mastery
 }): ReactNode => {
-    const { theme } = useTheme()
+    const { theme, themeName } = useTheme()
     const barPercentage = mastery / 10
     return (
         <div
             className={'skill-mastery-bar'}
             style={{
-                backgroundColor: darkenColor(theme.background)
+                backgroundColor: darkenOrLightenColor(theme.background, themeName)
             }}
         >
             <div

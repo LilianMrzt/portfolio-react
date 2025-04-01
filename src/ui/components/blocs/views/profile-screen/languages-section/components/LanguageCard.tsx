@@ -10,14 +10,14 @@ import {
     type LanguageCardProps
 } from '@interfaces/components/blocs/views/profile-screen/language-section/components/LanguageCardProps'
 import SubTitle from '@components/common/text/SubTitle'
-import { darkenColor } from '@utils/ColorUtils'
+import { darkenOrLightenColor } from '@utils/ColorUtils'
 import InfoBubble from '@components/common/InfoBubble'
 import { useTheme } from '@hooks/ThemeContext'
 
 const LanguageCard: FC<LanguageCardProps> = ({
     language
 }): ReactNode => {
-    const { theme } = useTheme()
+    const { theme, themeName } = useTheme()
     return (
         <Column
             alignItems={'start'}
@@ -58,7 +58,7 @@ const LanguageCard: FC<LanguageCardProps> = ({
                     {language.certifications.map((certification, index) => (
                         <Text
                             key={index}
-                            color={darkenColor(theme.textSecondary)}
+                            color={darkenOrLightenColor(theme.textSecondary, themeName)}
                         >
                             {certification}
                         </Text>
