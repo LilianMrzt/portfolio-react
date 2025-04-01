@@ -53,6 +53,9 @@
             "intermediate": "Intermédiaire",
             "advanced": "Avancé",
             "expert": "Expert"
+        },
+        "languagesSection": {
+            "title": "Langues"
         }
     },
     "projectsScreen": {
