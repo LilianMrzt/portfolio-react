@@ -17,50 +17,53 @@ const LanguageCard: FC<LanguageCardProps> = ({
     language
 }): ReactNode => {
     return (
-        <Row
+        <Column
             alignItems={'start'}
             width={'100%'}
-            justifyContent={'space-between'}
             className={'language-card'}
         >
-            <Row>
-                <Icon
-                    color={theme.primary}
-                    alignSelf={'start'}
+            <Row
+                width={'100%'}
+                justifyContent={'space-between'}
+            >
+                <Row
+                    width={'fit-content'}
                 >
-                    <LanguageIcon/>
-                </Icon>
-                <Column
-                    alignItems={'start'}
-                >
+                    <Icon
+                        color={theme.primary}
+                        alignSelf={'start'}
+                    >
+                        <LanguageIcon/>
+                    </Icon>
                     <SubTitle
                         fontSize={18}
                     >
                         {language.language}
                     </SubTitle>
-                    {language.certifications.length > 0 && (
-                        <Column
-                            gap={8}
-                            alignItems={'start'}
-                        >
-                            {language.certifications.map((certification, index) => (
-                                <Text
-                                    key={index}
-                                    color={darkenColor(theme.textSecondary)}
-                                >
-                                    {certification}
-                                </Text>
-                            ))}
-                        </Column>
-                    )}
-                </Column>
+                </Row>
+                <InfoBubble
+                    label={language.level}
+                    color={theme.onBlue}
+                    backgroundColor={theme.blue}
+                />
             </Row>
-            <InfoBubble
-                label={language.level}
-                color={theme.onBlue}
-                backgroundColor={theme.blue}
-            />
-        </Row>
+            {language.certifications.length > 0 && (
+                <Column
+                    gap={8}
+                    alignItems={'start'}
+                    padding={'0 0 0 44px'}
+                >
+                    {language.certifications.map((certification, index) => (
+                        <Text
+                            key={index}
+                            color={darkenColor(theme.textSecondary)}
+                        >
+                            {certification}
+                        </Text>
+                    ))}
+                </Column>
+            )}
+        </Column>
     )
 }
 
