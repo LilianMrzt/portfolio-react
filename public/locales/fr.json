@@ -59,6 +59,9 @@
         },
         "professionalExperiencesSection": {
             "title": "Experiences professionelles"
+        },
+        "formationsSection": {
+            "title": "Formations"
         }
     },
     "projectsScreen": {
