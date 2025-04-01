@@ -8,6 +8,10 @@ body {
   background-color: var(--surface);
 }
 
+body.theme-changing * {
+  transition: none !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

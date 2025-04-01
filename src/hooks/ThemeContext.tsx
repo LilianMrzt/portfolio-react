@@ -22,6 +22,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const theme = themes[themeName]
 
     const toggleTheme = (): void => {
+        document.body.classList.add('theme-changing')
+        setTimeout(() => {
+            document.body.classList.remove('theme-changing')
+        }, 50)
+
         setThemeName((prev) => (prev === 'light' ? 'dark' : 'light'))
     }
 

@@ -1,7 +1,7 @@
 import React, { type FC, type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
 import Icon from '@components/common/resources/Icon'
-import { CodeIcon, MenuIcon } from '@resources/Icons'
+import { CodeIcon, MenuIcon, MoonIcon, SunIcon } from '@resources/Icons'
 import './nav-bar.css'
 
 import Button from '@components/common/pressable/Button'
@@ -20,35 +20,40 @@ const NavBar: FC<NavBarProps> = ({
         <nav
             className={'nav-bar'}
         >
-            <Button
-                onClick={onMenuClick}
-                icon={<MenuIcon/>}
-                color={theme.text}
-                backgroundColor={theme.surface}
-                hoverColor={theme.primary}
-                padding={8}
-            />
-            <Link
-                to={AppRoutes.home.route ?? ''}
-                className={'nav-bar-link'}
-            >
-                <Row
-                    justifyContent={'start'}
-                    gap={8}
+            <Row>
+                <Button
+                    onClick={onMenuClick}
+                    icon={<MenuIcon/>}
+                    color={theme.text}
+                    backgroundColor={theme.surface}
+                    hoverColor={theme.primary}
+                    padding={8}
+                />
+                <Link
+                    to={AppRoutes.home.route ?? ''}
+                    className={'nav-bar-link'}
                 >
-                    <Icon
-                        color={theme.primary}
+                    <Row
+                        justifyContent={'start'}
+                        gap={8}
                     >
-                        <CodeIcon/>
-                    </Icon>
-                    <Title>
-                        Portfolio
-                    </Title>
-                </Row>
-            </Link>
+                        <Icon
+                            color={theme.primary}
+                        >
+                            <CodeIcon/>
+                        </Icon>
+                        <Title>
+                            Portfolio
+                        </Title>
+                    </Row>
+                </Link>
+            </Row>
             <Button
                 onClick={toggleTheme}
-                label={themeName === ThemeConstants.light ? '☀️ Light Mode' : '🌙 Dark Mode'}
+                icon={themeName === ThemeConstants.light ? <SunIcon/> : <MoonIcon/>}
+                padding={8}
+                color={theme.primary}
+                backgroundColor={theme.surface}
             />
 
         </nav>

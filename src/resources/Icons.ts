@@ -25,6 +25,8 @@ import { ReactComponent as ArrowLeftIcon } from '@resources/assets/ArrowLeftIcon
 import { ReactComponent as FormationIcon } from '@resources/assets/FormationIcon.svg'
 import { ReactComponent as WorkIcon } from '@resources/assets/WorkIcon.svg'
 import { ReactComponent as LanguageIcon } from '@resources/assets/LanguageIcon.svg'
+import { ReactComponent as SunIcon } from '@resources/assets/SunIcon.svg'
+import { ReactComponent as MoonIcon } from '@resources/assets/MoonIcon.svg'
 
 export {
     MenuIcon,
@@ -53,5 +55,7 @@ export {
     ArrowLeftIcon,
     FormationIcon,
     WorkIcon,
-    LanguageIcon
+    LanguageIcon,
+    SunIcon,
+    MoonIcon
 }
