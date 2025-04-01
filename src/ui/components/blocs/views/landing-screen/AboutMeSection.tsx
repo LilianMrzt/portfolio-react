@@ -19,8 +19,11 @@ const AboutMeSection = (): ReactNode => {
     const handleResumeDownload = (): void => {
         const link = document.createElement('a')
         link.href = '/files/CV_Lilian_MARZET.pdf'
-        link.download = 'CV_Lilian_MARZET.pdf'
+        link.setAttribute('download', 'CV_Lilian_MARZET.pdf')
+        link.setAttribute('target', '_blank')
+        document.body.appendChild(link)
         link.click()
+        document.body.removeChild(link)
     }
 
     return (
@@ -38,7 +41,7 @@ const AboutMeSection = (): ReactNode => {
                 >
                     <Column
                         gap={32}
-                        alignItems={'start'}
+                        alignItems={width < screenSizes.screenS ? 'center' : 'start'}
                     >
                         <Column>
                             <Text

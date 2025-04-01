@@ -17,6 +17,7 @@ const Footer = (): ReactNode => {
             >
                 <Text
                     color={theme.textSecondary}
+                    textAlign={'center'}
                 >
                     {`© ${new Date().getFullYear().toString()} • Portfolio - Lilian Marzet. ${translate('footer.allRightsReserved')}.`}
                 </Text>

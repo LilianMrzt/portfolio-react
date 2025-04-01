@@ -15,7 +15,6 @@ import Row from '@components/common/layout/Row'
 import ExternalLink from '@components/common/pressable/ExternalLink'
 import Image from '@components/common/resources/Image'
 import InfoBubble from '@components/common/InfoBubble'
-import Title from '@components/common/text/Title'
 import Text from '@components/common/text/Text'
 import { darkenColor } from '@utils/ColorUtils'
 
@@ -67,9 +66,9 @@ const ProjectDetailsSection = (): ReactNode => {
                             width={'100%'}
                             justifyContent={'space-between'}
                         >
-                            <Title>
+                            <SubTitle>
                                 {project.name}
-                            </Title>
+                            </SubTitle>
                             <Row>
                                 {project.githubLink && (
                                     <ExternalLink
@@ -160,7 +159,9 @@ const ProjectDetailsSection = (): ReactNode => {
                             </Text>
                         </Column>
                     </Column>
-                    <Row>
+                    <Row
+                        flexWrap={'wrap'}
+                    >
                         {project.appLink && (
                             <Button
                                 label={translate('projectsDetailsScreen.viewLiveDemo')}

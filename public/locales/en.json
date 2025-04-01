@@ -15,8 +15,8 @@
         },
         "aboutMeSection": {
             "title": "About me",
-            "contentText1": "My expertise lies mainly in modern technologies such as React and React Native for the front-end, where I thrive on managing dynamic and intuitive user interfaces. On the back-end, I stand out for my mastery of NodeJS, enabling the implementation of robust functionalities and efficient data management.",
-            "contentText2": "My recent career path bears witness to my determination to constantly learn and evolve in the field of development, with a resolute commitment to technical excellence and innovation.",
+            "contentText1": "I specialize in modern technologies such as React and React Native for front-end development, with a strong focus on building dynamic, intuitive, and high-performing user interfaces. On the back-end, I have solid expertise in Node.js, enabling me to design robust features and manage data flows efficiently.",
+            "contentText2": "My recent journey reflects a constant drive to learn and grow in the field of development. I am committed to delivering technical excellence, fostering innovation, and bringing real value to every project I undertake.",
             "buttonLabel": "Download my resume"
         },
         "skillsSection": {
