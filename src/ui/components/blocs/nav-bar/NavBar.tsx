@@ -9,10 +9,13 @@ import { type NavBarProps } from '@interfaces/components/blocs/nav-bar/NavBarPro
 import { Link } from 'react-router-dom'
 import { AppRoutes } from '@constants/DrawerRoutes'
 import Title from '@components/common/text/Title'
+import { useTheme } from '@hooks/ThemeContext'
+import ThemeConstants from '@constants/ThemeConstants'
 
 const NavBar: FC<NavBarProps> = ({
     onMenuClick
 }): ReactNode => {
+    const { themeType, toggleTheme } = useTheme()
     return (
         <nav
             className={'nav-bar'}
@@ -43,6 +46,11 @@ const NavBar: FC<NavBarProps> = ({
                     </Title>
                 </Row>
             </Link>
+            <Button
+                onClick={toggleTheme}
+                label={themeType === ThemeConstants.light ? '☀️ Light Mode' : '🌙 Dark Mode'}
+            />
+
         </nav>
     )
 }

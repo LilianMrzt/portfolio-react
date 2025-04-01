@@ -40,3 +40,27 @@ code {
   --screen-m: 1024;
   --screen-l: 1280;
 }
+
+[data-theme='dark'] {
+  --primary: #6366f1;
+  --primary-opacity: #2E3350;
+  --on-primary: #FFFFFF;
+  --secondary: #46b5e5;
+  --tertiary: #1f2937;
+  --background: #121212;
+  --on-background: #E5E7EB;
+  --surface: #1E1E1E;
+  --surface-secondary: #2C2C2C;
+  --text: #FFFFFF;
+  --text-secondary: #9CA3AF;
+  --outline: #3F3F46;
+
+  --green: #1D7B2E;
+  --on-green: #DFF6E0;
+  --blue: #1D40B0;
+  --on-blue: #DBE9FE;
+  --yellow: #916025;
+  --on-yellow: #FEF9C3;
+  --orange: #B0581D;
+  --on-orange: #FEE7DB;
+}

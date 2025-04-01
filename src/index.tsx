@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { TranslationProvider } from '@hooks/TranslatonContext'
+import { ThemeProvider } from '@hooks/ThemeContext'
 
 const root = ReactDOM.createRoot(
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -12,10 +13,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <React.StrictMode>
-        <Router>
-            <TranslationProvider>
-                <App />
-            </TranslationProvider>
-        </Router>
+        <ThemeProvider>
+            <Router>
+                <TranslationProvider>
+                    <App />
+                </TranslationProvider>
+            </Router>
+        </ThemeProvider>
     </React.StrictMode>
 )
