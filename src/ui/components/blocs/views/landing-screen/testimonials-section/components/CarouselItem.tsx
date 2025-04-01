@@ -8,7 +8,7 @@ import {
 import Image from '@components/common/resources/Image'
 import { useTranslation } from '@hooks/TranslatonContext'
 import { useWindowSize } from '@hooks/useWindowSize'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 
 const CarouselItem: FC<CarouselItemProps> = ({
     currentItem

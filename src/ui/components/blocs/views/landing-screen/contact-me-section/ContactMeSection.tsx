@@ -11,7 +11,7 @@ import theme from '@constants/Theme'
 import frContactInformation from '@fixtures/contact/fr.json'
 import { useTranslation } from '@hooks/TranslatonContext'
 import { useWindowSize } from '@hooks/useWindowSize'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 
 const ContactMeSection = (): ReactNode => {
     const { translate } = useTranslation()

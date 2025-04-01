@@ -10,7 +10,7 @@ import { FormationIcon } from '@resources/Icons'
 import VerticalSeparator
     from '@components/blocs/views/profile-screen/professional-experience-section/components/VerticalSeparator'
 import Column from '@components/common/layout/Column'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 import { useWindowSize } from '@hooks/useWindowSize'
 import './formation-card.css'
 

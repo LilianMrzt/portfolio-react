@@ -8,7 +8,7 @@ import { ChevronDownIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 import { scrollToSection } from '@utils/Animationutils'
 
 const InitialSection = (): ReactNode => {

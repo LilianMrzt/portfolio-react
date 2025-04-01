@@ -11,7 +11,7 @@ import {
 import SkillsCard from '@components/blocs/views/profile-screen/skills-section/components/SkillsCard'
 import Button from '@components/common/pressable/Button'
 import { useWindowSize } from '@hooks/useWindowSize'
-import AppConstants from '@constants/AppConstants'
+import AppConstants from '@constants/ScreenSizes'
 import { AddIcon, SubstractIcon } from '@resources/Icons'
 import { useTranslation } from '@hooks/TranslatonContext'
 

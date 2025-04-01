@@ -12,7 +12,7 @@ import InfoBubble from '@components/common/InfoBubble'
 import VerticalSeparator
     from '@components/blocs/views/profile-screen/professional-experience-section/components/VerticalSeparator'
 import { useWindowSize } from '@hooks/useWindowSize'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 import './professional-experience-card.css'
 
 const ProfessionalExperienceCard: FC<ProfessionalExperienceCardProps> = ({

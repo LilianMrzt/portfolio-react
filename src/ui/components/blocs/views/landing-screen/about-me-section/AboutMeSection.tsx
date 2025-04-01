@@ -10,7 +10,7 @@ import Button from '@components/common/pressable/Button'
 import { DownloadIcon } from '@resources/Icons'
 import { useWindowSize } from '@hooks/useWindowSize'
 import { useTranslation } from '@hooks/TranslatonContext'
-import screenSizes from '@constants/AppConstants'
+import screenSizes from '@constants/ScreenSizes'
 import { AppRoutes } from '@constants/DrawerRoutes'
 
 const AboutMeSection = (): ReactNode => {

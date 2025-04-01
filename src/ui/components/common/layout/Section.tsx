@@ -3,12 +3,12 @@ import Column from '@components/common/layout/Column'
 import { type SectionProps } from '@interfaces/components/common/layout/SectionProps'
 import SubTitle from '@components/common/text/SubTitle'
 import { useWindowSize } from '@hooks/useWindowSize'
-import screenSizes from '@constants/AppConstants'
 import Row from '@components/common/layout/Row'
 import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon } from '@resources/Icons'
 import theme from '@constants/Theme'
 import { useNavigate } from 'react-router-dom'
+import screenSizes from '@constants/ScreenSizes'
 
 const Section: FC<SectionProps> = ({
     label,
