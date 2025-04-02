@@ -4,7 +4,7 @@ import Text from '@components/common/text/Text'
 import Image from '@components/common/resources/Image'
 import {
     type HomeScreenProjectCardProps
-} from '@interfaces/components/blocs/views/landing-screen/projects-section/components/HomeScreenProjectCardProps'
+} from '@interfaces/components/blocs/views/home-screen/projects-section/components/HomeScreenProjectCardProps'
 import Column from '@components/common/layout/Column'
 import Button from '@components/common/pressable/Button'
 import { ArrowRightIcon } from '@resources/Icons'
@@ -22,7 +22,7 @@ import { useTheme } from '@hooks/ThemeContext'
 const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
     project
 }): ReactNode => {
-    const { theme } = useTheme()
+    const { theme, themeName } = useTheme()
     const { translate } = useTranslation()
     const navigate = useNavigate()
     const renderedTechnologies = project.technologies.slice(0, 3)
@@ -55,7 +55,7 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                     gap={8}
                 >
                     <SubTitle
-                        color={theme.surface}
+                        color={themeName === 'dark' ? theme.text : theme.surface}
                         fontSize={20}
                     >
                         {project.name}
@@ -68,7 +68,7 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                             <InfoBubble
                                 key={index}
                                 label={technology}
-                                color={theme.surface}
+                                color={themeName === 'dark' ? theme.text : theme.surface}
                                 backgroundColor={'rgba(255, 255, 255, 0.2)'}
                                 blur
                                 fontSize={13}
@@ -77,7 +77,7 @@ const HomeScreenProjectCard: FC<HomeScreenProjectCardProps> = ({
                         {remainingTechnologiesNumber > 0 && (
                             <InfoBubble
                                 label={`+ ${remainingTechnologiesNumber}`}
-                                color={theme.surface}
+                                color={themeName === 'dark' ? theme.text : theme.surface}
                                 backgroundColor={'rgba(255, 255, 255, 0.2)'}
                                 blur
                                 fontSize={13}

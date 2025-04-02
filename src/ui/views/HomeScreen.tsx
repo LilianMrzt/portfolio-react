@@ -1,15 +1,15 @@
 import React, { type ReactNode } from 'react'
 import Screen from '@components/common/layout/Screen'
-import InitialSection from '@components/blocs/views/landing-screen/InitialSection'
-import AboutMeSection from '@components/blocs/views/landing-screen/about-me-section/AboutMeSection'
-import ContactMeSection from '@components/blocs/views/landing-screen/contact-me-section/ContactMeSection'
-import MyProjectsLandingScreenSection from '@components/blocs/views/landing-screen/projects-section/MyProjectsLandingScreenSection'
-import TestimonialsSection from '@components/blocs/views/landing-screen/testimonials-section/TestimonialsSection'
+import InitialSection from '@components/blocs/views/home-screen/InitialSection'
+import AboutMeSection from '@components/blocs/views/home-screen/about-me-section/AboutMeSection'
+import ContactMeSection from '@components/blocs/views/home-screen/contact-me-section/ContactMeSection'
+import MyProjectsLandingScreenSection from '@components/blocs/views/home-screen/projects-section/MyProjectsLandingScreenSection'
+import TestimonialsSection from '@components/blocs/views/home-screen/testimonials-section/TestimonialsSection'
 import ParallaxCircle from '@components/common/ParallaxCircle'
 import { useWindowSize } from '@hooks/useWindowSize'
-import SkillsSection from '@components/blocs/views/landing-screen/skills-section/SkillsSection'
+import SkillsSection from '@components/blocs/views/home-screen/skills-section/SkillsSection'
 
-const LandingScreen = (): ReactNode => {
+const HomeScreen = (): ReactNode => {
     const { width, height } = useWindowSize()
 
     return (
@@ -58,4 +58,4 @@ const LandingScreen = (): ReactNode => {
     )
 }
 
-export default LandingScreen
+export default HomeScreen

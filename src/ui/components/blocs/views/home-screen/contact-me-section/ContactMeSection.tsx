@@ -4,7 +4,7 @@ import Text from '@components/common/text/Text'
 import Card from '@components/common/Card'
 import Row from '@components/common/layout/Row'
 import ContactInformationCard
-    from '@components/blocs/views/landing-screen/contact-me-section/components/ContactInformationCard'
+    from '@components/blocs/views/home-screen/contact-me-section/components/ContactInformationCard'
 import { GithubIcon, LinkedinIcon, LocationIcon, MailIcon, PhoneIcon } from '@resources/Icons'
 import ExternalLink from '@components/common/pressable/ExternalLink'
 

@@ -1,14 +1,12 @@
 import React, { type FC, type ReactNode } from 'react'
 import Row from '@components/common/layout/Row'
-import Button from '@components/common/pressable/Button'
 import Column from '@components/common/layout/Column'
 import Text from '@components/common/text/Text'
 import {
     type ContactInformationCardProps
-} from '@interfaces/components/blocs/views/landing-screen/contact-me-section/components/ContactInformationCardProps'
-
-import { copyToClipboard } from '@utils/TextUtils'
+} from '@interfaces/components/blocs/views/home-screen/contact-me-section/components/ContactInformationCardProps'
 import { useTheme } from '@hooks/ThemeContext'
+import Icon from '@components/common/resources/Icon'
 
 const ContactInformationCard: FC<ContactInformationCardProps> = ({
     icon,
@@ -18,15 +16,14 @@ const ContactInformationCard: FC<ContactInformationCardProps> = ({
     const { theme } = useTheme()
     return (
         <Row>
-            <Button
-                onClick={() => {
-                    void copyToClipboard(content)
-                }}
+            <Icon
                 padding={12}
-                icon={icon}
                 backgroundColor={theme.blue}
                 color={theme.onBlue}
-            />
+                round
+            >
+                {icon}
+            </Icon>
             <Column
                 alignItems={'start'}
                 gap={8}

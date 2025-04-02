@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { AppRoutes } from '@constants/DrawerRoutes'
-import LandingScreen from '@ui/views/LandingScreen'
+import HomeScreen from '@ui/views/HomeScreen'
 import ProjectsScreen from '@ui/views/ProjectsScreen'
 import ProfileScreen from '@ui/views/ProfileScreen'
 import ProjectDetailsScreen from '@ui/views/ProjectDetailsScreen'
@@ -11,7 +11,7 @@ const AppNavigation = (): ReactNode => {
         <Routes>
             <Route
                 path={AppRoutes.home.route}
-                element={<LandingScreen />}
+                element={<HomeScreen />}
             />
             <Route
                 path={AppRoutes.profile.route}

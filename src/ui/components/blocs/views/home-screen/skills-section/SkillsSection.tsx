@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import Section from '@components/common/layout/Section'
 import Grid from '@components/common/layout/Grid'
-import SkillCardHomeScreen from '@components/blocs/views/landing-screen/skills-section/components/SkillCardHomeScreen'
+import SkillCardHomeScreen from '@components/blocs/views/home-screen/skills-section/components/SkillCardHomeScreen'
 import { BackEndIcon, FrontEndIcon, ToolsIcon } from '@resources/Icons'
 import { type SkillObject } from '@interfaces/objects/front-objects/SkillObject'
 import { useTranslation } from '@hooks/TranslatonContext'

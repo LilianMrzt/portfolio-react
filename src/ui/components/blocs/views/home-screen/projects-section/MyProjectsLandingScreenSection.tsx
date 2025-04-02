@@ -2,7 +2,7 @@ import React, { type ReactNode } from 'react'
 import Section from '@components/common/layout/Section'
 import Grid from '@components/common/layout/Grid'
 import HomeScreenProjectCard
-    from '@components/blocs/views/landing-screen/projects-section/components/HomeScreenProjectCard'
+    from '@components/blocs/views/home-screen/projects-section/components/HomeScreenProjectCard'
 import { useTranslation } from '@hooks/TranslatonContext'
 import frProjects from '@fixtures/projects/fr.json'
 import enProjects from '@fixtures/projects/en.json'

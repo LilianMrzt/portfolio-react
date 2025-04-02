@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState, useEffect, type FC } from 'react'
 import { themes } from '@constants/theme/Themes'
 
 type ThemeType = 'light' | 'dark'
@@ -11,7 +11,7 @@ interface ThemeContextProps {
 
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined)
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const ThemeProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
     const [themeName, setThemeName] = useState<ThemeType>('light')
 
     const theme = themes[themeName]

@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react'
 import Section from '@components/common/layout/Section'
 import Card from '@components/common/Card'
-import Carousel from '@components/blocs/views/landing-screen/testimonials-section/components/Carousel'
+import Carousel from '@components/blocs/views/home-screen/testimonials-section/components/Carousel'
 import frTestimonials from '@fixtures/testimonials/fr.json'
 import enTestimonials from '@fixtures/testimonials/en.json'
 import { useTranslation } from '@hooks/TranslatonContext'
