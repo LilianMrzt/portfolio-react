@@ -1,15 +1,15 @@
 import React, { type FC, type ReactNode, useEffect, useRef, useState } from 'react'
 import {
     type CarouselProps
-} from '@interfaces/components/blocs/views/landing-screen/testimonials-section/components/CarouselProps'
+} from '@interfaces/components/blocs/views/home-screen/testimonials-section/components/CarouselProps'
 import Column from '@components/common/layout/Column'
 import Row from '@components/common/layout/Row'
 import Button from '@components/common/pressable/Button'
 import './carousel.css'
 import { ChevronLeftIcon, ChevronRightIcon, QuoteIcon } from '@resources/Icons'
 
-import CarouselDot from '@components/blocs/views/landing-screen/testimonials-section/components/CarouselDot'
-import CarouselItem from '@components/blocs/views/landing-screen/testimonials-section/components/CarouselItem'
+import CarouselDot from '@components/blocs/views/home-screen/testimonials-section/components/CarouselDot'
+import CarouselItem from '@components/blocs/views/home-screen/testimonials-section/components/CarouselItem'
 import Icon from '@components/common/resources/Icon'
 import { useTheme } from '@hooks/ThemeContext'
 

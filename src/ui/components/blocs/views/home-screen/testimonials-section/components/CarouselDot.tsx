@@ -2,7 +2,7 @@ import React, { type FC, type ReactNode } from 'react'
 import './carousel-dot.css'
 import {
     type CarouselDotProps
-} from '@interfaces/components/blocs/views/landing-screen/testimonials-section/components/CarouselDotProps'
+} from '@interfaces/components/blocs/views/home-screen/testimonials-section/components/CarouselDotProps'
 
 import { darkenOrLightenColor } from '@utils/ColorUtils'
 import { useTheme } from '@hooks/ThemeContext'

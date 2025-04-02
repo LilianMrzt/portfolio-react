@@ -4,7 +4,7 @@ import Text from '@components/common/text/Text'
 import Column from '@components/common/layout/Column'
 import {
     type CarouselItemProps
-} from '@interfaces/components/blocs/views/landing-screen/testimonials-section/components/CarouselItemProps'
+} from '@interfaces/components/blocs/views/home-screen/testimonials-section/components/CarouselItemProps'
 import Image from '@components/common/resources/Image'
 import { useTranslation } from '@hooks/TranslatonContext'
 import { useWindowSize } from '@hooks/useWindowSize'

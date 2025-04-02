@@ -6,8 +6,8 @@ import SubTitle from '@components/common/text/SubTitle'
 import Row from '@components/common/layout/Row'
 import {
     type SkillCardHomeScreenProps
-} from '@interfaces/components/blocs/views/landing-screen/skills-section/components/SkillCardHomeScreenProps'
-import SkillIndicator from '@components/blocs/views/landing-screen/skills-section/components/SkillIndicator'
+} from '@interfaces/components/blocs/views/home-screen/skills-section/components/SkillCardHomeScreenProps'
+import SkillIndicator from '@components/blocs/views/home-screen/skills-section/components/SkillIndicator'
 import { useTheme } from '@hooks/ThemeContext'
 
 const SkillCardHomeScreen: FC<SkillCardHomeScreenProps> = ({

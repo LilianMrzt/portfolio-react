@@ -2,7 +2,7 @@ import React, { type FC, type ReactNode } from 'react'
 import Text from '@components/common/text/Text'
 import {
     type InfoBubbleProps
-} from '@interfaces/components/blocs/views/landing-screen/projects-section/components/InfoBubbleProps'
+} from '@interfaces/components/blocs/views/home-screen/projects-section/components/InfoBubbleProps'
 import './info-bubble.css'
 import { useTheme } from '@hooks/ThemeContext'
 
@@ -28,6 +28,7 @@ const InfoBubble: FC<InfoBubbleProps> = ({
             <Text
                 color={colorValue}
                 fontSize={fontSize}
+                numberOfLines={1}
             >
                 {label}
             </Text>
