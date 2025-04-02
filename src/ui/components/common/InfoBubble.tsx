@@ -28,6 +28,7 @@ const InfoBubble: FC<InfoBubbleProps> = ({
             <Text
                 color={colorValue}
                 fontSize={fontSize}
+                numberOfLines={1}
             >
                 {label}
             </Text>
