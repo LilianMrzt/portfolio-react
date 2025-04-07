@@ -21,6 +21,8 @@ module.exports = {
                     (plugin: any) => plugin.constructor?.name !== 'ReactRefreshPlugin'
                 );
             }
+            console.log("NODE_ENV is:", process.env.NODE_ENV);
+
             return webpackConfig;
         },
     },
