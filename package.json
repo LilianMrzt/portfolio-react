@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "react-scripts build",
     "test": "craco test",
     "eject": "craco eject"
   },
