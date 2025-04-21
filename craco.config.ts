@@ -1,8 +1,6 @@
 // @ts-ignore
 import CracoAlias from "craco-alias";
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 module.exports = {
     plugins: [
         {
@@ -14,16 +12,4 @@ module.exports = {
             },
         },
     ],
-    webpack: {
-        configure: (webpackConfig: any) => {
-            if (isProduction) {
-                // Filter out React Refresh plugin in production
-                webpackConfig.plugins = webpackConfig.plugins.filter(
-                    (plugin: any) => plugin.constructor.name !== 'ReactRefreshWebpackPlugin'
-                );
-            }
-
-            return webpackConfig;
-        },
-    },
 };

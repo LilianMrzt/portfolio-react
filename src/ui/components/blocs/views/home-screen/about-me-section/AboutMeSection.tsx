@@ -18,13 +18,7 @@ const AboutMeSection = (): ReactNode => {
     const { translate } = useTranslation()
 
     const handleResumeDownload = (): void => {
-        const link = document.createElement('a')
-        link.href = '/files/CV_Lilian_MARZET.pdf'
-        link.setAttribute('download', 'CV_Lilian_MARZET.pdf')
-        link.setAttribute('target', '_blank')
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
+        window.open('/files/CV_Lilian_MARZET.pdf', '_blank')
     }
 
     return (
