@@ -10,6 +10,15 @@
   },
   {
     "id": 2,
+    "startDate": "2022",
+    "endDate": "2022",
+    "school": "UQAC",
+    "schoolType": "Séjour d'études au Québec",
+    "cursus": "Filière informatique",
+    "location": "555 Bd de l'Université, Chicoutimi, QC G7H 2B1, Canada"
+  },
+  {
+    "id": 3,
     "startDate": "2015",
     "endDate": "2018",
     "school": "Lycée Françoise Cabrini",
