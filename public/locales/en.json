@@ -75,6 +75,11 @@
         "viewLiveDemo": "View live demo",
         "viewSource": "View source"
     },
+    "error404Screen": {
+        "error404": "Error 404",
+        "pageNotFound": "Page not found",
+        "backToHomeScreen": "Back to Home screen"
+    },
     "buttons": {
         "viewDetails": "View details",
         "viewAllProjects": "View all projects"

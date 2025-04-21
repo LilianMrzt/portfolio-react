@@ -25,6 +25,11 @@ export const AppRoutes: Record<string, RouteType> = {
     projectDetails: {
         label: 'drawer.projects',
         routeFn: (sessionSlug: string) => `${AppRoutes.projects.route}/${sessionSlug}`,
-        icon: <ProjectsIcon/>
+        icon: <div/>
+    },
+    other: {
+        label: 'other',
+        route: '/*',
+        icon: <div/>
     }
 }

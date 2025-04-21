@@ -5,6 +5,7 @@ import HomeScreen from '@ui/views/HomeScreen'
 import ProjectsScreen from '@ui/views/ProjectsScreen'
 import ProfileScreen from '@ui/views/ProfileScreen'
 import ProjectDetailsScreen from '@ui/views/ProjectDetailsScreen'
+import Error404Screen from '@ui/views/Error404Screen'
 
 const AppNavigation = (): ReactNode => {
     return (
@@ -24,6 +25,10 @@ const AppNavigation = (): ReactNode => {
             <Route
                 path={`${AppRoutes.projects.route}/:projectSlug`}
                 element={<ProjectDetailsScreen />}
+            />
+            <Route
+                path={AppRoutes.other.route}
+                element={<Error404Screen/>}
             />
         </Routes>
     )
