@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Portfolio - Lilian Marzet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur le dépôt de mon **portfolio personnel**, développé avec **React** et **TypeScript**. Ce projet a pour objectif de présenter mes projets, mes compétences, et mon parcours de développeur à travers une interface moderne, professionnelle et responsive.
 
-## Available Scripts
+[Voir le site en ligne](https://lilian-marzet.com/)  
+[Voir le code sur GitHub](https://github.com/LilianMrzt/portfolio-react)
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## Aperçu
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Un portfolio de développeur moderne, construit avec les dernières technologies front-end. Il comprend notamment :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Un **design responsive** avec **prise en charge du mode sombre**
+- Une **interface multilingue** (français et anglais)
+- Une **présentation claire des projets**, des compétences et des témoignages
+- Une **navigation mobile optimisée**, avec un menu coulissant
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Détails techniques
 
-### `yarn build`
+Ce projet a été développé avec les technologies et concepts suivants :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React 18** — pour la construction de l’interface
+- **TypeScript** — pour un typage statique robuste
+- **React Router** — pour la gestion de la navigation
+- **Context API** — pour la gestion du thème (sombre/clair) et de la langue
+- **ESLint** — pour assurer la qualité du code
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+L’architecture repose sur des composants réutilisables et la logique métier est séparée de la présentation. Les thèmes et langues sont gérés via des contextes, assurant une expérience fluide et centralisée.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+## Structure du projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+portfolio-react/
+├── public/               # Fichiers statiques (favicon, index.html, images publiques...)
+│   ├── files/            # Fichiers statiques
+│   ├── images/           # Images statiques
+│   ├── locales/          # Fichiers de traduction
+├── src/                  # Code source principal de l'application
+│   ├── constants/        # Constantes du projet
+│   ├── fixtures/         # Données statiques du projet
+│   ├── hooks/            # Hooks et Contexts React (thème, langue, etc.)
+│   ├── interfaces/       # Interfaces et types Typescript
+│   ├── resources/        # Ressources statiques : icônes, images, logos...
+│   ├── ui/               # Pages et composants React
+│   │   ├── components/   # Composants dde l'application
+│   │   ├── navigation/   # Composants relatifs à la navigation et à React Router
+│   │   ├── views/        # Pages de l'application
+│   ├── utils/            # Fonctions utilitaires génériques
+│   └── App.tsx           # Composant racine de l'application
+├── .eslintrc.js          # Configuration ESLint
+├── tsconfig.json         # Configuration TypeScript
+├── package.json          # Dépendances du projet
+└── README.md             # Documentation principale du projet
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Fonctionnalités
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Design réactif compatible avec tous les formats d’écran
+- Thème clair / sombre avec persistance locale
+- Langue dynamique (FR/EN) avec détection automatique du language du navigateur
+- Présentation des projets avec aperçu détaillé
+- Navigation fluide grâce à React Router
+- Structure modulaire et extensible
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Pré-requis
 
-### Code Splitting
+- Node.js ≥ 18.x
+- Yarn ≥ 1.22
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Étapes
 
-### Analyzing the Bundle Size
+1. **Cloner le dépôt :**
+```bash
+git clone https://github.com/LilianMrzt/portfolio-react.git
+cd portfolio-react
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Installer les dépendances :**
 
-### Making a Progressive Web App
+Si vous n’avez pas Yarn, installez-le avec :
+```bash
+npm install --global yarn
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Pour installer les dépendances:
 
-### Advanced Configuration
+```bash
+yarn install
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Lancer le projet localement :**
+```bash
+yarn start
+```
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Le site sera accessible à l’adresse suivante :
+http://localhost:3000
