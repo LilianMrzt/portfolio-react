@@ -2,7 +2,7 @@
   {
     "id": 1,
     "slug": "portfolio",
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    "image": "/images/projects/portfolio-project.png",
     "name": "Developper Portfolio",
     "overview": "A modern, responsive developer portfolio built with React and TypeScript. Features dark mode support, multi-language functionality, and a clean, professional design showcasing projects, skills, and testimonials.",
     "features": [
@@ -15,5 +15,23 @@
     "technologies": ["React", "TypeScript", "React Router", "ESLint"],
     "githubLink": "https://github.com/LilianMrzt/portfolio-react",
     "appLink": "https://lilian-marzet.com/"
-  }
+  },
+  {
+  "id": 2,
+  "slug": "dev-ink",
+  "image": "/images/projects/dev-ink-project.png",
+  "name": "DevInk - Code Editor",
+  "overview": "DevInk is a modern and lightweight code editor built with React, TypeScript, and Electron. It offers a smooth experience with syntax highlighting, multi-file support, change history tracking, and line numbering.",
+  "features": [
+    "Live syntax highlighting for multiple programming languages",
+    "Smart undo/redo history system",
+    "Multi-file navigation with tab organization",
+    "Modification of files and folders on the user's local machine"
+  ],
+  "technicalDetails": "Built using React 18 and TypeScript for type safety and an improved developer experience. The architecture is based on reusable components. Syntax highlighting is handled without heavy dependencies (Prism). The application is connected to the local file system through Electron. The editor also uses react-window for efficient rendering of lines, even in very large files.\n\n⚠️ Warning!\nThis project is a work in progress and does not represent the quality of a finished product. It was created as a way to explore Electron and desktop application development with React. Many features are planned: Terminal, Refactoring, Git integration, support for more languages, settings panel, auto-completion, global search and refactoring, etc.\nIt is recommended to use real code editors such as VSCode or IntelliJ when working on your own development projects.",
+  "technologies": ["React", "TypeScript", "Electron", "ESLint", "Prism.js", "React Window"],
+  "githubLink": "https://github.com/LilianMrzt/dev-ink",
+  "appLink": ""
+}
+
 ]

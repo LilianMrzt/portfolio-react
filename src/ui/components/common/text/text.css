@@ -6,6 +6,7 @@
     width: fit-content;
     text-align: center;
     z-index: 5;
+    white-space: pre-line;
 }
 
 .text.italic {
