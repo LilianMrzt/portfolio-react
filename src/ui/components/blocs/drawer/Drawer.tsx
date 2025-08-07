@@ -57,7 +57,7 @@ const Drawer: FC<DrawerProps> = ({
                         gap={8}
                     >
                         <Image
-                            src={'https://media.licdn.com/dms/image/v2/D5603AQHXsCF1ovgpQg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693410201608?e=1748476800&v=beta&t=F7OApupk981tjvqfMgV0zys8Mtnk8Oe_2AgEDj3x2mg'}
+                            src={'/images/lilian-marzet.jpg'}
                             alt={'Photo of Lilian Marzet'}
                             height={180}
                             width={180}
